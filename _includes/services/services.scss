@@ -1,0 +1,34 @@
+.services {
+  height: 50vh;
+  padding: 42px 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: cadetblue;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 960px;
+
+    .title {
+      font-size: 42px;
+      padding: 24px 0;
+    }
+
+    .services-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .service {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        max-width: 420px;
+      }
+    }
+  }
+}

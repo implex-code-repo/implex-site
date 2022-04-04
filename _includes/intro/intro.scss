@@ -1,0 +1,23 @@
+.intro {
+  padding: 42px 0;
+  min-height: 920px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: antiquewhite;
+
+  .title {
+    padding: 24px 0;
+    font-size: 72px;
+    font-weight: bold;
+    max-width: 960px;
+  }
+
+  .description {
+    padding: 15px 0 30px;
+    font-size: 22px;
+    max-width: 960px;
+  }
+}

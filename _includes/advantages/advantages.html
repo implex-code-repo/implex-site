@@ -1,0 +1,14 @@
+<section class="container">
+    <div>The advantages you'll get</div>
+    <div class="description">Our diverse background allows offering you
+        the most effective practices.</div>
+    <div class="advantages-container">
+        {% for item in site.data.advantages %}
+        <div class="advantage">
+            <div class="icon"></div>
+            <div class="adv-title">{{ item.title }}</div>
+            <div class="adv-description">{{ item.description }}</div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

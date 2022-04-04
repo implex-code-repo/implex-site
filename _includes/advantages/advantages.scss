@@ -1,0 +1,23 @@
+.container {
+  padding: 42px 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+
+  .advantages-container {
+    width: 960px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 14px;
+    grid-row-gap: 14px;
+
+    .advantage {
+      .adv-title {
+        font-size: 18px;
+        font-family: Arial;
+        font-weight: bold;
+      }
+    }
+  }
+}
