@@ -1,22 +1,56 @@
 .container {
-  padding: 42px 0;
+  margin: 142px 0;
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
 
+  .title {
+    font-size: 42px;
+    font-family: Arial;
+    font-weight: bold;
+  }
+
+  .description {
+    padding: 40px 0;
+    width: 560px;
+    font-size: 24px;
+    font-family: Arial;
+  }
+
   .advantages-container {
-    width: 960px;
+    width: 1200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 14px;
-    grid-row-gap: 14px;
+    grid-column-gap: 20px;
+    grid-row-gap: 62px;
 
     .advantage {
+      display: grid;
+      grid-template-columns: 66px repeat(2, 1fr);
+
+      .icon {
+        height: 50px;
+        width: 50px;
+      }
+
       .adv-title {
+        grid-column: 2 / 4;
         font-size: 18px;
         font-family: Arial;
         font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+
+      .adv-description {
+        grid-column: 1 / 4;
+        grid-row: 2;
+        padding-top: 12px;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 300;
+        font-family: Arial;
       }
     }
   }
