@@ -1,11 +1,45 @@
 ---
 ---
+@import 'mixins';
+@import "intro";
+@import "about";
+@import "advantages";
+@import "services";
+@import "how-it-works";
+
 body {
   margin: 0;
   padding: 0;
 }
 
-@import "intro";
-@import "about";
-@import "advantages";
-@import "services";
+.section {
+  @include flex(column, center, center);
+  padding: 142px 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+
+  h1 {
+    @include font(42px, 600, 1.23);
+    font-family: 'Roboto',Arial,sans-serif;
+    color: black;
+  }
+
+  h2 {
+    @include font(24px, 300, 1.5);
+    color: black;
+    font-family: 'Roboto',Arial,sans-serif;
+    max-width: 560px;
+    padding: 0 0 80px;
+  }
+
+  &.section-dark {
+    h1 {
+      @include font(42px, 600, 1.23);
+      font-family: 'Roboto',Arial,sans-serif;
+      color: white;
+
+    }
+  }
+}

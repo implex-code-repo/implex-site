@@ -1,0 +1,44 @@
+//@mixin skew-background() {
+//  position: relative;
+//
+//  &:before {
+//    content: '';
+//    display: block;
+//    border-radius: 24px;
+//    transition: transform $transition-time;
+//    position: absolute;
+//    top: 0;
+//    bottom: 0;
+//    left: 0;
+//    right: 0;
+//  }
+//
+//  &:hover:before {
+//    transform: skewX(-45deg);
+//  }
+//
+//  & > span {
+//    position: absolute;
+//    top: 50%;
+//    left: 50%;
+//    transform: translate(-50%, -50%);
+//  }
+//}
+
+@mixin font($size, $weight, $line-height) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+}
+
+@mixin flex($flex-direction: column, $justify: flex-start, $align: stretch) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin size($width: 0px, $height: 0px) {
+  width: $width;
+  height: $height;
+}
