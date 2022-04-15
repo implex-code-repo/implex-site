@@ -1,10 +1,13 @@
-<section class="services">
-    <div class="content">
-        <div class="title">Our services</div>
+<section class="section services">
+    {% assign prefix = site.imgPrefix %}
+    <div class="content content-block">
+        <h1 class="title">Our services</h1>
         <div class="services-container">
             {% for item in site.data.services %}
             <div class="service">
-                <div class="icon"></div>
+                <div class="icon">
+                    <img src="{{ prefix }}{{ item.icon }}">
+                </div>
                 <div class="service-title">{{ item.title }}</div>
                 <div class="service-description">{{ item.description }}</div>
             </div>

@@ -2,11 +2,11 @@
   background-color: #f5f5f5;
 
   .advantages-container {
-    width: 1200px;
     display: grid;
     grid-template-columns: repeat(3, 360px);
     grid-column-gap: 20px;
     grid-row-gap: 72px;
+    margin-top: 80px;
 
     .advantage {
       display: grid;
@@ -18,22 +18,18 @@
       }
 
       .adv-title {
+        @include font(18px, bold);
         grid-column: 2 / 4;
-        font-size: 18px;
-        font-family: Arial;
-        font-weight: bold;
         display: flex;
         align-items: center;
       }
 
       .adv-description {
+        @include font(16px, 300);
         grid-column: 1 / 4;
         grid-row: 2;
         padding-top: 12px;
         text-align: left;
-        font-size: 16px;
-        font-weight: 300;
-        font-family: Arial;
         line-height: 1.55;
       }
     }

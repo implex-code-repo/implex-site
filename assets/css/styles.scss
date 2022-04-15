@@ -6,40 +6,43 @@
 @import "advantages";
 @import "services";
 @import "how-it-works";
+@import "partnership";
 
 body {
   margin: 0;
   padding: 0;
+  color: black;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .section {
-  @include flex(column, center, center);
   padding: 142px 0;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
 
   h1 {
-    @include font(42px, 600, 1.23);
-    font-family: 'Roboto',Arial,sans-serif;
-    color: black;
+    @include font(42px, 600);
+    line-height: 1.23;
   }
 
   h2 {
-    @include font(24px, 300, 1.5);
-    color: black;
-    font-family: 'Roboto',Arial,sans-serif;
+    @include font(24px, 300);
+    line-height: 1.5;
     max-width: 560px;
-    padding: 0 0 80px;
+    margin: 0 auto;
+  }
+
+  .content {
+    margin: 0 auto;
+    max-width: 1200px;
   }
 
   &.section-dark {
-    h1 {
-      @include font(42px, 600, 1.23);
-      font-family: 'Roboto',Arial,sans-serif;
-      color: white;
+    color: white;
 
+    h2 {
+      max-width: 600px;
     }
   }
 }

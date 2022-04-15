@@ -1,17 +1,21 @@
 <section class="section advantages">
-    {% assign prefix = site.imgPrefix %}
-    <h1>The advantages you'll get</h1>
-    <h2>Our diverse background allows offering you
-        the most effective practices.</h2>
-    <div class="advantages-container">
-        {% for item in site.data.advantages %}
-        <div class="advantage">
-            <div class="icon">
-                <img src="{{ prefix }}{{ item.icon }}">
-            </div>
-            <div class="adv-title">{{ item.title }}</div>
-            <div class="adv-description">{{ item.description }}</div>
+    <div class="content">
+        {% assign prefix = site.imgPrefix %}
+        <div class="text-center">
+            <h1>The advantages you'll get</h1>
+            <h2>Our diverse background allows offering you
+                the most effective practices.</h2>
         </div>
-        {% endfor %}
+        <div class="advantages-container">
+            {% for item in site.data.advantages %}
+            <div class="advantage">
+                <div class="icon">
+                    <img src="{{ prefix }}{{ item.icon }}">
+                </div>
+                <div class="adv-title">{{ item.title }}</div>
+                <div class="adv-description">{{ item.description }}</div>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </section>

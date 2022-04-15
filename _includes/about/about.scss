@@ -1,34 +1,38 @@
-.about {
-  height: 50vh;
-  padding: 42px 0;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  background-color: aquamarine;
+@import 'mixins';
 
-  .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 960px;
+.about {
+  background-color: white;
+
+  .content-block {
+    @include flex(row, center, flex-start);
 
     .info {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-row-gap: 14px;
+      @include flex(column, center, flex-start);
+      padding-right: 80px;
+
+      .title {
+        @include font(42px, 700);
+        line-height: 1.23;
+      }
+
+      .description {
+        @include font(20px, 300);
+        line-height: 1.55;
+        text-align: left;
+        padding-top: 24px;
+        max-width: 450px;
+      }
     }
 
     .collage {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 10px;
-      grid-row-gap: 10px;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
       padding-left: 16px;
 
       img {
-        width: 160px;
-        height: 160px;
+        @include size(270px, 270px);
       }
     }
   }
