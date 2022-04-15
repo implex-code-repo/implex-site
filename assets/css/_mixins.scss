@@ -25,10 +25,10 @@
 //  }
 //}
 
-@mixin font($size, $weight, $line-height) {
+@mixin font($size, $weight) {
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: $size;
   font-weight: $weight;
-  line-height: $line-height;
 }
 
 @mixin flex($flex-direction: column, $justify: flex-start, $align: stretch) {

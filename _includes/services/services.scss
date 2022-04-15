@@ -1,33 +1,40 @@
+@import 'mixins';
+
 .services {
-  height: 50vh;
-  padding: 42px 0;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  background-color: cadetblue;
+  background-color: #f5f5f5;
 
   .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 960px;
+    @include flex(column, center, center);
+    max-width: 1200px;
 
     .title {
-      font-size: 42px;
-      padding: 24px 0;
+      padding-bottom: 60px;
     }
 
     .services-container {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+      @include flex(row, center, center);
 
       .service {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
+        @include flex(column, center, center);
+        padding: 0 40px;
         max-width: 420px;
+
+        .icon {
+          @include size(90px, 90px);
+          padding-bottom: 36px;
+        }
+
+        .service-title {
+          @include font(30px, 600);
+          line-height: 1.17;
+          padding-bottom: 26px;
+        }
+
+        .service-description {
+          @include font(16px, 300);
+          text-align: center;
+          line-height: 1.55;
+        }
       }
     }
   }

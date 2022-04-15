@@ -1,15 +1,13 @@
-<section class="about">
+<section class="section about">
     {% assign prefix = site.imgPrefix %}
     {% assign content = site.data.about %}
     <div class="content">
         {% for item in content %}
         <div class="info">
-
             <div class="title">{{ item.title }}</div>
             <div class="description">{{ item.description1 }}</div>
             <div class="description">{{ item.description2 }}</div>
             <div class="description">{{ item.description3 }}</div>
-
         </div>
         <div class="collage">
             <img src="{{ prefix }}{{ item.image1 }}">

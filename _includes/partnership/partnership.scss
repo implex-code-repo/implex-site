@@ -1,0 +1,18 @@
+@import 'mixins';
+
+.partnership {
+  background-image: url("../../assets/img/background/partnership-bg.webp");
+  background-size: cover;
+
+  .overlay {
+    @include size(100%, 100%);
+    background-color: rgba(0, 0, 0, .9);
+
+    .content {
+      @include flex(column, center, center);
+      text-align: center;
+    }
+  }
+
+}
+
