@@ -1,0 +1,38 @@
+@import 'mixins';
+
+.how-it-works-section {
+  background-color: white;
+
+  .product-container {
+    @include flex(row, center, center);
+    width: 1200px;
+
+    .product-block {
+      @include flex(column, center, center);
+      padding: 0 44px;
+
+      &:nth-child(n + 2):nth-child(-n + 2) {
+        border-left: 1px solid #d1d1d1;
+        border-right: 1px solid #d1d1d1;
+      }
+
+      .index {
+        @include font(16px, 600);
+        letter-spacing: 2.5px;
+        padding-bottom: 16px;
+      }
+
+      .product-title {
+        @include font(24px, 600);
+        line-height: 1.35;
+        padding-bottom: 20px;
+      }
+
+      .product-description {
+        @include font(18px, 300);
+        text-align: center;
+        line-height: 1.55;
+      }
+    }
+  }
+}
