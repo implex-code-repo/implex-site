@@ -1,5 +1,6 @@
 ---
 ---
+
 @import 'mixins';
 @import "intro";
 @import "about";
@@ -7,8 +8,13 @@
 @import "services";
 @import "how-it-works";
 @import "partnership";
+@import "post-preview";
+@import "vacancy-preview";
 
 body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
   margin: 0;
   padding: 0;
   color: black;
@@ -45,4 +51,50 @@ body {
       max-width: 600px;
     }
   }
+}
+
+.post-content {
+  line-height: 1.55;
+  margin: 0 auto;
+  max-width: 760px;
+
+  .post-metadata {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    text-transform: uppercase;
+
+    span + span {
+      margin-left: 16px;
+    };
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(250, 139, 65);
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  blockquote {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+
+    blockquote {
+      font-style: normal;
+      font-weight: 300;
+      margin: 36px 0;
+    }
+  }
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 960px;
 }

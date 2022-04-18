@@ -24,7 +24,15 @@
 
     {{ content }}
 
-    {{ page.author }}
+    {% assign filtered_posts = site.categories["Vacancy"] | where: 'tag', page.tag %}
+    {% if filtered_posts.size > 1 %}
+      <h2>See also</h2>
+    {% endif %}
+    {% for post in filtered_posts %}
+      {% if post.title != page.title %}
+        {% include vacancy-preview/vacancy-preview.html post=post %}
+      {% endif %}
+    {% endfor %}
   </div>
 </body>
 </html>

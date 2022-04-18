@@ -1,0 +1,33 @@
+.vacancy-preview {
+  display: block;
+  padding: 24px 0;
+  text-decoration: none;
+  width: 100%;
+
+  .title {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  .description {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 14px;
+    line-height: 1.55;
+    margin-top: 8px;
+  }
+
+  .tag {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    text-transform: uppercase;
+  }
+
+  & + & {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+  }
+}
