@@ -1,16 +1,37 @@
+/*!
+ * Copyright (c) 2022. Implex
+ * All rights reserved
+ */
+
 @import 'mixins';
 
 .partnership {
-  background-image: url("../../assets/img/background/partnership-bg.webp");
+  background: url("../../assets/img/background/partnership-bg.webp") no-repeat center center;
   background-size: cover;
 
   .overlay {
     @include size(100%, 100%);
-    background-color: rgba(0, 0, 0, .9);
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9));
 
     .content-block {
       margin: 0 auto;
+      padding: 110px 0;
       text-align: center;
+    }
+
+    .button-wrapper {
+      margin-top: 88px;
+
+      .partnership-button {
+        @include size(220px, 60px);
+        @include font(16px, 700);
+        background-color: #f5914f;
+        border: 1px solid #f5914f;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
     }
   }
 

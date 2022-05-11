@@ -1,0 +1,24 @@
+<!--
+  ~ Copyright (c) 2022. Implex
+  ~ All rights reserved
+  -->
+
+<footer>
+    {% assign content = site.data.footer %}
+    {% assign prefix = site.imgPrefix %}
+    <div class="white-part">
+        <div class="content text-center">
+            <div class="title">{{ content.title }}</div>
+            <div class="email">{{ content.email }}</div>
+            <div class="subtitle">{{ content.subtitle }}</div>
+            <div class="icon">
+                <a target="_blank" rel="noopener noreferrer" href="{{ content.href }}" >
+                    <img src="{{ prefix }}{{ content.icon }}">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="black-part">
+        <div class="text-center creator">{{ content.creator }}</div>
+    </div>
+</footer>

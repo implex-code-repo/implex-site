@@ -1,10 +1,19 @@
 ---
 ---
 
+/*!
+ * Copyright (c) 2022. Implex
+ * All rights reserved
+ */
+
+
 @import 'mixins';
-@import "intro";
 @import "about";
 @import "advantages";
+@import "blog";
+@import "clients";
+@import "footer";
+@import "intro";
 @import "services";
 @import "how-it-works";
 @import "partnership";
@@ -45,6 +54,7 @@ body {
   }
 
   &.section-dark {
+    padding: 0;
     color: white;
 
     h2 {
