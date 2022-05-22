@@ -22,17 +22,32 @@
       position: absolute;
       transform: translate(-50%, -50%);
 
+      @include tablet-screen {
+        width: 100%;
+      }
+
       .title {
         padding: 24px 0;
         font-size: 72px;
         font-weight: bold;
         max-width: 960px;
+
+        @include tablet-screen {
+          @include font(30px, 600);
+          padding-inline: 28px;
+          letter-spacing: 1px;
+        }
       }
 
       .description {
         padding: 15px 0 30px;
         font-size: 22px;
         max-width: 960px;
+
+        @include tablet-screen {
+          @include font(14px, 300);
+          padding-inline: 10px;
+        }
       }
 
       .button-wrapper {
@@ -47,6 +62,10 @@
           color: white;
           cursor: pointer;
           text-transform: uppercase;
+
+          @include tablet-screen {
+            @include size(160px, 60px);
+          }
         }
       }
     }

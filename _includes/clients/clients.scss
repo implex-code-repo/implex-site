@@ -17,6 +17,10 @@
       margin-top: 120px;
       align-items: center;
 
+      @include tablet-screen {
+        grid-template-columns: 100%;
+      }
+
       &:nth-child(n + 2):nth-child(-n + 2) {
         .title {
           grid-column: 1;
@@ -30,6 +34,10 @@
         .image {
           grid-column: 2;
 
+          @include tablet-screen {
+            grid-column: 1;
+          }
+
         }
 
         .button {
@@ -41,6 +49,10 @@
         @include font(26px, 600);
         line-height: 1.23;
         grid-column: 2;
+
+        @include tablet-screen {
+          grid-column: 1;
+        }
       }
 
       .description {
@@ -48,11 +60,22 @@
         line-height: 1.55;
         grid-column: 2;
 
+        @include tablet-screen {
+          grid-column: 1;
+        }
+
       }
 
       .image {
         grid-column: 1;
         grid-row: 4 / 1;
+
+        @include tablet-screen {
+          grid-row: 1;
+          img {
+            max-width: 100%;
+          }
+        }
 
       }
 
@@ -65,6 +88,10 @@
         color: #f5914f;
         cursor: pointer;
         grid-column: 2;
+
+        @include tablet-screen {
+          grid-column: 1;
+        }
       }
     }
   }

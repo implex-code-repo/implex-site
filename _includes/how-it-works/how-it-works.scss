@@ -13,13 +13,29 @@
     flex: 1 1 0;
     margin-top: 80px;
 
+    @include tablet-screen {
+      @include flex(column, center, center);
+    }
+
     .product-block {
       @include flex(column, center, center);
       padding: 0 44px;
 
+      @include tablet-screen {
+        padding: 44px 0;
+        margin: 0 5%;
+      }
+
       &:nth-child(n + 2):nth-child(-n + 2) {
         border-left: 1px solid #d1d1d1;
         border-right: 1px solid #d1d1d1;
+
+        @include tablet-screen {
+          border-top: 1px solid #d1d1d1;
+          border-bottom: 1px solid #d1d1d1;
+          border-left: 0;
+          border-right: 0;
+        }
       }
 
       .index {

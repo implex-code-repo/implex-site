@@ -17,6 +17,10 @@
       border-bottom: 1px solid rgba(0, 0, 0, .15);
       cursor: pointer;
 
+      @include tablet-screen {
+        grid-template-columns: 1fr;
+      }
+
       &:last-child {
         border: none;
       }
@@ -26,6 +30,11 @@
         letter-spacing: 1.35px;
         grid-column: 2;
         grid-row: 1;
+
+        @include tablet-screen {
+          grid-column: 1;
+          grid-row: 2;
+        }
       }
 
       .description {
@@ -35,6 +44,11 @@
         grid-column: 2;
         grid-row: 2;
         margin-top: 10px;
+
+        @include tablet-screen {
+          grid-column: 1;
+          grid-row: 3;
+        }
       }
 
       .date {
@@ -44,11 +58,21 @@
         margin-top: 14px;
         grid-column: 2;
         grid-row: 3;
+
+        @include tablet-screen {
+          grid-column: 1;
+          grid-row: 4;
+        }
       }
 
       .image {
         grid-column: 1;
         grid-row: 5 / 1;
+
+        @include tablet-screen {
+          grid-column: 1;
+          grid-row: 1;
+        }
       }
     }
   }

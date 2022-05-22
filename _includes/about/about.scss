@@ -11,6 +11,10 @@
   .content-block {
     @include flex(row, center, flex-start);
 
+    @include tablet-screen {
+      @include flex(column, center, center);
+    }
+
     .info {
       @include flex(column, center, flex-start);
       padding-right: 80px;
@@ -38,6 +42,10 @@
 
       img {
         @include size(270px, 270px);
+
+        @include tablet-screen {
+          @include size(140px, 140px);
+        }
       }
     }
   }

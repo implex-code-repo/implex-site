@@ -15,6 +15,10 @@
     grid-row-gap: 72px;
     margin-top: 80px;
 
+    @include tablet-screen {
+      grid-template-columns: repeat(1, 360px);
+    }
+
     .advantage {
       display: grid;
       grid-template-columns: 66px repeat(2, 1fr);
