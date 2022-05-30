@@ -1,0 +1,29 @@
+{% comment %}
+<!--
+  ~ Copyright (c) 2022. Implex
+  ~ All rights reserved
+  -->
+{% endcomment %}
+
+<section class="section clients">
+    {% assign prefix = site.imgPrefix %}
+    {% assign content = site.data.clients %}
+    <div class="content">
+        <div class="text-center">
+            <h1>{{ content.title }}</h1>
+            <h2>{{ content.subTitle }}</h2>
+        </div>
+        <div class="clients-container">
+            {% for item in content.clients %}
+            <div class="clients-block">
+                <div class="title">{{ item.title }}</div>
+                <div class="description">{{ item.description }}</div>
+                <button class="button">View Case Study</button>
+                <div class="image">
+                    <img src="{{ prefix }}{{ item.image }}">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

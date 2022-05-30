@@ -1,0 +1,33 @@
+.white-part {
+  background-color: white;
+  padding: 100px 0;
+
+  .title {
+    @include font(16px, 600);
+    line-height: 1.35;
+  }
+
+  .email {
+    @include font(36px, 600);
+    line-height: 1.23;
+    margin-top: 44px;
+  }
+
+  .subtitle {
+    @include font(18px, 300);
+    line-height: 1.55;
+    margin-top: 44px;
+  }
+
+  .icon {
+    margin-top: 44px;
+  }
+}
+
+.black-part {
+  @include font(15px, 300);
+  line-height: 1.55;
+  background-color: black;
+  color: #939393;
+  padding: 60px 0 30px;
+}

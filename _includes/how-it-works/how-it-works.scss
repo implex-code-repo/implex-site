@@ -8,91 +8,29 @@
     flex: 1 1 0;
     margin-top: 80px;
 
-    .product-block {
+    @include tablet-screen {
       @include flex(column, center, center);
-      padding: 0 44px;
-
-      &:nth-child(n + 2):nth-child(-n + 2) {
-        border-left: 1px solid #d1d1d1;
-        border-right: 1px solid #d1d1d1;
-      }
-
-      .index {
-        @include font(16px, 600);
-        letter-spacing: 2.5px;
-        padding-bottom: 16px;
-      }
-
-      .product-title {
-        @include font(24px, 600);
-        line-height: 1.35;
-        padding-bottom: 20px;
-      }
-
-      .product-description {
-        @include font(18px, 300);
-        text-align: center;
-        line-height: 1.55;
-      }
     }
-  }
-}
-@import 'mixins';
-
-.how-it-works-section {
-  background-color: white;
-
-  .product-container {
-    @include flex(row, center, center);
-    flex: 1 1 0;
-    margin-top: 80px;
 
     .product-block {
       @include flex(column, center, center);
       padding: 0 44px;
 
-      &:nth-child(n + 2):nth-child(-n + 2) {
-        border-left: 1px solid #d1d1d1;
-        border-right: 1px solid #d1d1d1;
+      @include tablet-screen {
+        padding: 44px 0;
+        margin: 0 5%;
       }
-
-      .index {
-        @include font(16px, 600);
-        letter-spacing: 2.5px;
-        padding-bottom: 16px;
-      }
-
-      .product-title {
-        @include font(24px, 600);
-        line-height: 1.35;
-        padding-bottom: 20px;
-      }
-
-      .product-description {
-        @include font(18px, 300);
-        text-align: center;
-        line-height: 1.55;
-      }
-    }
-  }
-}
-@import 'mixins';
-
-.how-it-works-section {
-  background-color: white;
-
-  .product-container {
-    @include flex(row, center, center);
-    flex: 1 1 0;
-    margin-top: 80px;
-
-    .product-block {
-      @include flex(column, center, center);
-      padding: 0 44px;
 
       &:nth-child(n + 2):nth-child(-n + 2) {
         border-left: 1px solid #d1d1d1;
         border-right: 1px solid #d1d1d1;
+
+        @include tablet-screen {
+          border-top: 1px solid #d1d1d1;
+          border-bottom: 1px solid #d1d1d1;
+          border-left: 0;
+          border-right: 0;
+        }
       }
 
       .index {

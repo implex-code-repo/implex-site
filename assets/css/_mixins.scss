@@ -25,6 +25,34 @@
 //  }
 //}
 
+$width-mobile: 480px;
+$width-tablet: 768px;
+$width-tablet-landscape: 1024px;
+
+@mixin tablet-screen {
+  @media screen and (max-width: $width-tablet - 1px) {
+    @content;
+  }
+}
+
+@mixin mobile-screen {
+  @media screen and (max-width: $width-mobile - 1px) {
+    @content;
+  }
+}
+
+@mixin small-height-screen {
+  @media screen and (max-height: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape-screen {
+  @media screen and (max-width: $width-tablet-landscape - 1px) {
+    @content;
+  }
+}
+
 @mixin font($size, $weight) {
   font-family: 'Roboto', Arial, sans-serif;
   font-size: $size;

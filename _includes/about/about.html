@@ -1,18 +1,24 @@
+{% comment %}
+<!--
+  ~ Copyright (c) 2022. Implex
+  ~ All rights reserved
+  -->
+{% endcomment %}
+
 <section class="section about">
     {% assign prefix = site.imgPrefix %}
     {% assign content = site.data.about %}
     <div class="content content-block">
         <div class="info">
             <div class="title">{{ content.title }}</div>
-            <div class="description">{{ content.description1 }}</div>
-            <div class="description">{{ content.description2 }}</div>
-            <div class="description">{{ content.description3 }}</div>
+            {% for item in content.descriptions %}
+            <div class="description">{{ item }}</div>
+            {% endfor %}
         </div>
         <div class="collage">
-            <img src="{{ prefix }}{{ content.image1 }}">
-            <img src="{{ prefix }}{{ content.image2 }}">
-            <img src="{{ prefix }}{{ content.image3 }}">
-            <img src="{{ prefix }}{{ content.image4 }}">
+            {% for item in content.images %}
+            <img src="{{ prefix }}{{ item }}">
+            {% endfor %}
         </div>
     </div>
 </section>
