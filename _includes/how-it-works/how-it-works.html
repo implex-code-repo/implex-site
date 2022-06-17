@@ -6,15 +6,14 @@
 {% endcomment %}
 
 <section class="section how-it-works-section">
-    <div class="content">
+    {% assign content = site.data.how-it-works %}
+    <div class="content content-block">
         <div class="text-center">
-            <h1>How it works</h1>
-            <h2>We will help you get from the initial product concept to a working service with happy users, guiding you
-                through
-                the entire process.</h2>
+            <h1 class="title">{{ content.title }}</h1>
+            <h2 class="description">{{ content.description }}</h2>
         </div>
         <div class="product-container">
-            {% for item in site.data.how-it-works %}
+            {% for item in content.products %}
             <div class="product-block">
                 <div class="index">{{ item.index }}</div>
                 <div class="product-title">{{ item.title }}</div>

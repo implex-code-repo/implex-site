@@ -8,15 +8,29 @@
 
     @include tablet-screen {
       @include flex(column, center, center);
+      padding: 0 100px;
+    }
+
+    @include mobile-screen {
+      padding: 0 40px;
     }
 
     .info {
       @include flex(column, center, flex-start);
       padding-right: 80px;
 
+      @include tablet-screen {
+        padding-bottom: 40px;
+        padding-right: 0;
+      }
+
       .title {
         @include font(42px, 700);
         line-height: 1.23;
+
+        @include tablet-screen {
+          @include font(30px, 700);
+        }
       }
 
       .description {
@@ -25,6 +39,11 @@
         text-align: left;
         padding-top: 24px;
         max-width: 450px;
+
+        @include tablet-screen {
+          @include font(16px, 300);
+          max-width: 600px;
+        }
       }
     }
 
@@ -35,11 +54,16 @@
       grid-row-gap: 20px;
       padding-left: 16px;
 
+      @include tablet-screen {
+        padding-left: 0;
+      }
+
       img {
         @include size(270px, 270px);
 
         @include tablet-screen {
-          @include size(140px, 140px);
+          width: 100%;
+          height: auto;
         }
       }
     }

@@ -29,7 +29,7 @@
 
         @include tablet-screen {
           @include font(30px, 600);
-          padding-inline: 28px;
+          padding-inline: 10px;
           letter-spacing: 1px;
         }
       }

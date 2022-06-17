@@ -1,9 +1,14 @@
-- index: -1-
-  title: Product Design
-  description: Great product design is an excellent starting point for a lovely product. And it's not just about the UI. It's about creating personas, information architecture, interaction design, prototyping and only then visual design. Cooperating with you tightly, our design team can do all this and more.
-- index: -2-
-  title: Product Engineering
-  description: When the design is in place, we engineer your product in short 1-2 week-long iterations, following the Agile methodology. This way, you can see the progress in almost real-time. It's vital for us to receive feedback consistently and adjust accordingly, which makes communication with the tech team critical for successful development and going live.
-- index: -3-
-  title: Product Maintenance
-  description: After the product has gone live, you can focus on the core business while we're keeping an eye on your product's health. Our team will quickly react to every issue and do everything to keep the system's uptime as high as possible. On top of that, we can add new features and modify the existing ones to make the product even better.
+title: How it works
+description: We will help you get from the initial product concept to a working service with happy users, guiding you
+  through
+  the entire process.
+products:
+  - index: -1-
+    title: Product Design
+    description: Great product design is an excellent starting point for a lovely product. And it's not just about the UI. It's about creating personas, information architecture, interaction design, prototyping and only then visual design. Cooperating with you tightly, our design team can do all this and more.
+  - index: -2-
+    title: Product Engineering
+    description: When the design is in place, we engineer your product in short 1-2 week-long iterations, following the Agile methodology. This way, you can see the progress in almost real-time. It's vital for us to receive feedback consistently and adjust accordingly, which makes communication with the tech team critical for successful development and going live.
+  - index: -3-
+    title: Product Maintenance
+    description: After the product has gone live, you can focus on the core business while we're keeping an eye on your product's health. Our team will quickly react to every issue and do everything to keep the system's uptime as high as possible. On top of that, we can add new features and modify the existing ones to make the product even better.
