@@ -16,7 +16,6 @@
         @include font(20px, 300);
       }
     }
-
   }
 
   .product-container {
@@ -35,7 +34,6 @@
 
       @include tablet-screen {
         padding: 44px 0;
-
       }
 
       &:nth-child(n + 2):nth-child(-n + 2) {

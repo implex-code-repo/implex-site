@@ -15,7 +15,7 @@
         <div class="product-container">
             {% for item in content.products %}
             <div class="product-block">
-                <div class="index">{{ item.index }}</div>
+                <div class="index">-{{ forloop.index }}-</div>
                 <div class="product-title">{{ item.title }}</div>
                 <div class="product-description">{{ item.description }}</div>
             </div>

@@ -62,8 +62,7 @@
         @include size(270px, 270px);
 
         @include tablet-screen {
-          width: 100%;
-          height: auto;
+          @include size(100%, auto);
         }
       }
     }
