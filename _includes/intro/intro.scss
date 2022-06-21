@@ -4,6 +4,7 @@
   text-align: center;
   background-image: url("../../assets/img/background/main-bg.webp");
   background-size: cover;
+  background-position: top;
 
   .overlay {
     @include size(100%, 100%);
