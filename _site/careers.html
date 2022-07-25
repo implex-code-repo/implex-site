@@ -16,34 +16,88 @@
 
 <header>
     
-
-<nav>
+<nav class="menu">
     
-    <a href="/" >
-        Home
-    </a>
     
-    <a href="/about" >
-        about
-    </a>
-    
-    <a href="/intro" >
-        Intro
-    </a>
-    
-    <a href="/staff.html" >
-        Staff
-    </a>
-    
-    <a href="/blogg.html" >
-        Blog
-    </a>
-    
-    <a href="/careers" style="color: red;">
-        Careers
-    </a>
-    
+    <div class="wrapper">
+        <div class="left-corner">
+            
+            
+            <div class="dropdown">
+                <span class="drop-btn">Company &dtrif;</span>
+                <div class="triangle"></div>
+                <div class="dropdown-content">
+                    
+                    <a href="/">Contact us</a>
+                    
+                    <a href="/careers">Careers</a>
+                    
+                </div>
+            </div>
+            
+            
+                
+            
+            
+            <a href="/">Services</a>
+            
+            
+            
+            <a href="/">How it works</a>
+            
+        </div>
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="">
+        </div>
+        <div class="right-corner">
+            
+            <a
+                    
+                    href="/">Our Clients</a>
+            
+            <a
+                    
+                    href="/blogg.html">Blog</a>
+            
+            <a
+                    
+                    class="button"
+                    
+                    href="/">How it works</a>
+            
+        </div>
+    </div>
 </nav>
+
+<nav class="mobile-menu">
+    
+    <div class="title">
+        <span>Web & Mob Development</span>
+    </div>
+    <input id="menu-toggle" type="checkbox"/>
+    <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+    </label>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="">
+        </div>
+        <div class="dropdown">
+            <div class="drop-btn">Company &dtrif;</div>
+            <div class="dropdown-content">
+                <a href="">About us</a>
+                <a href="">Careers</a>
+            </div>
+        </div>
+        <a href="">Services</a>
+        <a href="">How it works</a>
+        <a href="">Our Clients</a>
+        <a href="">Blog</a>
+        <a class="button" href="">Contact Us</a>
+
+    </div>
+</nav>
+<script src="../../assets/scripts/script.js"></script>
 <!--<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>-->
 <!--<script>-->
 <!--    anchors.add('a');-->

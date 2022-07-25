@@ -1,0 +1,288 @@
+@import 'mixins';
+
+.menu {
+  background-color: transparent;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  padding: 12px 24px;
+  box-sizing: border-box;
+  transition: background-color .5s;
+
+  @include mobile-screen {
+    display: none;
+  }
+
+  &.black-background {
+    background-color: rgba(0, 0, 0, .5);
+  }
+
+  .wrapper {
+    @include flex(row, space-between, center);
+
+    a {
+      @include font(16px, 600);
+      color: white;
+      text-decoration: none;
+      transition: color .5s;
+      padding: 14px;
+
+      &:hover {
+        color: #fa8b41;
+      }
+    }
+
+    .logo {
+      img {
+        @include size(120px, 35px);
+      }
+    }
+
+    .dropdown {
+      display: inline-block;
+
+      &:hover .dropdown-content {
+        @include flex(column, space-between, flex-start);
+      }
+
+      .drop-btn {
+        @include font(16px, 600);
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        transition: color .5s;
+        padding: 14px;
+        cursor: pointer;
+
+        &:hover {
+          color: #fa8b41;
+        }
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 140px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+
+        &:after{
+          content:'';
+          position: absolute;
+          top: 0;
+          left: 50%;
+          margin-left: -10px;
+          margin-top:-10px; /* Set margin equal to border px */
+          width: 0;
+          z-index:1;
+          height: 0;
+          border-bottom: solid 10px white;
+          border-left: solid 10px transparent;
+          border-right: solid 10px transparent;
+        }
+
+        a {
+          width: 100%;
+          color: black;
+          transition: color .5s;
+
+          &:hover {
+            color: #fa8b41;
+          }
+        }
+      }
+    }
+
+    .right-corner {
+      @include flex(row, center, center);
+    }
+
+    .button {
+      @include font(16px, 700);
+      display: block;
+      background-color: transparent;
+      border: 1px solid white;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      text-align: center;
+      line-height: 40px;
+      padding: 0 30px;
+      margin: 0 14px;
+    }
+  }
+}
+
+.mobile-menu {
+  display: none;
+
+  @include mobile-screen {
+    @include flex(row, space-between, center);
+    height: 64px;
+    position: absolute;
+    background-color: rgba(17, 17, 17, 1);
+    z-index: 99;
+    width: 100%;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    transition: background-color .5s;
+  }
+
+  .title {
+    @include font(16px, 600);
+    color: white;
+  }
+
+  .wrapper {
+    @include mobile-screen {
+      display: none;
+      text-align: center;
+      box-sizing: content-box;
+    }
+
+    .button {
+      @include size(136px, 40px);
+      @include font(16px, 700);
+      display: block;
+      background-color: transparent;
+      border: 1px solid white;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      text-align: center;
+      line-height: 40px;
+      padding: 0;
+      margin: 70px 0 40px;
+    }
+
+    a {
+      @include font(16px, 600);
+      color: white;
+      text-decoration: none;
+      transition: color .5s;
+      padding: 10px 0;
+      width: 100%;
+
+      &:hover {
+        color: #fa8b41;
+      }
+    }
+
+    .logo {
+      @include mobile-screen {
+        text-align: center;
+        padding: 40px 0;
+      }
+
+      img {
+        @include size(120px, 35px);
+      }
+    }
+
+    .dropdown {
+      @include flex(column, center, center);
+      width: 100%;
+
+      &:hover .dropdown-content {
+        @include flex(column, space-between, flex-start);
+      }
+
+      .drop-btn {
+        width: 100%;
+        @include font(16px, 600);
+        color: white;
+        text-decoration: none;
+        transition: color .5s;
+        padding: 10px 0;
+        cursor: pointer;
+
+        &:hover {
+          color: #fa8b41;
+        }
+      }
+
+      .dropdown-content {
+        @include mobile-screen {
+          display: none;
+          flex-direction: column;
+          justify-items: center;
+          align-items: center;
+          z-index: 1;
+          text-align: center;
+          width: 100%;
+
+          a {
+            width: 100%;
+            color: white;
+            transition: color .5s;
+
+            &:hover {
+              color: #fa8b41;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .menu-button-container {
+    display: none;
+
+    @include mobile-screen {
+      @include flex(column, center, flex-end);
+      cursor: pointer;
+    }
+  }
+
+  #menu-toggle {
+    display: none;
+
+    &:checked + .menu-button-container .menu-button::before {
+      margin-top: 0;
+      transform: rotate(405deg);
+    }
+
+    &:checked + .menu-button-container .menu-button {
+      background: rgba(255, 255, 255, 0);
+    }
+
+    &:checked + .menu-button-container .menu-button::after {
+      margin-top: 0;
+      transform: rotate(-405deg);
+    }
+
+    &:checked ~ .wrapper {
+      @include mobile-screen {
+        @include flex(column, center, center);
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background-color: black;
+      }
+    }
+  }
+
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 800ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+}

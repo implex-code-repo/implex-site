@@ -1,12 +1,18 @@
-- name: Home
-  link: /
-- name: about
-  link: /about
-- name: Intro
-  link: /intro
-- name: Staff
-  link: /staff.html
-- name: Blog
-  link: /blogg.html
-- name: Careers
-  link: /careers
+menuItem:
+  - name: Company
+  - name: Services
+    link: /
+  - name: How it works
+    link: /
+  - name: Our Clients
+    link: /
+  - name: Blog
+    link: /blogg.html
+  - name: How it works
+    link: /
+dropdownMenu:
+  - name: Contact us
+    link: /
+  - name: Careers
+    link: /careers
+logo: logo.png
