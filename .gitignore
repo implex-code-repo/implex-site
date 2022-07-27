@@ -1,5 +1,6 @@
 .jekyll-cache
 .sass-cache
+.idea
 node_modules
 package-lock.json
 Gemfile.lock
