@@ -10,8 +10,8 @@
     {% assign content = site.data.clients %}
     <div class="content">
         <div class="text-center">
-            <h1>{{ content.title }}</h1>
-            <h2>{{ content.subTitle }}</h2>
+            <h1 class="title">{{ content.title }}</h1>
+            <h2 class="subtitle">{{ content.subTitle }}</h2>
         </div>
         <div class="clients-container">
             {% for item in content.clients %}

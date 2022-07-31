@@ -9,6 +9,11 @@
 
     .title {
       padding-bottom: 60px;
+
+      @include tablet-screen {
+        @include font(30px, 600);
+        padding-bottom: 0;
+      }
     }
 
     .services-container {
@@ -23,6 +28,19 @@
         padding: 0 40px;
         max-width: 420px;
 
+        @include tablet-screen {
+          padding-inline: 20px;
+        }
+
+        &:nth-child(n + 1):nth-child(-n + 1) {
+
+          .service-description {
+            @include tablet-screen {
+              margin-bottom: 60px;
+            }
+          }
+        }
+
         .icon {
           @include size(90px, 90px);
           padding-bottom: 36px;
@@ -32,12 +50,20 @@
           @include font(30px, 600);
           line-height: 1.17;
           padding-bottom: 26px;
+
+          @include tablet-screen {
+            @include font(24px, 600);
+          }
         }
 
         .service-description {
           @include font(16px, 300);
           text-align: center;
           line-height: 1.55;
+
+          @include tablet-screen {
+            @include font(12px, 300);
+          }
         }
       }
     }

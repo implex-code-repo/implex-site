@@ -6,15 +6,15 @@
 {% endcomment %}
 
 <section class="section advantages">
-    <div class="content">
+    <div class="content content-block">
         {% assign prefix = site.imgPrefix %}
+        {% assign content = site.data.advantages %}
         <div class="text-center">
-            <h1>The advantages you'll get</h1>
-            <h2>Our diverse background allows offering you
-                the most effective practices.</h2>
+            <h1 class="title">{{ content.title }}</h1>
+            <h2 class="description">{{ content.description }}</h2>
         </div>
         <div class="advantages-container">
-            {% for item in site.data.advantages %}
+            {% for item in content.advantages %}
             <div class="advantage">
                 <div class="icon">
                     <img src="{{ prefix }}{{ item.icon }}">
