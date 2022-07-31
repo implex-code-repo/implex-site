@@ -4,6 +4,7 @@
   text-align: center;
   background-image: url("../../assets/img/background/main-bg.webp");
   background-size: cover;
+  background-position: top;
 
   .overlay {
     @include size(100%, 100%);
@@ -29,7 +30,7 @@
 
         @include tablet-screen {
           @include font(30px, 600);
-          padding-inline: 28px;
+          padding-inline: 10px;
           letter-spacing: 1px;
         }
       }

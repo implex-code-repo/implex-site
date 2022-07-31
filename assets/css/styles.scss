@@ -37,6 +37,10 @@ body {
 .section {
   padding: 142px 0;
 
+  @include tablet-screen {
+    padding: 122px 20px;
+  }
+
   h1 {
     @include font(42px, 600);
     line-height: 1.23;

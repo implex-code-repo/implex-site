@@ -2,21 +2,37 @@
   background-color: white;
   padding: 100px 0;
 
+  @include tablet-screen {
+    padding-inline: 20px;
+  }
+
   .title {
     @include font(16px, 600);
     line-height: 1.35;
+
+    @include tablet-screen {
+      @include font(12px, 600);
+    }
   }
 
   .email {
     @include font(36px, 600);
     line-height: 1.23;
     margin-top: 44px;
+
+    @include tablet-screen {
+      @include font(28px, 600);
+    }
   }
 
   .subtitle {
     @include font(18px, 300);
     line-height: 1.55;
     margin-top: 44px;
+
+    @include tablet-screen {
+      @include font(14px, 300);
+    }
   }
 
   .icon {
@@ -30,4 +46,9 @@
   background-color: black;
   color: #939393;
   padding: 60px 0 30px;
+
+  @include tablet-screen {
+    @include font(12px, 300);
+    padding: 44px 0 14px;
+  }
 }

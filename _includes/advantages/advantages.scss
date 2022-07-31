@@ -3,6 +3,21 @@
 .advantages {
   background-color: #f5f5f5;
 
+  .content-block {
+
+    .title {
+      @include tablet-screen {
+        @include font(30px, 600);
+      }
+    }
+
+    .description {
+      @include tablet-screen {
+        @include font(20px, 300);
+      }
+    }
+  }
+
   .advantages-container {
     display: grid;
     grid-template-columns: repeat(3, 360px);
@@ -11,7 +26,10 @@
     margin-top: 80px;
 
     @include tablet-screen {
-      grid-template-columns: repeat(1, 360px);
+      grid-template-columns: repeat(1, 100%);
+      margin-top: 60px;
+      grid-column-gap: 0;
+      grid-row-gap: 36px;
     }
 
     .advantage {
@@ -24,10 +42,14 @@
       }
 
       .adv-title {
-        @include font(18px, bold);
+        @include font(18px, 600);
         grid-column: 2 / 4;
         display: flex;
         align-items: center;
+
+        @include tablet-screen {
+          @include font(14px, 600);
+        }
       }
 
       .adv-description {
@@ -37,6 +59,10 @@
         padding-top: 12px;
         text-align: left;
         line-height: 1.55;
+
+        @include tablet-screen {
+          @include font(12px, 300);
+        }
       }
     }
   }
