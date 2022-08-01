@@ -1,12 +1,17 @@
-- name: Home
-  link: /
-- name: about
-  link: /about
-- name: Intro
-  link: /intro
-- name: Staff
-  link: /staff.html
+- name: Company
+  children: 
+    - name: About us
+      link: /#about
+    - name: Careers
+      link: /careers
+- name: Services
+  link: /#services
+- name: How it works
+  link: /#how-it-works
+- name: Our Clients
+  link: /#our-clients
 - name: Blog
   link: /blogg.html
-- name: Careers
-  link: /careers
+- name: Contact us
+  link: /#
+  button: true

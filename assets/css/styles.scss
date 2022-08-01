@@ -6,8 +6,8 @@
  * All rights reserved
  */
 
-
-@import 'mixins';
+@import "mixins";
+@import "animations";
 @import "about";
 @import "advantages";
 @import "blog";
@@ -19,9 +19,14 @@
 @import "partnership";
 @import "post-preview";
 @import "vacancy-preview";
+@import "header";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 20px;
   font-weight: 300;
   margin: 0;

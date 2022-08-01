@@ -5,21 +5,22 @@
   -->
 {% endcomment %}
 
-<section class="section how-it-works-section">
-    {% assign content = site.data.how-it-works %}
-    <div class="content content-block">
-        <div class="text-center">
-            <h1 class="title">{{ content.title }}</h1>
-            <h2 class="description">{{ content.description }}</h2>
-        </div>
-        <div class="product-container">
-            {% for item in content.products %}
-            <div class="product-block">
-                <div class="index">-{{ forloop.index }}-</div>
-                <div class="product-title">{{ item.title }}</div>
-                <div class="product-description">{{ item.description }}</div>
-            </div>
-            {% endfor%}
-        </div>
+<section class="section how-it-works-section" id="how-it-works">
+  {% assign content = site.data.how-it-works %}
+  <div class="content content-block">
+    <div class="text-center transite transite-up sn-1">
+      <h1 class="title">{{ content.title }}</h1>
+      <h2 class="description">{{ content.description }}</h2>
     </div>
+    <div class="product-container">
+      {% for item in content.products %}
+        {% assign animationIndex = forloop.index | plus: 1 %}
+        <div class="product-block transite transite-up sn-{{ animationIndex }}">
+          <div class="index">-{{ forloop.index }}-</div>
+          <div class="product-title">{{ item.title }}</div>
+          <div class="product-description">{{ item.description }}</div>
+        </div>
+      {% endfor%}
+    </div>
+  </div>
 </section>
