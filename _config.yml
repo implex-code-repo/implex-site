@@ -1,7 +1,7 @@
 sass:
     style: compressed
     sass_dir: assets/css
-    load_paths: [ _includes/**/* ]
+    load_paths: [ _includes/**/*, _pages/**/* ]
 collections:
   authors:
     output: true

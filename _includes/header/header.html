@@ -4,7 +4,7 @@
   ~ All rights reserved
   -->
 {% endcomment %}
-{% assign prefix = site.imgPrefix %}
+{% assign prefix = site.url | append: '/' | append: site.imgPrefix %}
 {% assign navBar = site.data.navigation %}
 {% assign desktop_menu_classes = 'menu desktop-menu' %}
 {% if include.black %}

@@ -1,0 +1,28 @@
+---
+permalink: '/careers'
+title: 'Careers'
+layout: default-static-header
+---
+
+{% comment %}
+<!--
+  ~ Copyright (c) 2022. Implex
+  ~ All rights reserved
+  -->
+{% endcomment %}
+<div class="careers">
+  <div class="content ">
+    <h1>Our vacancies</h1>
+    {% assign category_posts = site.categories["Vacancy"] %}
+    <div class="tags">
+      <div class="tag-filter">All</div>
+      {% for tag in site.tags %}
+        <div class="tag-filter">{{ tag | first }}</div>
+      {% endfor %}
+    </div>
+
+    {% for post in category_posts %}
+      {% include vacancy-preview/vacancy-preview.html post=post %}
+    {% endfor %}
+  </div>
+</div>

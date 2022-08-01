@@ -20,6 +20,8 @@
 @import "post-preview";
 @import "vacancy-preview";
 @import "header";
+/* pages */
+@import "careers";
 
 * {
   box-sizing: border-box;
@@ -111,6 +113,10 @@ body {
       margin: 36px 0;
     }
   }
+}
+
+.vacancy {
+  margin: 95px 0;
 }
 
 .content {
