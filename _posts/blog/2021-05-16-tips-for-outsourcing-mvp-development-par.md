@@ -3,6 +3,7 @@ layout: post
 title: "Tips for Outsourcing MVP Development. Part II"
 description: "Team, requirements management, sprint planning  estimation and communication for successful MVP delivery — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup"
 image: "https://thumb.tildacdn.com/tild3764-3039-4164-a430-353139626537/-/cover/380x300/center/center/-/format/webp/Time_is_ticking.jpg"
+ogImage: "https://static.tildacdn.com/tild3764-3039-4164-a430-353139626537/Time_is_ticking.jpg"
 author: "Slava Hraichenko"
 highlight: true
 permalink: "/tips"
