@@ -1,0 +1,26 @@
+{% comment %}
+<!--
+  ~ Copyright (c) 2022. Implex
+  ~ All rights reserved
+  -->
+{% endcomment %}
+
+{% assign item = include.item %}
+{% assign item_classes = 'menu-item ' %}
+{% if item.button %}
+  {% assign item_classes = item_classes | append: 'button ' %}
+{% endif %}
+
+{% if item.children %}
+  <div class="{{ item_classes }} dropdown">
+    {{ item.name }} &dtrif;
+    <div class="dropdown-content">
+      <div class="dropdown-transparent"></div>
+      {% for childItem in item.children %}
+        <a class="{{ item_classes }}" href="{{ childItem.link }}">{{ childItem.name }}</a>
+      {% endfor %}
+    </div>
+  </div>
+{% else %}
+  <a class="{{ item_classes }}" href="{{ item.link }}">{{ item.name }}</a>
+{% endif %}

@@ -5,25 +5,32 @@
   -->
 {% endcomment %}
 
-<section class="section clients">
-    {% assign prefix = site.imgPrefix %}
-    {% assign content = site.data.clients %}
-    <div class="content">
-        <div class="text-center">
-            <h1 class="title">{{ content.title }}</h1>
-            <h2 class="subtitle">{{ content.subTitle }}</h2>
-        </div>
-        <div class="clients-container">
-            {% for item in content.clients %}
-            <div class="clients-block">
-                <div class="title">{{ item.title }}</div>
-                <div class="description">{{ item.description }}</div>
-                <button class="button">View Case Study</button>
-                <div class="image">
-                    <img src="{{ prefix }}{{ item.image }}">
-                </div>
-            </div>
-            {% endfor %}
-        </div>
+<section class="section clients" id="our-clients">
+  {% assign prefix = site.imgPrefix %}
+  {% assign content = site.data.clients %}
+  <div class="content">
+    <div class="text-center">
+      <h1 class="title transite transite-up sn-1">{{ content.title }}</h1>
+      <h2 class="subtitle transite transite-up sn-2">{{ content.subTitle }}</h2>
     </div>
+    <div class="clients-container">
+      {% for item in content.clients %}
+        {% assign animationTextIndex = forloop.index | times: 2 | plus: 1 %}
+        {% assign animationIndex = forloop.index | times: 2 | plus: 2 %}
+        {% assign imageAnimationDirection = "left" %}
+        {% assign mod = forloop.index | modulo: 2 %}
+        {% if mod == 1 %}
+          {% assign imageAnimationDirection = "right" %}
+        {% endif %}
+        <div class="clients-block">
+          <div class="title transite transite-up sn-{{ animationTextIndex }}">{{ item.title }}</div>
+          <div class="description transite transite-up sn-{{ animationTextIndex }}">{{ item.description }}</div>
+          <button class="button transite transite-up sn-{{ animationIndex }}">View Case Study</button>
+          <div class="image transite transite-{{imageAnimationDirection}} sn-{{ animationIndex }}">
+            <img src="{{ prefix }}{{ item.image }}">
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>

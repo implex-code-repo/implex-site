@@ -1,18 +1,17 @@
-menuItem:
-  - name: Company
-  - name: Services
-    link: /
-  - name: How it works
-    link: /
-  - name: Our Clients
-    link: /
-  - name: Blog
-    link: /blogg.html
-  - name: How it works
-    link: /
-dropdownMenu:
-  - name: Contact us
-    link: /
-  - name: Careers
-    link: /careers
-logo: logo.png
+- name: Company
+  children: 
+    - name: About us
+      link: /#about
+    - name: Careers
+      link: /careers
+- name: Services
+  link: /#services
+- name: How it works
+  link: /#how-it-works
+- name: Our Clients
+  link: /#our-clients
+- name: Blog
+  link: /blogg.html
+- name: Contact us
+  link: /#
+  button: true

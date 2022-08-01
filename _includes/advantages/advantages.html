@@ -6,23 +6,24 @@
 {% endcomment %}
 
 <section class="section advantages">
-    <div class="content content-block">
-        {% assign prefix = site.imgPrefix %}
-        {% assign content = site.data.advantages %}
-        <div class="text-center">
-            <h1 class="title">{{ content.title }}</h1>
-            <h2 class="description">{{ content.description }}</h2>
-        </div>
-        <div class="advantages-container">
-            {% for item in content.advantages %}
-            <div class="advantage">
-                <div class="icon">
-                    <img src="{{ prefix }}{{ item.icon }}">
-                </div>
-                <div class="adv-title">{{ item.title }}</div>
-                <div class="adv-description">{{ item.description }}</div>
-            </div>
-            {% endfor %}
-        </div>
+  <div class="content content-block">
+    {% assign prefix = site.imgPrefix %}
+    {% assign content = site.data.advantages %}
+    <div class="text-center transite transite-up sn-1">
+      <h1 class="title">{{ content.title }}</h1>
+      <h2 class="description">{{ content.description }}</h2>
     </div>
+    <div class="advantages-container">
+      {% for item in content.advantages %}
+        {% assign animationIndex = forloop.index | plus: 1 %}
+        <div class="advantage transite transite-up sn-{{ animationIndex }}">
+          <div class="icon">
+            <img src="{{ prefix }}{{ item.icon }}">
+          </div>
+          <div class="adv-title">{{ item.title }}</div>
+          <div class="adv-description">{{ item.description }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>

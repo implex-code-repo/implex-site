@@ -1,0 +1,234 @@
+@import 'mixins';
+
+$hover-color: #fa8b41;
+$arrow-size: 10px;
+$mobile-header-height: 64px;
+$toggle-size: 30px;
+
+.navigation {
+  @include font(16px, 600);
+  color: white;
+
+  .logo {
+    @include tablet-screen {
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    img {
+      @include size(120px, 35px);
+    }
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    padding: 6px;
+  }
+
+  .menu-item {
+    color: white;
+    text-decoration: none;
+    transition: color .5s;
+    padding: 14px;
+    cursor: pointer;
+
+    &:hover {
+      color: $hover-color;
+    }
+
+    @include tablet-screen {
+      padding: 10px 0;
+      width: 100%;
+    }
+  }
+
+  .button {
+    display: block;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    padding: 0 30px;
+    margin: 0 14px;
+
+    &:hover {
+      color: white;
+    }
+
+    @include tablet-screen {
+      width: auto;
+    }
+  }
+
+  .dropdown:hover {
+    .dropdown-content {
+      @include flex(column, space-between, flex-start);
+    }
+  }
+
+  .dropdown-content {
+    display: none;
+    z-index: 1;
+  }
+
+  .desktop-menu {
+    background-color: transparent;
+    transition: background-color .5s;
+    
+    &.black-opaque {
+      background-color: rgba(black, .5);
+    }
+
+    &.black {
+      background-color: black;
+    }
+    
+    @include tablet-screen {
+      display: none;
+    }
+
+    .menu-block {
+      @include flex(row, flex-start, center);
+    }
+
+    .wrapper {
+      @include flex(row, space-between, center);
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      position: absolute;
+      min-width: 140px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      top: 100%;
+      left: 60%;
+      transform: translateX(-50%);
+
+      .dropdown-transparent {
+        @include size(100%, $arrow-size);
+        background-color: transparent;
+      }
+
+      .menu-item {
+        background-color: white;
+        color: black;
+        font-size: 14px;
+        width: 100%;
+
+        &:hover {
+          color: $hover-color;
+        }
+      }
+
+      &:after{
+        @include size(0, 0);
+        content: '';
+        position: absolute;
+        top: $arrow-size;
+        left: 50%;
+        margin-left: -$arrow-size;
+        margin-top: -$arrow-size; /* Set margin equal to border px */
+        z-index: 1;
+        border-bottom: solid $arrow-size white;
+        border-left: solid $arrow-size transparent;
+        border-right: solid $arrow-size transparent;
+      }
+    }
+  }
+
+  .mobile-menu {
+    background-color: rgba(17, 17, 17, 1);
+    display: none;
+    height: $mobile-header-height;
+
+    @include tablet-screen {
+      @include flex(row, space-between, center);
+    }
+
+    .button {
+      margin: 70px 0 40px;
+    }
+
+    .wrapper {
+      display: none;
+      text-align: center;
+      box-sizing: content-box;
+    }
+
+    .dropdown {
+      @include flex(column, center, center);
+      width: 100%;
+    }
+
+    .dropdown-content {
+      text-align: center;
+      width: 100%;
+      display: none;
+    }
+
+    .menu-button-container {
+      @include flex(column, center, flex-end);
+      @include size($toggle-size, $toggle-size);
+      cursor: pointer;
+    }
+
+    #menu-toggle {
+      display: none;
+
+      &:checked + .menu-button-container .menu-button {
+        background: rgba(black, 0);
+
+        &:before {
+          margin-top: 0;
+          transform: rotate(45deg);
+        }
+
+        &:after {
+          margin-top: 0;
+          transform: rotate(-45deg);
+        }
+      }
+
+      &:checked ~ .wrapper {
+        @include tablet-screen {
+          @include flex(column, center, center);
+          position: absolute;
+          top: $mobile-header-height;
+          left: 0;
+          right: 0;
+          background-color: black;
+        }
+      }
+    }
+
+    .menu-button,
+    .menu-button::before,
+    .menu-button::after {
+      display: block;
+      background-color: #fff;
+      position: absolute;
+      height: 4px;
+      width: $toggle-size;
+      transition: transform 800ms cubic-bezier(0.23, 1, 0.32, 1);
+      border-radius: 2px;
+    }
+
+    .menu-button::before {
+      content: '';
+      margin-top: -8px;
+    }
+
+    .menu-button::after {
+      content: '';
+      margin-top: 8px;
+    }
+  }
+}

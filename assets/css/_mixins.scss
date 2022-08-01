@@ -54,7 +54,6 @@ $width-tablet-landscape: 1024px;
 }
 
 @mixin font($size, $weight) {
-  font-family: 'Roboto', Arial, sans-serif;
   font-size: $size;
   font-weight: $weight;
 }

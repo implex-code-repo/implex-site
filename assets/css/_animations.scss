@@ -1,0 +1,46 @@
+$duration: 0.6s;
+$delay-step: 0.2;
+$translate-value: 50px;
+
+section {
+  .transite {
+    opacity: 0;
+    transition-duration: $duration;
+    transition-property: opacity, transform;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    &-up {
+      transform: translateY($translate-value);
+    }
+
+    &-left {
+      transform: translateX($translate-value);
+    }
+
+    &-right {
+      transform: translateX(-$translate-value);
+    }
+  }
+
+  &.start {
+    .transite {
+      opacity: 1;
+
+      &-up {
+        transform: translateY(0);
+      }
+
+      &-left,
+      &-right {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+@for $i from 1 through 13 {
+  .sn-#{$i} {
+    //for 'sequence number'
+    transition-delay: #{$i * $delay-step}s;
+  }
+}

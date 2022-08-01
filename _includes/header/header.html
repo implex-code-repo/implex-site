@@ -4,7 +4,47 @@
   ~ All rights reserved
   -->
 {% endcomment %}
+{% assign prefix = site.imgPrefix %}
+{% assign navBar = site.data.navigation %}
+{% assign desktop_menu_classes = 'menu desktop-menu' %}
+{% if include.black %}
+  {% assign desktop_menu_classes = desktop_menu_classes | append: ' black' %}
+{% endif %}
 
 <header>
-    {% include navigation/navigation.html %}
+  <nav class="navigation">
+    <div class="{{ desktop_menu_classes }}" id="header">
+      <div class="wrapper">
+        <div class="menu-block">
+          {% for item in navBar limit: 3 %}
+            {% include header/menu-item.html item=item %}
+          {% endfor %}
+        </div>
+        <div class="logo">
+          <img src="{{ prefix }}logo.png" alt="Implex logo">
+        </div>
+        <div class="menu-block">
+          {% for item in navBar offset: 3 %}
+            {% include header/menu-item.html item=item %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <div class="menu mobile-menu">
+      <div>Web & Mob Development</div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <div class="wrapper">
+        <div class="logo">
+          <img src="{{ prefix }}logo.png" alt="Implex logo">
+        </div>
+        {% for item in navBar %}
+          {% include header/menu-item.html item=item %}
+        {% endfor %}
+      </div>
+    </div>
+  </nav>
 </header>

@@ -5,20 +5,21 @@
   -->
 {% endcomment %}
 
-<section class="section services">
-    {% assign prefix = site.imgPrefix %}
-    <div class="content content-block">
-        <h1 class="title">Our services</h1>
-        <div class="services-container">
-            {% for item in site.data.services %}
-            <div class="service">
-                <div class="icon">
-                    <img src="{{ prefix }}{{ item.icon }}">
-                </div>
-                <div class="service-title">{{ item.title }}</div>
-                <div class="service-description">{{ item.description }}</div>
-            </div>
-            {% endfor %}
+<section class="section services" id="services">
+  {% assign prefix = site.imgPrefix %}
+  <div class="content content-block">
+    <h1 class="title transite transite-up sn-1">Our services</h1>
+    <div class="services-container">
+      {% for item in site.data.services %}
+        {% assign animationIndex = forloop.index | plus: 1 %}
+        <div class="service transite transite-up sn-{{ animationIndex }}">
+          <div class="icon">
+            <img src="{{ prefix }}{{ item.icon }}">
+          </div>
+          <div class="service-title">{{ item.title }}</div>
+          <div class="service-description">{{ item.description }}</div>
         </div>
+      {% endfor %}
     </div>
+  </div>
 </section>
