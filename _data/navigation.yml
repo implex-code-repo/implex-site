@@ -4,20 +4,17 @@
       link: /#about
     - name: Careers
       link: /careers
-  id:
 - name: Services
   link: /#services
-  id: services-id
+  id: services-menu
 - name: How it works
   link: /#how-it-works
-  id: how-it-works-id
+  id: how-it-works-menu
 - name: Our Clients
   link: /#our-clients
-  id: our-clients-id
+  id: our-clients-menu
 - name: Blog
   link: /blogg.html
-  id:
 - name: Contact us
   link: /#
   button: true
-  id:

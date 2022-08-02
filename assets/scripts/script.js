@@ -31,22 +31,22 @@ const implex = (function () {
   }
 
   function setActiveMenu() {
-      let currentSection = '';
+    let currentSection = '';
 
-      for (let section of sections) {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-          if (pageYOffset >= sectionTop - sectionHeight / 3) {
-              currentSection = section.getAttribute('id');
-          }
+    for (let section of sections) {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        currentSection = section.getAttribute('id');
       }
+    }
 
-      for (let item of headerItems) {
-          item.classList.remove('active');
-          if (item.getAttribute('id') === (currentSection + '-id')) {
-              item.classList.add('active');
-          }
+    for (let item of headerItems) {
+      item.classList.remove('active');
+      if (item.getAttribute('id') === (currentSection + '-menu')) {
+        item.classList.add('active');
       }
+    }
   }
 
   function checkSectionPositions() {
@@ -54,8 +54,8 @@ const implex = (function () {
 
     Array.prototype.forEach.call(sections, section => {
       if (
-        isElementInViewport(section, innerHeight) &&
-        !section.classList.contains(START_TRANSITION_CLASS)
+          isElementInViewport(section, innerHeight) &&
+          !section.classList.contains(START_TRANSITION_CLASS)
       ) {
         section.classList.add(START_TRANSITION_CLASS);
         sectionsToshow--;

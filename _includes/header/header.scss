@@ -112,7 +112,7 @@ $toggle-size: 30px;
     .dropdown-content {
       position: absolute;
       min-width: 140px;
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       top: 100%;
       left: 60%;
       transform: translateX(-50%);
@@ -128,16 +128,12 @@ $toggle-size: 30px;
         font-size: 14px;
         width: 100%;
 
-        &.active {
-          color: $hover-color;
-        }
-
         &:hover {
           color: $hover-color;
         }
       }
 
-      &:after{
+      &:after {
         @include size(0, 0);
         content: '';
         position: absolute;
