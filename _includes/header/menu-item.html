@@ -12,15 +12,15 @@
 {% endif %}
 
 {% if item.children %}
-  <div class="{{ item_classes }} dropdown">
+<div class="{{ item_classes }} dropdown" id="{{ item.id }}">
     {{ item.name }} &dtrif;
     <div class="dropdown-content">
-      <div class="dropdown-transparent"></div>
-      {% for childItem in item.children %}
+        <div class="dropdown-transparent"></div>
+        {% for childItem in item.children %}
         <a class="{{ item_classes }}" href="{{ childItem.link }}">{{ childItem.name }}</a>
-      {% endfor %}
+        {% endfor %}
     </div>
-  </div>
+</div>
 {% else %}
-  <a class="{{ item_classes }}" href="{{ item.link }}">{{ item.name }}</a>
+<a class="{{ item_classes }}" id="{{ item.id }}" href="{{ item.link }}">{{ item.name }}</a>
 {% endif %}

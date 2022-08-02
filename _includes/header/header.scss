@@ -35,6 +35,11 @@ $toggle-size: 30px;
     padding: 14px;
     cursor: pointer;
 
+    &.active {
+      color: $hover-color;
+    }
+
+
     &:hover {
       color: $hover-color;
     }
@@ -79,7 +84,7 @@ $toggle-size: 30px;
   .desktop-menu {
     background-color: transparent;
     transition: background-color .5s;
-    
+
     &.black-opaque {
       background-color: rgba(black, .5);
     }
@@ -87,7 +92,7 @@ $toggle-size: 30px;
     &.black {
       background-color: black;
     }
-    
+
     @include tablet-screen {
       display: none;
     }
@@ -122,6 +127,10 @@ $toggle-size: 30px;
         color: black;
         font-size: 14px;
         width: 100%;
+
+        &.active {
+          color: $hover-color;
+        }
 
         &:hover {
           color: $hover-color;
