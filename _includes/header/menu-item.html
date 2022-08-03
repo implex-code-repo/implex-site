@@ -12,7 +12,7 @@
 {% endif %}
 
 {% if item.children %}
-<div class="{{ item_classes }} dropdown" id="{{ item.id }}">
+<div class="{{ item_classes }} dropdown" data-section-id="{{ item.id }}">
     {{ item.name }} &dtrif;
     <div class="dropdown-content">
         <div class="dropdown-transparent"></div>
@@ -22,5 +22,5 @@
     </div>
 </div>
 {% else %}
-<a class="{{ item_classes }}" id="{{ item.id }}" href="{{ item.link }}">{{ item.name }}</a>
+<a class="{{ item_classes }}" data-section-id="{{ item.id }}" href="{{ item.link }}">{{ item.name }}</a>
 {% endif %}

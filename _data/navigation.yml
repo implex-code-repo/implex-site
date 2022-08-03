@@ -6,15 +6,16 @@
       link: /careers
 - name: Services
   link: /#services
-  id: services-menu
+  id: services
 - name: How it works
   link: /#how-it-works
-  id: how-it-works-menu
+  id: how-it-works
 - name: Our Clients
   link: /#our-clients
-  id: our-clients-menu
+  id: our-clients
 - name: Blog
-  link: /blogg.html
+  link: /#blog
+  id: blog
 - name: Contact us
   link: /#
   button: true
