@@ -48,21 +48,10 @@
 
       .button-wrapper {
         margin-top: 44px;
-
-        .intro-button {
-          @include size(220px, 60px);
-          @include font(16px, 700);
-          background-color: #f5914f;
-          border: 1px solid #f5914f;
-          border-radius: 5px;
-          color: white;
-          cursor: pointer;
-          text-transform: uppercase;
-
-          @include tablet-screen {
-            @include size(160px, 60px);
-          }
-        }
+      }
+      
+      .button {
+        text-transform: uppercase;
       }
     }
   }

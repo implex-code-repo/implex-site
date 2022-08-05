@@ -123,3 +123,22 @@ body {
   margin: 0 auto;
   max-width: 960px;
 }
+
+.button {
+  @include size(220px, 60px);
+  @include font(16px, 700);
+  background-color: $orange;
+  border: 1px solid $orange;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+
+  @include tablet-screen {
+    @include size(160px, 60px);
+  }
+
+  &.button-outline {
+    background-color: white;
+    color: $orange;
+  }
+}

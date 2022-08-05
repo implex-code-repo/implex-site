@@ -8,7 +8,7 @@
 {% assign item = include.item %}
 {% assign item_classes = 'menu-item ' %}
 {% if item.button %}
-  {% assign item_classes = item_classes | append: 'button ' %}
+  {% assign item_classes = item_classes | append: 'header-button ' %}
 {% endif %}
 
 {% if item.children %}

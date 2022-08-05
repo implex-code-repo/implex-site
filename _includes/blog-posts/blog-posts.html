@@ -1,0 +1,27 @@
+{% comment %}
+<!--
+  ~ Copyright (c) 2022. Implex
+  ~ All rights reserved
+  -->
+{% endcomment %}
+
+{% assign posts=site.categories["Blog"] %}
+
+{% if include.mainPage %}
+{% assign posts=posts | where: 'showOnMainPage', 'true' %}
+{% endif %}
+
+
+<div class="blog-posts">
+  <div class="content">
+    <div class="text-center">
+      <h1 class="title">{{ include.title }}</h1>
+      <h2 class="subtitle">{{ include.subtitle }}</h2>
+    </div>
+    <div class="posts-list">
+      {% for post in posts limit: include.limit %}
+        {% include post-preview/post-preview.html post=post %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

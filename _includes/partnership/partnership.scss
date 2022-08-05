@@ -32,22 +32,13 @@
 
     .button-wrapper {
       margin-top: 88px;
-
-      .partnership-button {
-        @include size(220px, 60px);
-        @include font(16px, 700);
-        background-color: #f5914f;
-        border: 1px solid #f5914f;
-        border-radius: 5px;
-        color: white;
-        cursor: pointer;
-
-        @include tablet-screen {
-          width: 100%;
-        }
+    }
+      
+    .button {
+      @include tablet-screen {
+        width: 100%;
       }
     }
   }
-
 }
 

@@ -6,24 +6,8 @@
 {% endcomment %}
 
 <section class="section blog" id="blog">
-    {% assign prefix = site.imgPrefix %}
-    {% assign content = site.data.blog %}
-    <div class="content">
-        <div class="text-center">
-            <h1 class="title">{{ content.title }}</h1>
-            <h2 class="subtitle">{{ content.subTitle }}</h2>
-        </div>
-        <div class="articles-container">
-            {% for item in content.articles %}
-            <div onclick="location.href='{{ item.link }}'" class="article">
-                <div class="title">{{ item.title }}</div>
-                <div class="description">{{ item.description }}</div>
-                <div class="date">{{ item.date }}</div>
-                <div class="image">
-                    <img src="{{ prefix }}{{ item.img }}">
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
+  {% assign prefix = site.imgPrefix %}
+  {% assign content = site.data.blog %}
+
+  {% include blog-posts/blog-posts.html mainPage=true limit=3 title=content.title subtitle=content.subTitle %}
 </section>

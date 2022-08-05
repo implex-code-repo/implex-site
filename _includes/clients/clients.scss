@@ -83,6 +83,7 @@
 
         @include tablet-screen {
           grid-row: 1;
+
           img {
             max-width: 100%;
           }
@@ -91,18 +92,12 @@
       }
 
       .button {
-        @include size(246px, 60px);
-        @include font(16px, 700);
-        background-color: white;
-        border: 1px solid #f5914f;
-        border-radius: 5px;
-        color: #f5914f;
-        cursor: pointer;
         grid-column: 2;
+        width: 246px;
 
         @include tablet-screen {
-          @include size(186px, 60px);
           grid-column: 1;
+          width: 186px;
         }
       }
     }
