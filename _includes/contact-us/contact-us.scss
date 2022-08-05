@@ -1,0 +1,18 @@
+@import 'mixins';
+
+.contact-us {
+  background-color: black;
+  padding: 120px 0 136px !important;
+
+  .form-wrapper {
+    @include flex(row, center, center);
+  }
+
+  .button {
+    @include flex(column, center, center);
+  }
+
+  .additional-text {
+    text-align: center;
+  }
+}
