@@ -27,24 +27,24 @@ const implex = (function () {
     }, 0);
 
     window.addEventListener('scroll', checkSectionPositions);
-    window.addEventListener('scroll', setActiveMenuItem);
+    window.addEventListener('scroll', setActiveMenuItem); 
     window.addEventListener('scroll', checkHeaderClassNames);
   }
 
-  function setActiveMenu() {
-    let currentSection = '';
+  function setActiveMenuItem() {
+    let currentSectionId = '';
 
     for (let section of sections) {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
       if (pageYOffset >= sectionTop - sectionHeight / 3) {
-        currentSection = section.getAttribute('id');
+        currentSectionId = section.getAttribute('id');
       }
     }
 
     for (let item of headerItems) {
       item.classList.remove('active');
-      if (item.getAttribute('id') === (currentSection + '-menu')) {
+      if (item.getAttribute('data-section-id') === currentSectionId) {
         item.classList.add('active');
       }
     }
