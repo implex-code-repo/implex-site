@@ -14,20 +14,21 @@ const implex = (function () {
 
   document.addEventListener("DOMContentLoaded", init);
 
-
   function init() {
     sections = document.getElementsByTagName('section');
     sectionsToshow = sections.length;
     header = document.getElementById(HEADER_ID);
     headerItems = document.querySelectorAll('.desktop-menu .menu-item');
 
-
     setTimeout(() => {
       checkSectionPositions();
+      setActiveMenuItem();
+      checkHeaderClassNames();
     }, 0);
 
     window.addEventListener('scroll', checkSectionPositions);
-    window.addEventListener('scroll', setActiveMenu);
+    window.addEventListener('scroll', setActiveMenuItem);
+    window.addEventListener('scroll', checkHeaderClassNames);
   }
 
   function setActiveMenu() {
@@ -73,7 +74,7 @@ const implex = (function () {
     return rect.top <= viewportHeight;
   }
 
-  window.onscroll = () => {
+  function checkHeaderClassNames() {
     const additionalClassName = 'black-opaque';
 
     if (document.documentElement.scrollTop > 100) {
@@ -81,7 +82,7 @@ const implex = (function () {
     } else {
       header.classList.remove(additionalClassName);
     }
-  };
+  }
 
   return {};
 })();

@@ -17,22 +17,26 @@
     {% include _head/head.html %}
 </head>
 <body>
-{% include header/header.html %}
+  {% include header/header.html black=true %}
   <div class="post-content">
     <h1>{{ page.title }}</h1>
     <div class="post-metadata">
       <span>{{ page.date | date: "%d.%m.%Y" }}</span><span>{{ page.tag }}</span>
     </div>
-    <p>
-        {% assign author = site.authors | where: 'short_name', page.author | first %}
-        {% if author %}
-        - <a href="{{ author.url }}">{{ author.name }}</a>
-        {% endif %}
-    </p>
 
     {{ content }}
 
-    {{ page.author }}
+    <p>
+      {% assign author = site.authors | where: 'name', page.author | first %}
+      {% if author %}
+      <div >
+        <a href="{{ author.linkedinProfile }}" class="author">  
+          <div class="author-avatar" style="background-image: url({{author.avatarUrl}})"></div>{{ author.name }}
+        </a>
+      </div>
+      {% endif %}
+    </p>
   </div>
+  {% include footer/footer.html %}
 </body>
 </html>

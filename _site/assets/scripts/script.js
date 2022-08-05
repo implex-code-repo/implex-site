@@ -14,7 +14,6 @@ const implex = (function () {
 
   document.addEventListener("DOMContentLoaded", init);
 
-
   function init() {
     sections = document.getElementsByTagName('section');
     sectionsToshow = sections.length;
@@ -32,21 +31,20 @@ const implex = (function () {
     window.addEventListener('scroll', checkHeaderClassNames);
   }
 
-  function setActiveMenuItem() {
-    let currentSectionId = '';
+  function setActiveMenu() {
+    let currentSection = '';
 
     for (let section of sections) {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
-
       if (pageYOffset >= sectionTop - sectionHeight / 3) {
-        currentSectionId = section.getAttribute('id');
+        currentSection = section.getAttribute('id');
       }
     }
 
     for (let item of headerItems) {
       item.classList.remove('active');
-      if (item.getAttribute('data-section-id') === (currentSectionId)) {
+      if (item.getAttribute('id') === (currentSection + '-menu')) {
         item.classList.add('active');
       }
     }

@@ -79,6 +79,20 @@ body {
   line-height: 1.55;
   margin: 0 auto;
   max-width: 760px;
+  padding: 95px 0;
+
+  @include small-desktop-screen {
+    max-width: 620px;
+  }
+
+  @include tablet-screen {
+    max-width: 100%;
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+
+  @include mobile-screen {
+  }
 
   .post-metadata {
     color: rgba(0, 0, 0, 0.5);
@@ -113,6 +127,23 @@ body {
       font-weight: 300;
       margin: 36px 0;
     }
+  }
+
+  .author {
+    @include flex(row, flex-start, center);
+    border-bottom: none;
+    font-size: 12px;
+    line-height: 1.55;
+    margin-top: 36px;
+  }
+
+  .author-avatar {
+    @include size(30px, 30px);
+    margin-right: 10px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
