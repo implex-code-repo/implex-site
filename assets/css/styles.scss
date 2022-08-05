@@ -22,6 +22,7 @@
 @import "header";
 /* pages */
 @import "careers";
+@import "blogs";
 
 * {
   box-sizing: border-box;
@@ -138,7 +139,7 @@ body {
   }
 
   &.button-outline {
-    background-color: white;
+    background-color: transparent;
     color: $orange;
   }
 }
