@@ -7,12 +7,20 @@
 
     .title {
       @include tablet-screen {
+        @include font(38px, 600);
+      }
+
+      @include small-tablet-screen {
         @include font(30px, 600);
       }
     }
 
     .description {
       @include tablet-screen {
+        @include font(22px, 300);
+      }
+
+      @include small-tablet-screen {
         @include font(20px, 300);
       }
     }
@@ -26,6 +34,14 @@
     margin-top: 80px;
 
     @include tablet-screen {
+      grid-template-columns: repeat(1, 100%);
+      margin: 60px auto 0;
+      grid-column-gap: 0;
+      grid-row-gap: 36px;
+      max-width: 600px;
+    }
+
+    @include small-tablet-screen {
       grid-template-columns: repeat(1, 100%);
       margin-top: 60px;
       grid-column-gap: 0;
@@ -48,7 +64,11 @@
         align-items: center;
 
         @include tablet-screen {
-          @include font(14px, 600);
+          font-size: 16px;
+        }
+
+        @include small-tablet-screen {
+          font-size: 14px;
         }
       }
 
@@ -61,7 +81,11 @@
         line-height: 1.55;
 
         @include tablet-screen {
-          @include font(12px, 300);
+          font-size: 14px;
+        }
+
+        @include small-tablet-screen {
+          font-size: 12px;
         }
       }
     }

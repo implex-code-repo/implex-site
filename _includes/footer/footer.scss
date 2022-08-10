@@ -11,7 +11,11 @@
     line-height: 1.35;
 
     @include tablet-screen {
-      @include font(12px, 600);
+      font-size: 14px;
+    }
+
+    @include small-tablet-screen {
+      font-size: 12px;
     }
   }
 
@@ -21,7 +25,11 @@
     margin-top: 44px;
 
     @include tablet-screen {
-      @include font(28px, 600);
+      font-size: 32px;
+    }
+
+    @include small-tablet-screen {
+      font-size: 28px;
     }
   }
 
@@ -31,7 +39,11 @@
     margin-top: 44px;
 
     @include tablet-screen {
-      @include font(14px, 300);
+      font-size: 16px;
+    }
+
+    @include small-tablet-screen {
+      font-size: 14px;
     }
   }
 
@@ -48,6 +60,11 @@
   padding: 60px 0 30px;
 
   @include tablet-screen {
+    font-size: 14px;
+    padding: 44px 0 14px;
+  }
+
+  @include small-tablet-screen {
     @include font(12px, 300);
     padding: 44px 0 14px;
   }
