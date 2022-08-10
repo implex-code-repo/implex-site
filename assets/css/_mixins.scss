@@ -1,6 +1,7 @@
 $orange: #f5914f;
 $width-mobile: 480px;
 $width-tablet: 960px;
+$width-small-tablet: 640px;
 $width-small-desktop: 1200px;
 $width-tablet-landscape: 1024px;
 
@@ -12,6 +13,12 @@ $width-tablet-landscape: 1024px;
 
 @mixin tablet-screen {
   @media screen and (max-width: $width-tablet) {
+    @content;
+  }
+}
+
+@mixin small-tablet-screen {
+  @media screen and (max-width: $width-small-tablet) {
     @content;
   }
 }

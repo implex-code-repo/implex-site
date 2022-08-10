@@ -5,17 +5,29 @@
 
   .title {
     @include tablet-screen {
-      @include font(30px, 600);
+      font-size: 38px;
+    }
+
+    @include small-tablet-screen {
+      font-size: 30px;
     }
   }
 
   .subtitle {
     @include tablet-screen {
-      @include font(20px, 300);
+      font-size: 22px;
+    }
+
+    @include small-tablet-screen {
+      font-size: 20px;
     }
   }
 
   .clients-container {
+    @include tablet-screen {
+      @include flex(column, center, center);
+    }
+
     .clients-block {
       display: grid;
       grid-template-columns: 560px 500px;
@@ -60,7 +72,12 @@
         grid-column: 2;
 
         @include tablet-screen {
-          @include font(22px, 600);
+          font-size: 24px;
+          grid-column: 1;
+        }
+
+        @include small-tablet-screen {
+          font-size: 22px;
           grid-column: 1;
         }
       }
@@ -71,7 +88,13 @@
         grid-column: 2;
 
         @include tablet-screen {
-          @include font(14px, 300);
+          font-size: 16px;
+          grid-column: 1;
+          max-width: 500px;
+        }
+
+        @include small-tablet-screen {
+          font-size: 14px;
           grid-column: 1;
         }
 
@@ -96,6 +119,10 @@
         width: 246px;
 
         @include tablet-screen {
+          grid-column: 1;
+        }
+
+        @include small-tablet-screen {
           grid-column: 1;
           width: 186px;
         }

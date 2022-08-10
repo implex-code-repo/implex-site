@@ -24,5 +24,9 @@
     @include small-desktop-screen {
       max-width: 780px;
     }
+
+    @include tablet-screen {
+      max-width: 600px;
+    }
   }
 }
