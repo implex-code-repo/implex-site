@@ -1,42 +1,30 @@
-//@mixin skew-background() {
-//  position: relative;
-//
-//  &:before {
-//    content: '';
-//    display: block;
-//    border-radius: 24px;
-//    transition: transform $transition-time;
-//    position: absolute;
-//    top: 0;
-//    bottom: 0;
-//    left: 0;
-//    right: 0;
-//  }
-//
-//  &:hover:before {
-//    transform: skewX(-45deg);
-//  }
-//
-//  & > span {
-//    position: absolute;
-//    top: 50%;
-//    left: 50%;
-//    transform: translate(-50%, -50%);
-//  }
-//}
-
+$orange: #f5914f;
 $width-mobile: 480px;
-$width-tablet: 768px;
+$width-tablet: 960px;
+$width-small-tablet: 640px;
+$width-small-desktop: 1200px;
 $width-tablet-landscape: 1024px;
 
+@mixin small-desktop-screen {
+  @media screen and (max-width: $width-small-desktop) {
+    @content;
+  }
+}
+
 @mixin tablet-screen {
-  @media screen and (max-width: $width-tablet - 1px) {
+  @media screen and (max-width: $width-tablet) {
+    @content;
+  }
+}
+
+@mixin small-tablet-screen {
+  @media screen and (max-width: $width-small-tablet) {
     @content;
   }
 }
 
 @mixin mobile-screen {
-  @media screen and (max-width: $width-mobile - 1px) {
+  @media screen and (max-width: $width-mobile) {
     @content;
   }
 }
@@ -48,7 +36,7 @@ $width-tablet-landscape: 1024px;
 }
 
 @mixin tablet-landscape-screen {
-  @media screen and (max-width: $width-tablet-landscape - 1px) {
+  @media screen and (max-width: $width-tablet-landscape) {
     @content;
   }
 }

@@ -4,32 +4,32 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Blog</title>
+    <title>Implex Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700" rel="stylesheet">
 
-<!--<link rel="shortcut icon" type="image/png" href="assets/img/favicon/16x16.png" sizes="16x16">
-<link rel="shortcut icon" type="image/png" href="assets/img/favicon/32x32.png" sizes="32x32">
-<link rel="shortcut icon" type="image/png" href="assets/img/favicon/96x96.png" sizes="96x96">
-<link rel="shortcut icon" type="image/png" href="assets/img/favicon/152x152.png" sizes="192x192">
+<!--<link rel="shortcut icon" type="image/png" href="http://localhost:4000/assets/img/16x16.png" sizes="16x16">
+<link rel="shortcut icon" type="image/png" href="http://localhost:4000/assets/img/32x32.png" sizes="32x32">
+<link rel="shortcut icon" type="image/png" href="http://localhost:4000/assets/img/96x96.png" sizes="96x96">
+<link rel="shortcut icon" type="image/png" href="http://localhost:4000/assets/img/152x152.png" sizes="192x192">
 <link
   rel="apple-touch-icon-precomposed"
   sizes="57x57"
-  href="assets/img/favicon/57x57.png"
+  href="http://localhost:4000/assets/img/57x57.png"
 />
 <link
   rel="apple-touch-icon-precomposed"
   sizes="120x120"
-  href="assets/img/favicon/120x120.png"
+  href="http://localhost:4000/assets/img/120x120.png"
 />-->
-<link rel="shortcut icon" href="assets/img/favicon/64x64.ico" sizes="64x64">
+<link rel="shortcut icon" href="http://localhost:4000/assets/img/64x64.ico" sizes="64x64">
 <link
   rel="apple-touch-icon"
   sizes="152x152"
-  href="assets/img/favicon/152x152.png"
+  href="http://localhost:4000/assets/img/152x152.png"
 />
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -42,9 +42,9 @@
   gtag('config', 'G-X0000000');
 </script>
 <!-- End Google Analytics -->
-<meta property="og:title" content="Blog" />
+<meta property="og:title" content="Implex Blog" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:4000/blog.html " />
+<meta property="og:url" content="http://localhost:4000/blog " />
 
 
 
@@ -59,7 +59,7 @@
 
 <header>
   <nav class="navigation">
-    <div class="menu desktop-menu" id="header">
+    <div class="menu desktop-menu black" id="header">
       <div class="wrapper">
         <div class="menu-block">
           
@@ -70,17 +70,18 @@
 
 
 
-  <div class="menu-item  dropdown">
+<div class="menu-item  dropdown" data-section-id="">
     Company &dtrif;
     <div class="dropdown-content">
-      <div class="dropdown-transparent"></div>
-      
+        <div class="dropdown-transparent"></div>
+        
         <a class="menu-item " href="/#about">About us</a>
-      
+        
         <a class="menu-item " href="/careers">Careers</a>
-      
+        
     </div>
-  </div>
+</div>
+
 
           
             
@@ -90,7 +91,8 @@
 
 
 
-  <a class="menu-item " href="/#services">Services</a>
+<a class="menu-item " data-section-id="services" href="/#services">Services</a>
+
 
           
             
@@ -100,7 +102,8 @@
 
 
 
-  <a class="menu-item " href="/#how-it-works">How it works</a>
+<a class="menu-item " data-section-id="how-it-works" href="/#how-it-works">How it works</a>
+
 
           
         </div>
@@ -116,7 +119,8 @@
 
 
 
-  <a class="menu-item " href="/#our-clients">Our Clients</a>
+<a class="menu-item " data-section-id="our-clients" href="/#our-clients">Our Clients</a>
+
 
           
             
@@ -126,7 +130,8 @@
 
 
 
-  <a class="menu-item " href="/blogg.html">Blog</a>
+<a class="menu-item " data-section-id="blog" href="/#blog">Blog</a>
+
 
           
             
@@ -136,7 +141,8 @@
 
 
 
-  <a class="menu-item button " href="/#">Contact us</a>
+<a class="menu-item header-button " data-section-id="" href="/#">Contact Us</a>
+
 
           
         </div>
@@ -144,7 +150,7 @@
     </div>
 
     <div class="menu mobile-menu">
-      <div>Web & Mob Development</div>
+      <div class="title">Web & Mob Development</div>
       <input id="menu-toggle" type="checkbox" />
       <label class='menu-button-container' for="menu-toggle">
         <div class='menu-button'></div>
@@ -161,17 +167,18 @@
 
 
 
-  <div class="menu-item  dropdown">
+<div class="menu-item  dropdown" data-section-id="">
     Company &dtrif;
     <div class="dropdown-content">
-      <div class="dropdown-transparent"></div>
-      
+        <div class="dropdown-transparent"></div>
+        
         <a class="menu-item " href="/#about">About us</a>
-      
+        
         <a class="menu-item " href="/careers">Careers</a>
-      
+        
     </div>
-  </div>
+</div>
+
 
         
           
@@ -181,7 +188,8 @@
 
 
 
-  <a class="menu-item " href="/#services">Services</a>
+<a class="menu-item " data-section-id="services" href="/#services">Services</a>
+
 
         
           
@@ -191,7 +199,8 @@
 
 
 
-  <a class="menu-item " href="/#how-it-works">How it works</a>
+<a class="menu-item " data-section-id="how-it-works" href="/#how-it-works">How it works</a>
+
 
         
           
@@ -201,7 +210,8 @@
 
 
 
-  <a class="menu-item " href="/#our-clients">Our Clients</a>
+<a class="menu-item " data-section-id="our-clients" href="/#our-clients">Our Clients</a>
+
 
         
           
@@ -211,7 +221,8 @@
 
 
 
-  <a class="menu-item " href="/blogg.html">Blog</a>
+<a class="menu-item " data-section-id="blog" href="/#blog">Blog</a>
+
 
         
           
@@ -221,66 +232,87 @@
 
 
 
-  <a class="menu-item button " href="/#">Contact us</a>
+<a class="menu-item header-button " data-section-id="" href="/#">Contact Us</a>
+
 
         
       </div>
     </div>
   </nav>
 </header>
-  <!--
-  ~ Copyright (c) 2022. Implex
-  ~ All rights reserved
-  -->
 
-<h1>Latest Posts</h1>
+  
 
-<ul>
+<div class="blogs">
+  <div class="content">
     
-    <li>
-        <h2><a href="/vacancy/2022/03/22/senior-back-end-developer-for-admitme-te.html">Senior Back End Developer for Admit.me team</a></h2>
-        <p>You will be working at the https://www.admit.me product. The project is aimed to help an applicant applying to college: we propose the only automated profile review for full-time MBA candidates. By analyzing the many factors used in admissions decisions across six primary areas, it conducts a detailed review of a candidate’s profile. At its core, the score is a numerical representation of the strength of your candidacy, scored out of 1000.</p>
 
-    </li>
-    
-    <li>
-        <h2><a href="/vacancy/2022/01/16/tech-lead-for-percona-team.html">Tech Lead for Percona team</a></h2>
-        <p><em>We are working with a cutting-edge technology stack! Golang, k8s, clickhouse, gRPC and many more. It’s a product company, not a typical outsource where nobody cares about your results. It’s so cool to work on products that are used by thousands of people every day. We are driven by delivering results, not closed tickets, we are always open to new ideas. And this is OSS, so you can proudly show your friends how cool you are!</em></p>
 
-    </li>
-    
-    <li>
-        <h2><a href="/vacancy/2022/01/16/qa-automation-engineer-for-percona-team.html">QA Automation Engineer for Percona team</a></h2>
-        <p><em>We are working with a cutting-edge technology stack! Golang, k8s, clickhouse, gRPC and many more. It’s a product company, not a typical outsource where nobody cares about your results. It’s so cool to work on products that are used by thousands of people every day. We are driven by delivering results, not closed tickets, we are always open to new ideas. And this is OSS, so you can proudly show your friends how cool you are!</em></p>
 
-    </li>
-    
-    <li>
-        <h2><a href="/vacancy/2021/12/01/full-stack-engineer-for-percona-team.html">Full stack engineer for Percona team</a></h2>
-        <p><em>We are working with a cutting-edge technology stack! Golang, k8s, clickhouse, gRPC and many more. It’s a product company, not a typical outsource where nobody cares about your results. It’s so cool to work on products that are used by thousands of people every day. We are driven by delivering results, not closed tickets, we are always open to new ideas. And this is OSS, so you can proudly show your friends how cool you are!</em></p>
 
-    </li>
-    
-    <li>
-        <h2><a href="/vacancy/2021/12/01/application-support-engineer-l2-support.html">Application support engineer (L2 support)</a></h2>
-        <p>Our client is a IT consultancy and software development company which provides comprehensive end to end solutions for banks and financial institutions, from electronic payments to software systems. It’s a part of a big financial holding which provides financial services for SMEs.</p>
 
-    </li>
-    
-    <li>
-        <h2><a href="/blog/2021/05/26/implex-receives-clutch-award-for-top-ukr.html">Implex Receives Clutch Award For Top Ukranian B2B Firm</a></h2>
-        <p>Headquartered in the beautiful city of Kyiv, Ukraine, Implex is one of the country’s premier software development companies that offers a multitude of <a href="https://implex.dev/tpost/x6dxl0fpp1-implex-receives-clutch-award-for-top-ukr#:~:text=customized%20solutions%20and%20technologies">customized solutions and technologies</a>. Since our establishment, we’ve been striving to help companies and startups successfully launch their businesses while building trust and long-lasting relationships in the process. Our top priority is your success!</p>
 
-    </li>
-    
-    <li>
-        <h2><a href="/tips">Tips for Outsourcing MVP Development. Part II</a></h2>
-        <p><img src="https://static.tildacdn.com/tild3764-3039-4164-a430-353139626537/Time_is_ticking.jpg" alt="" /></p>
+<div class="blog-posts">
+  <div class="content">
+    <div class="text-center">
+      <h1 class="title">Implex Blog</h1>
+      <h2 class="subtitle">Whole list of blog posts</h2>
+    </div>
+    <div class="posts-list">
+      
+        
 
-    </li>
-    
-</ul>
+<a href="/tpost/x6dxl0fpp1-implex-receives-clutch-award-for-top-ukr" class="post-preview">
+  <div class="image" style="background-image: url(https://static.tildacdn.com/tild3264-6632-4333-a132-633962643365/TopDev2021-Ukraine-c.png)"></div>
+  <div>
+    <div class="title">Implex Receives Clutch Award For Top Ukranian B2B Firm</div>
+    <div class="description">We are thrilled to announce that Clutch have recognized us as one of the 250 best-performing software development companies in Ukraine.</div>
+    <div class="date">26-05-2021</div>
+  </div>
+</a>
 
+      
+        
+
+<a href="/tpost/ye6u7ml161-tips-for-outsourcing-mvp-development-par" class="post-preview">
+  <div class="image" style="background-image: url(https://thumb.tildacdn.com/tild3764-3039-4164-a430-353139626537/-/cover/380x300/center/center/-/format/webp/Time_is_ticking.jpg)"></div>
+  <div>
+    <div class="title">Tips for Outsourcing MVP Development. Part II</div>
+    <div class="description">Team, requirements management, sprint planning  estimation and communication for successful MVP delivery — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup</div>
+    <div class="date">16-05-2021</div>
+  </div>
+</a>
+
+      
+        
+
+<a href="/tpost/m6n0b6l511-tips-for-outsourcing-mvp-development-par" class="post-preview">
+  <div class="image" style="background-image: url(https://static.tildacdn.com/tild6435-3836-4034-b934-613439336233/Minimal_viable_produ.jpg)"></div>
+  <div>
+    <div class="title">Tips for Outsourcing MVP Development. Part I</div>
+    <div class="description">Project preparation, documentation and right tech stack — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup</div>
+    <div class="date">25-04-2021</div>
+  </div>
+</a>
+
+      
+        
+
+<a href="/tpost/j7m9itycp1-is-it-possible-to-find-100-tech-speciali" class="post-preview">
+  <div class="image" style="background-image: url(https://static.tildacdn.com/tild3862-3862-4934-a565-383663323131/web-3706562_1920.jpg)"></div>
+  <div>
+    <div class="title">Is It Possible to Find 100+ Tech Specialists at Affordable Rates in a Fortnight? Yes!</div>
+    <div class="description">We analyzed the market, various hiring channels, and payment models. Our experience has shown you CAN subcontract 100 specialists in a fortnight, but boy, will you have to work for it.</div>
+    <div class="date">07-01-2021</div>
+  </div>
+</a>
+
+      
+    </div>
+  </div>
+</div>
+  </div>
+</div>
   
 
 <footer>
@@ -293,7 +325,7 @@
       <div class="subtitle">Looking forward to connecting with you</div>
       <div class="icon">
         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/implex-dev/about/">
-          <img src="assets/img/linkedin.svg">
+          <img src="http://localhost:4000/assets/img/linkedin.svg">
         </a>
       </div>
     </div>
@@ -302,6 +334,6 @@
     <div class="text-center creator">© 2020 Implex. All rights reserved.</div>
   </div>
 </footer>
-  <script src="../assets/scripts/script.js"></script>
+  <script src="../assets/scripts/script.js?q=20220805"></script>
 </body>
 </html>

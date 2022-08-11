@@ -11,25 +11,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700" rel="stylesheet">
 
-<!--<link rel="shortcut icon" type="image/png" href="assets/img/favicon/16x16.png" sizes="16x16">
-<link rel="shortcut icon" type="image/png" href="assets/img/favicon/32x32.png" sizes="32x32">
-<link rel="shortcut icon" type="image/png" href="assets/img/favicon/96x96.png" sizes="96x96">
-<link rel="shortcut icon" type="image/png" href="assets/img/favicon/152x152.png" sizes="192x192">
+<!--<link rel="shortcut icon" type="image/png" href="http://localhost:4000/assets/img/16x16.png" sizes="16x16">
+<link rel="shortcut icon" type="image/png" href="http://localhost:4000/assets/img/32x32.png" sizes="32x32">
+<link rel="shortcut icon" type="image/png" href="http://localhost:4000/assets/img/96x96.png" sizes="96x96">
+<link rel="shortcut icon" type="image/png" href="http://localhost:4000/assets/img/152x152.png" sizes="192x192">
 <link
   rel="apple-touch-icon-precomposed"
   sizes="57x57"
-  href="assets/img/favicon/57x57.png"
+  href="http://localhost:4000/assets/img/57x57.png"
 />
 <link
   rel="apple-touch-icon-precomposed"
   sizes="120x120"
-  href="assets/img/favicon/120x120.png"
+  href="http://localhost:4000/assets/img/120x120.png"
 />-->
-<link rel="shortcut icon" href="assets/img/favicon/64x64.ico" sizes="64x64">
+<link rel="shortcut icon" href="http://localhost:4000/assets/img/64x64.ico" sizes="64x64">
 <link
   rel="apple-touch-icon"
   sizes="152x152"
-  href="assets/img/favicon/152x152.png"
+  href="http://localhost:4000/assets/img/152x152.png"
 />
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -70,17 +70,18 @@
 
 
 
-  <div class="menu-item  dropdown">
+<div class="menu-item  dropdown" data-section-id="">
     Company &dtrif;
     <div class="dropdown-content">
-      <div class="dropdown-transparent"></div>
-      
+        <div class="dropdown-transparent"></div>
+        
         <a class="menu-item " href="/#about">About us</a>
-      
+        
         <a class="menu-item " href="/careers">Careers</a>
-      
+        
     </div>
-  </div>
+</div>
+
 
           
             
@@ -90,7 +91,8 @@
 
 
 
-  <a class="menu-item " href="/#services">Services</a>
+<a class="menu-item " data-section-id="services" href="/#services">Services</a>
+
 
           
             
@@ -100,7 +102,8 @@
 
 
 
-  <a class="menu-item " href="/#how-it-works">How it works</a>
+<a class="menu-item " data-section-id="how-it-works" href="/#how-it-works">How it works</a>
+
 
           
         </div>
@@ -116,7 +119,8 @@
 
 
 
-  <a class="menu-item " href="/#our-clients">Our Clients</a>
+<a class="menu-item " data-section-id="our-clients" href="/#our-clients">Our Clients</a>
+
 
           
             
@@ -126,7 +130,8 @@
 
 
 
-  <a class="menu-item " href="/blogg.html">Blog</a>
+<a class="menu-item " data-section-id="blog" href="/#blog">Blog</a>
+
 
           
             
@@ -136,7 +141,8 @@
 
 
 
-  <a class="menu-item button " href="/#">Contact us</a>
+<a class="menu-item header-button " data-section-id="" href="/#">Contact Us</a>
+
 
           
         </div>
@@ -144,7 +150,7 @@
     </div>
 
     <div class="menu mobile-menu">
-      <div>Web & Mob Development</div>
+      <div class="title">Web & Mob Development</div>
       <input id="menu-toggle" type="checkbox" />
       <label class='menu-button-container' for="menu-toggle">
         <div class='menu-button'></div>
@@ -161,17 +167,18 @@
 
 
 
-  <div class="menu-item  dropdown">
+<div class="menu-item  dropdown" data-section-id="">
     Company &dtrif;
     <div class="dropdown-content">
-      <div class="dropdown-transparent"></div>
-      
+        <div class="dropdown-transparent"></div>
+        
         <a class="menu-item " href="/#about">About us</a>
-      
+        
         <a class="menu-item " href="/careers">Careers</a>
-      
+        
     </div>
-  </div>
+</div>
+
 
         
           
@@ -181,7 +188,8 @@
 
 
 
-  <a class="menu-item " href="/#services">Services</a>
+<a class="menu-item " data-section-id="services" href="/#services">Services</a>
+
 
         
           
@@ -191,7 +199,8 @@
 
 
 
-  <a class="menu-item " href="/#how-it-works">How it works</a>
+<a class="menu-item " data-section-id="how-it-works" href="/#how-it-works">How it works</a>
+
 
         
           
@@ -201,7 +210,8 @@
 
 
 
-  <a class="menu-item " href="/#our-clients">Our Clients</a>
+<a class="menu-item " data-section-id="our-clients" href="/#our-clients">Our Clients</a>
+
 
         
           
@@ -211,7 +221,8 @@
 
 
 
-  <a class="menu-item " href="/blogg.html">Blog</a>
+<a class="menu-item " data-section-id="blog" href="/#blog">Blog</a>
+
 
         
           
@@ -221,13 +232,15 @@
 
 
 
-  <a class="menu-item button " href="/#">Contact us</a>
+<a class="menu-item header-button " data-section-id="" href="/#">Contact Us</a>
+
 
         
       </div>
     </div>
   </nav>
 </header>
+
   <!--
   ~ Copyright (c) 2022. Implex
   ~ All rights reserved
@@ -237,18 +250,19 @@
 
 
 <section class="section section-dark intro">
-    <div class="overlay">
-        <div class="content intro-wrapper">
-            <div class="title transite transite-up sn-1">Engineering Your Dreams</div>
-            <div class="description transite transite-up sn-2">We develop web and mobile applications with the team of the best engineers equipped with
-                reliable tools and following modern agile methodologies
-            </div>
-            <div class="button-wrapper transite transite-up sn-3">
-                <button class="intro-button">contact us</button>
-            </div>
-            <div class="arrow"></div>
-        </div>
+  <div class="overlay">
+    <div class="content intro-wrapper">
+      <div class="title transite transite-up sn-1">Engineering Your <br class="break-line">Dreams</div>
+      <div class="description transite transite-up sn-2">We develop web and mobile applications with the team of the
+        best engineers equipped with
+        reliable tools and following modern agile methodologies
+      </div>
+      <div class="button-wrapper transite transite-up sn-3">
+        <button class="button">contact us</button>
+      </div>
+      <div class="arrow"></div>
     </div>
+  </div>
 </section>
 
 
@@ -322,7 +336,7 @@
       <h2 class="description transite transite-up sn-2">We strive to build relationships with our clients that last for years. This makes trust,
         reliability and respect the principle values of our culture.</h2>
       <div class="button-wrapper transite transite-up sn-3">
-        <button class="partnership-button">Contact us</button>
+        <button class="button">Contact Us</button>
       </div>
     </div>
   </div>
@@ -451,7 +465,7 @@
         <div class="clients-block">
           <div class="title transite transite-up sn-3">WikiArt.org</div>
           <div class="description transite transite-up sn-3">The aim of the project was to make art accessible to anyone, anywhere. Today, WikiArt features over 250,000 artworks by 5,000 artists, localized to 8 languages. These artworks are displayed in museums, universities and town halls of more than 100 countries, yet most of it is not on public view. The client claims that they are planning to cover the entire art history of the Earth, from cave artworks to modern private collections.</div>
-          <button class="button transite transite-up sn-4">View Case Study</button>
+          <button class="button button-outline transite transite-up sn-4">View Case Study</button>
           <div class="image transite transite-right sn-4">
             <img src="assets/img/clients/wiki.webp">
           </div>
@@ -465,7 +479,7 @@
         <div class="clients-block">
           <div class="title transite transite-up sn-5">SmartLane</div>
           <div class="description transite transite-up sn-5">A B2B startup for car dealers who sell used vehicles across the USA via the marketplace. The developed application has a whole range of functions to support the workflows of car dealers and inspectors, like auctions workflow, live and proxy bidding, post-auction counter offering, and deal closing. The solution is integrated with different APIs to gather information about vehicles, helping dealers make the right decisions at auctions.</div>
-          <button class="button transite transite-up sn-6">View Case Study</button>
+          <button class="button button-outline transite transite-up sn-6">View Case Study</button>
           <div class="image transite transite-left sn-6">
             <img src="assets/img/clients/smart-lane.webp">
           </div>
@@ -479,7 +493,7 @@
         <div class="clients-block">
           <div class="title transite transite-up sn-7">Admit.me</div>
           <div class="description transite transite-up sn-7">Admit.me is a free virtual admissions coach that offers step-by-step guides through the admissions process of the best schools. The developed solution allows for generating personalized admissions programs based on the applicant's background and goals. Admit.me provides tools and lessons designed to optimize the applicant's admissions chances by framing the applicant's thinking and informing critical admissions decisions.</div>
-          <button class="button transite transite-up sn-8">View Case Study</button>
+          <button class="button button-outline transite transite-up sn-8">View Case Study</button>
           <div class="image transite transite-right sn-8">
             <img src="assets/img/clients/admit.webp">
           </div>
@@ -490,56 +504,58 @@
 </section>
 
 
-<section class="section blog">
-    
-    
-    <div class="content">
-        <div class="text-center">
-            <h1 class="title">Implex Blog</h1>
-            <h2 class="subtitle">Here we publish the most interesting things we experienced during our work</h2>
-        </div>
-        <div class="articles-container">
-            
-            <div onclick="location.href=''" class="article">
-                <div class="title">Implex Receives Clutch Award For Top Ukranian B2B Firm</div>
-                <div class="description">We are thrilled to announce that Clutch have recognized us as one of the 250 best-performing software development companies in Ukraine.</div>
-                <div class="date">26.05.2021</div>
-                <div class="image">
-                    <img src="assets/img/articles/clutch.png">
-                </div>
-            </div>
-            
-            <div onclick="location.href=''" class="article">
-                <div class="title">Tips for Outsourcing MVP Development. Part II</div>
-                <div class="description">Team, requirements management, sprint planning  estimation and communication for successful MVP delivery — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup</div>
-                <div class="date">16.05.2021</div>
-                <div class="image">
-                    <img src="assets/img/articles/tips-2.jpg">
-                </div>
-            </div>
-            
-            <div onclick="location.href=''" class="article">
-                <div class="title">Tips for Outsourcing MVP Development. Part I</div>
-                <div class="description">Project preparation, documentation and right tech stack — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup</div>
-                <div class="date">25.04.2021</div>
-                <div class="image">
-                    <img src="assets/img/articles/tips-1.jpg">
-                </div>
-            </div>
-            
-            <div onclick="location.href=''" class="article">
-                <div class="title">Is It Possible to Find 100+ Tech Specialists at Affordable Rates in a Fortnight? Yes!</div>
-                <div class="description">We analyzed the market, various hiring channels, and payment models. Our experience has shown you CAN subcontract 100 specialists in a fortnight, but boy, will you have to work for it.</div>
-                <div class="date">07.01.2021</div>
-                <div class="image">
-                    <img src="assets/img/articles/rates.jpg">
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
+<section class="section blog" id="blog">
+  
+  
 
+  
+
+
+
+
+
+
+<div class="blog-posts">
+  <div class="content">
+    <div class="text-center">
+      <h1 class="title">Implex Blog</h1>
+      <h2 class="subtitle">Here we publish the most interesting things we experienced during our work</h2>
+    </div>
+    <div class="posts-list">
+      
+        
+
+<a href="/tpost/ye6u7ml161-tips-for-outsourcing-mvp-development-par" class="post-preview">
+  <div class="image" style="background-image: url(https://thumb.tildacdn.com/tild3764-3039-4164-a430-353139626537/-/cover/380x300/center/center/-/format/webp/Time_is_ticking.jpg)"></div>
+  <div>
+    <div class="title">Tips for Outsourcing MVP Development. Part II</div>
+    <div class="description">Team, requirements management, sprint planning  estimation and communication for successful MVP delivery — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup</div>
+    <div class="date">16-05-2021</div>
+  </div>
+</a>
+
+      
+        
+
+<a href="/tpost/m6n0b6l511-tips-for-outsourcing-mvp-development-par" class="post-preview">
+  <div class="image" style="background-image: url(https://static.tildacdn.com/tild6435-3836-4034-b934-613439336233/Minimal_viable_produ.jpg)"></div>
+  <div>
+    <div class="title">Tips for Outsourcing MVP Development. Part I</div>
+    <div class="description">Project preparation, documentation and right tech stack — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup</div>
+    <div class="date">25-04-2021</div>
+  </div>
+</a>
+
+      
+    </div>
+  </div>
+</div>
+  <div class="text-center">
+    <a href="/blog">
+      <button class="button button-outline">Read all blogs</button>
+    </a>
+  </div>
+</section>
 
 
 <section class="section section-dark contact-us">
@@ -582,7 +598,7 @@
       <div class="subtitle">Looking forward to connecting with you</div>
       <div class="icon">
         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/implex-dev/about/">
-          <img src="assets/img/linkedin.svg">
+          <img src="http://localhost:4000/assets/img/linkedin.svg">
         </a>
       </div>
     </div>
@@ -591,6 +607,6 @@
     <div class="text-center creator">© 2020 Implex. All rights reserved.</div>
   </div>
 </footer>
-  <script src="../assets/scripts/script.js"></script>
+  <script src="../assets/scripts/script.js?q=20220805"></script>
 </body>
 </html>

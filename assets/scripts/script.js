@@ -10,21 +10,44 @@ const implex = (function () {
   let sections;
   let sectionsToshow;
   let header;
+  let headerItems;
 
   document.addEventListener("DOMContentLoaded", init);
-
 
   function init() {
     sections = document.getElementsByTagName('section');
     sectionsToshow = sections.length;
     header = document.getElementById(HEADER_ID);
+    headerItems = document.querySelectorAll('.desktop-menu .menu-item');
 
-
-    setTimeout(() => {  
+    setTimeout(() => {
       checkSectionPositions();
+      setActiveMenuItem();
+      checkHeaderClassNames();
     }, 0);
 
     window.addEventListener('scroll', checkSectionPositions);
+    window.addEventListener('scroll', setActiveMenuItem); 
+    window.addEventListener('scroll', checkHeaderClassNames);
+  }
+
+  function setActiveMenuItem() {
+    let currentSectionId = '';
+
+    for (let section of sections) {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        currentSectionId = section.getAttribute('id');
+      }
+    }
+
+    for (let item of headerItems) {
+      item.classList.remove('active');
+      if (item.getAttribute('data-section-id') === currentSectionId) {
+        item.classList.add('active');
+      }
+    }
   }
 
   function checkSectionPositions() {
@@ -32,8 +55,8 @@ const implex = (function () {
 
     Array.prototype.forEach.call(sections, section => {
       if (
-        isElementInViewport(section, innerHeight) &&
-        !section.classList.contains(START_TRANSITION_CLASS)
+          isElementInViewport(section, innerHeight) &&
+          !section.classList.contains(START_TRANSITION_CLASS)
       ) {
         section.classList.add(START_TRANSITION_CLASS);
         sectionsToshow--;
@@ -51,7 +74,7 @@ const implex = (function () {
     return rect.top <= viewportHeight;
   }
 
-  window.onscroll = () => {
+  function checkHeaderClassNames() {
     const additionalClassName = 'black-opaque';
 
     if (document.documentElement.scrollTop > 100) {
@@ -59,7 +82,7 @@ const implex = (function () {
     } else {
       header.classList.remove(additionalClassName);
     }
-  };
+  }
 
   return {};
 })();

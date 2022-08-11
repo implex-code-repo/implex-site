@@ -6,16 +6,19 @@
   padding: 24px 0;
   text-decoration: none;
   width: 100%;
+  max-width: 960px;
 
-  .image-wrapper {
-    width: 190px;
-    height: 150px;
+  @include tablet-screen {
+    max-width: 600px;
+  }
+
+  .image {
+    @include size(190px, 150px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-right: 40px;
     flex-shrink: 0;
-
-    img {
-      max-width: 100%;
-    }
   }
 
   .title {
@@ -23,6 +26,14 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 1.35;
+
+    @include tablet-screen {
+      font-size: 22px;
+    }
+
+    @include small-tablet-screen {
+      font-size: 20px;
+    }
   }
 
   .description {
@@ -30,6 +41,10 @@
     font-size: 14px;
     line-height: 1.55;
     margin-top: 8px;
+
+    @include tablet-screen {
+      font-size: 12px;
+    }
   }
 
   .date {

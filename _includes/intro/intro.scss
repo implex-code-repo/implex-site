@@ -12,6 +12,7 @@
     position: relative;
 
     .intro-wrapper {
+      @include flex(column, center, center);
       margin: 0;
       top: 50%;
       left: 50%;
@@ -23,15 +24,34 @@
       }
 
       .title {
+        @include font(72px, 600);
         padding: 24px 0;
-        font-size: 72px;
-        font-weight: bold;
         max-width: 960px;
 
         @include tablet-screen {
+          font-size: 68px;
+        }
+
+        @include small-tablet-screen {
+          font-size: 30px;
+        }
+
+        @include mobile-screen {
           @include font(30px, 600);
           padding-inline: 10px;
           letter-spacing: 1px;
+        }
+      }
+
+      .break-line {
+        display: none;
+
+        @include tablet-screen {
+          display: block;
+        }
+
+        @include small-tablet-screen {
+          display: none;
         }
       }
 
@@ -39,29 +59,32 @@
         padding: 15px 0 30px;
         font-size: 22px;
         max-width: 960px;
+        line-height: 1.55;
 
         @include tablet-screen {
-          @include font(14px, 300);
+          font-size: 20px;
+          max-width: 640px;
+        }
+
+        @include small-tablet-screen {
+          font-size: 14px;
           padding-inline: 10px;
         }
       }
 
       .button-wrapper {
         margin-top: 44px;
+      }
 
-        .intro-button {
+      .button {
+        text-transform: uppercase;
+
+        @include tablet-screen {
           @include size(220px, 60px);
-          @include font(16px, 700);
-          background-color: #f5914f;
-          border: 1px solid #f5914f;
-          border-radius: 5px;
-          color: white;
-          cursor: pointer;
-          text-transform: uppercase;
+        }
 
-          @include tablet-screen {
-            @include size(160px, 60px);
-          }
+        @include small-tablet-screen {
+          @include size(160px, 60px);
         }
       }
     }

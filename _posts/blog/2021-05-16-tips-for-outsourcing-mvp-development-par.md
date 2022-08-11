@@ -5,8 +5,8 @@ description: "Team, requirements management, sprint planning  estimation and com
 image: "https://thumb.tildacdn.com/tild3764-3039-4164-a430-353139626537/-/cover/380x300/center/center/-/format/webp/Time_is_ticking.jpg"
 ogImage: "https://static.tildacdn.com/tild3764-3039-4164-a430-353139626537/Time_is_ticking.jpg"
 author: "Slava Hraichenko"
-highlight: true
-permalink: "/tips"
+permalink: "/tpost/ye6u7ml161-tips-for-outsourcing-mvp-development-par"
+showOnMainPage: true
 category: "Blog"
 ---
 

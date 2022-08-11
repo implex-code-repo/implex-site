@@ -5,6 +5,7 @@ description: "We are thrilled to announce that Clutch have recognized us as one 
 image: "https://static.tildacdn.com/tild3264-6632-4333-a132-633962643365/TopDev2021-Ukraine-c.png"
 author: "Slava Hraichenko"
 category: "Blog"
+permalink: "/tpost/x6dxl0fpp1-implex-receives-clutch-award-for-top-ukr"
 ---
 
 Headquartered in the beautiful city of Kyiv, Ukraine, Implex is one of the country’s premier software development companies that offers a multitude of [customized solutions and technologies](https://implex.dev/tpost/x6dxl0fpp1-implex-receives-clutch-award-for-top-ukr#:~:text=customized%20solutions%20and%20technologies). Since our establishment, we’ve been striving to help companies and startups successfully launch their businesses while building trust and long-lasting relationships in the process. Our top priority is your success!

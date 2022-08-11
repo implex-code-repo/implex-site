@@ -7,7 +7,7 @@
 
 <footer>
   {% assign content = site.data.footer %}
-  {% assign prefix = site.imgPrefix %}
+  {% assign prefix = site.url | append: '/' | append: site.imgPrefix %}
   <div class="white-part">
     <div class="content text-center">
       <div class="title">{{ content.title }}</div>
