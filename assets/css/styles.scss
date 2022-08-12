@@ -218,6 +218,7 @@ body {
 .button {
   @include size(220px, 60px);
   @include font(16px, 700);
+  font-family: 'Roboto', Arial, sans-serif;
   background-color: $orange;
   border: 1px solid $orange;
   border-radius: 5px;

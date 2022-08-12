@@ -11,6 +11,10 @@
       padding: 0 100px;
     }
 
+    @include small-tablet-screen {
+      padding: 0;
+    }
+
     @include mobile-screen {
       padding: 0 40px;
     }
@@ -31,6 +35,15 @@
         @include tablet-screen {
           @include font(30px, 700);
         }
+
+        @include small-tablet-screen {
+          font-size: 38px;
+        }
+
+        @include mobile-screen {
+          font-size: 30px;
+        }
+
       }
 
       .description {
@@ -43,6 +56,15 @@
         @include tablet-screen {
           @include font(16px, 300);
           max-width: 600px;
+        }
+
+        @include small-tablet-screen {
+          font-size: 18px;
+        }
+
+        @include mobile-screen {
+          font-size: 16px;
+          max-width: 300px;
         }
       }
     }
@@ -63,6 +85,10 @@
 
         @include tablet-screen {
           @include size(100%, auto);
+        }
+
+        @include mobile-screen {
+          @include size(140px, 140px);
         }
       }
     }

@@ -11,6 +11,11 @@
       padding-bottom: 60px;
 
       @include tablet-screen {
+        @include font(38px, 600);
+        padding-bottom: 0;
+      }
+
+      @include small-tablet-screen {
         @include font(30px, 600);
         padding-bottom: 0;
       }
@@ -29,6 +34,10 @@
         max-width: 420px;
 
         @include tablet-screen {
+          max-width: 640px;
+        }
+
+        @include mobile-screen {
           padding-inline: 20px;
         }
 
@@ -52,6 +61,11 @@
           padding-bottom: 26px;
 
           @include tablet-screen {
+            @include font(28px, 600);
+            padding: 26px 0;
+          }
+
+          @include small-tablet-screen {
             @include font(24px, 600);
           }
         }
@@ -62,6 +76,10 @@
           line-height: 1.55;
 
           @include tablet-screen {
+            @include font(14px, 300);
+          }
+
+          @include small-tablet-screen {
             @include font(12px, 300);
           }
         }

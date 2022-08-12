@@ -8,6 +8,10 @@
   width: 100%;
   max-width: 960px;
 
+  @include tablet-screen {
+    max-width: 600px;
+  }
+
   .image {
     @include size(190px, 150px);
     background-position: center;
@@ -22,6 +26,14 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 1.35;
+
+    @include tablet-screen {
+      font-size: 22px;
+    }
+
+    @include small-tablet-screen {
+      font-size: 20px;
+    }
   }
 
   .description {
@@ -29,6 +41,10 @@
     font-size: 14px;
     line-height: 1.55;
     margin-top: 8px;
+
+    @include tablet-screen {
+      font-size: 12px;
+    }
   }
 
   .date {
