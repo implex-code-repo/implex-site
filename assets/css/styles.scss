@@ -172,9 +172,21 @@ body {
     }
   }
 
+  .content {
+    max-width: 1160px;
+  }
+
   .col-2 {
     display: grid;
     grid-template-columns: repeat(2, 50%);
+
+    & > div {
+      margin: 0 20px;
+    }
+  }
+
+  .sub-heading {
+    margin: 40px 0 45px;
   }
 
   .image {
@@ -194,6 +206,10 @@ body {
     &:last-child {
       padding-left: 100px;
     }
+  }
+
+  .technologies {
+    margin-top: 55px;
   }
 
   .logos-row {
