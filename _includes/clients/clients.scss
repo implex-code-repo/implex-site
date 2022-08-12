@@ -30,7 +30,7 @@
         margin-top: 80px;
       }
 
-      &:nth-child(n + 2):nth-child(-n + 2) {
+      &:nth-child(2n) {
         .title {
           grid-column: 1;
         }
@@ -81,14 +81,13 @@
         grid-column: 1;
         grid-row: 4 / 1;
 
-        @include tablet-screen {
-          grid-row: 1;
-
-          img {
-            max-width: 100%;
-          }
+        img {
+          max-width: 100%;
         }
 
+        @include tablet-screen {
+          grid-row: 1;
+        }
       }
 
       .button {

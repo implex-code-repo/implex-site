@@ -20,6 +20,7 @@
 @import "post-preview";
 @import "vacancy-preview";
 @import "header";
+@import "quote";
 /* pages */
 @import "careers";
 @import "blogs";
@@ -147,6 +148,64 @@ body {
   }
 }
 
+.case-study {
+  line-height: 1.55;
+  margin-top: 60px;
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  section { 
+    padding: 75px 0;
+
+    &.section-black {
+      background-color: #000;
+    }
+
+    &.section-grey {
+      background-color: #f5f5f5;
+    }
+  }
+
+  .col-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
+  .image-wrapper {
+    margin: 0 20px;
+
+    &:first-child {
+      padding-right: 100px;
+    }
+
+    &:last-child {
+      padding-left: 100px;
+    }
+  }
+
+  .logos-row {
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+
+    img {
+      max-width: 160px;
+    }
+  }
+}
+
 .vacancy {
   margin: 95px 0;
 }
@@ -173,4 +232,9 @@ body {
     background-color: transparent;
     color: $orange;
   }
+}
+
+a.button {
+  @include flex(row, center, center);
+  text-decoration: none;
 }

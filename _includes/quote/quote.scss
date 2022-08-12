@@ -1,0 +1,47 @@
+.quote {
+  @include flex(row, flex-start, flex-start);
+  color: white;
+  text-align: left;
+  line-height: 1.55;
+
+  .avatar {
+    @include size(100px, 100px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 30px;
+  }
+
+  .text {
+    @include font(20px, 300);
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+
+  .author-name {
+    @include font(16px, 600);
+    color: white;
+    border-bottom: 2px solid $orange;
+    text-decoration: none;
+    margin-bottom: 2px;
+  }
+
+  .author-position {
+    @include font(14px, 300);
+    margin-bottom: 10px;
+  }
+
+  .author-socials {
+    @include flex(row, flex-start, flex-start);
+    
+    svg {
+      @include size(24px, 24px);
+    }
+
+    a + a {
+      margin-left: 8px;
+    }
+  }
+}
