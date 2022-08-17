@@ -5,10 +5,45 @@
   padding: 120px 0 136px !important;
 
   .form-wrapper {
-    @include flex(row, center, center);
+    @include flex(row, flex-start, flex-start);
+    flex-wrap: wrap;
+    max-width: 984px;
+    margin: 0 auto;
+
+    label {
+      padding: 12px;
+    }
+
+    input[type=text] {
+      @include font(16px, 400);
+      line-height: 24px;
+      padding: 16px 20px;
+      width: 468px;
+      height: 56px;
+      background-color: transparent;
+      border: 1px solid rgba(122, 120, 120, 1);
+      border-radius: 3px;
+    }
+
+
+
+    .file-wrapper {
+      padding: 12px;
+    }
+
+    textarea {
+      @include font(16px, 400);
+      line-height: 24px;
+      padding: 16px 20px;
+      width: 960px;
+      min-height: 56px;
+      background-color: transparent;
+      border: 1px solid rgba(122, 120, 120, 1);
+      border-radius: 3px;
+    }
   }
 
-  .button {
+  .button-wrapper {
     @include flex(column, center, center);
   }
 
