@@ -12,6 +12,10 @@
     max-width: 600px;
   }
 
+  @include mobile-screen {
+    flex-direction: column;
+  }
+
   .image {
     @include size(190px, 150px);
     background-position: center;
@@ -19,6 +23,12 @@
     background-size: cover;
     margin-right: 40px;
     flex-shrink: 0;
+
+    @include mobile-screen {
+      @include size(100%, 192px);
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
   }
 
   .title {

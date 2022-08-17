@@ -28,7 +28,7 @@
 
   .advantages-container {
     display: grid;
-    grid-template-columns: repeat(3, 360px);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 72px;
     margin-top: 80px;

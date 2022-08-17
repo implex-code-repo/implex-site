@@ -1,0 +1,49 @@
+{% comment %}
+<!--
+  ~ Copyright (c) 2022. Implex
+  ~ All rights reserved
+  -->
+{% endcomment %}
+
+<div class="quote">
+  <div class="avatar" style="background-image: url({{include.avatarUrl}})"></div>
+  <div class="quote-data">
+    <div class="text">{{ include.content }}</div>
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="{{ include.authorUrl }}"
+      class="author-name"
+    >{{ include.authorName }}</a>
+    <div class="author-position">{{ include.authorPosition }}</div>
+    <div class="author-socials">
+      {% if include.linkedin %}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="{{ include.linkedin }}"
+        >
+          {% include svg/linkedin.svg %}
+        </a>
+      {% endif %}
+      {% if include.facebook %}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="{{ include.facebook }}"
+        >
+          {% include svg/facebook.svg %}
+        </a>
+      {% endif %}
+      {% if include.instagram %}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="{{ include.instagram }}"
+        >
+          {% include svg/instagram.svg %}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
