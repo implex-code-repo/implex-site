@@ -1,5 +1,9 @@
 .blog-posts {
   .title {
+    @include small-desktop-screen {
+      font-size: 38px;
+    }
+
     @include tablet-screen {
       @include font(30px, 600);
     }
@@ -7,6 +11,10 @@
 
   .subtitle {
     margin-bottom: 90px;
+
+    @include small-desktop-screen {
+      font-size: 22px;
+    }
 
     @include tablet-screen {
       @include font(20px, 300);

@@ -27,6 +27,7 @@
         @include font(72px, 600);
         padding: 24px 0;
         max-width: 960px;
+        white-space:nowrap;
 
         @include tablet-screen {
           font-size: 68px;
@@ -46,7 +47,7 @@
       .break-line {
         display: none;
 
-        @include tablet-screen {
+        @include small-desktop-screen {
           display: block;
         }
 
@@ -60,6 +61,10 @@
         font-size: 22px;
         max-width: 960px;
         line-height: 1.55;
+
+        @include small-desktop-screen {
+          width: 780px;
+        }
 
         @include tablet-screen {
           font-size: 20px;
