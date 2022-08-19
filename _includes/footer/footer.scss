@@ -10,7 +10,7 @@
     @include font(16px, 600);
     line-height: 1.35;
 
-    @include tablet-screen {
+    @include small-desktop-screen {
       font-size: 14px;
     }
 
@@ -24,7 +24,7 @@
     line-height: 1.23;
     margin-top: 44px;
 
-    @include tablet-screen {
+    @include small-desktop-screen {
       font-size: 32px;
     }
 
@@ -38,7 +38,7 @@
     line-height: 1.55;
     margin-top: 44px;
 
-    @include tablet-screen {
+    @include small-desktop-screen {
       font-size: 16px;
     }
 
@@ -59,7 +59,7 @@
   color: #939393;
   padding: 60px 0 30px;
 
-  @include tablet-screen {
+  @include small-desktop-screen {
     font-size: 14px;
     padding: 44px 0 14px;
   }

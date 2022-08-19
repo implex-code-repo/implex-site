@@ -4,7 +4,7 @@
   background-color: white;
 
   .title {
-    @include tablet-screen {
+    @include small-desktop-screen {
       font-size: 38px;
     }
 
@@ -14,7 +14,7 @@
   }
 
   .subtitle {
-    @include tablet-screen {
+    @include small-desktop-screen {
       font-size: 22px;
     }
 
@@ -71,6 +71,10 @@
         line-height: 1.23;
         grid-column: 2;
 
+        @include small-desktop-screen {
+          font-size: 24px;
+        }
+
         @include tablet-screen {
           font-size: 24px;
           grid-column: 1;
@@ -86,6 +90,10 @@
         @include font(18px, 300);
         line-height: 1.55;
         grid-column: 2;
+
+        @include small-desktop-screen {
+          font-size: 16px;
+        }
 
         @include tablet-screen {
           font-size: 16px;

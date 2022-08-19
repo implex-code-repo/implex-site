@@ -30,8 +30,14 @@
 
       .service {
         @include flex(column, center, center);
-        padding: 0 40px;
-        max-width: 420px;
+        padding: 0 20px;
+        margin: 0 20px;
+        max-width: 560px;
+
+        @include small-desktop-screen {
+          max-width: 460px;
+          padding: 0 20px;
+        }
 
         @include tablet-screen {
           max-width: 640px;
