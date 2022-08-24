@@ -1,0 +1,17 @@
+.yoy {
+  #image1 {
+    height: 700px;
+    
+    @include small-desktop-screen {
+      height: 575px;
+    }
+  }
+
+  #image2 {
+    height: 600px;
+
+    @include small-desktop-screen {
+      height: 493px;
+    }
+  }
+}
