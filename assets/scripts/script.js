@@ -11,6 +11,8 @@ const implex = (function () {
   let sectionsToshow;
   let header;
   let headerItems;
+  let uploadBtn;
+  let customText;
 
   document.addEventListener("DOMContentLoaded", init);
 
@@ -19,16 +21,26 @@ const implex = (function () {
     sectionsToshow = sections.length;
     header = document.getElementById(HEADER_ID);
     headerItems = document.querySelectorAll('.desktop-menu .menu-item');
+    uploadBtn = document.getElementById('file-upload');
+    customText = document.getElementById('custom-text');
 
     setTimeout(() => {
       checkSectionPositions();
       setActiveMenuItem();
       checkHeaderClassNames();
+      customText.innerHTML = '5 files max, up to 10MB each';
     }, 0);
 
+    console.log(uploadBtn);
+
     window.addEventListener('scroll', checkSectionPositions);
-    window.addEventListener('scroll', setActiveMenuItem); 
+    window.addEventListener('scroll', setActiveMenuItem);
     window.addEventListener('scroll', checkHeaderClassNames);
+    uploadBtn.addEventListener('change', function () {
+      if (uploadBtn.value) {
+        customText.textContent = uploadBtn.value.replace(/^.*[\\\/]/, '');
+      }
+    })
   }
 
   function setActiveMenuItem() {

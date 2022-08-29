@@ -23,12 +23,30 @@
       background-color: transparent;
       border: 1px solid rgba(122, 120, 120, 1);
       border-radius: 3px;
+      color: white;
     }
 
-
-
     .file-wrapper {
+      @include flex(row, center, center);
       padding: 12px;
+
+      .file-label {
+        @include font(16px, 600);
+        line-height: 24px;
+        background-color: transparent;
+        padding: 8px 20px;
+        border-radius: 3px;
+        border: 1px solid rgba(122, 120, 120, 1);
+        height: auto;
+        cursor: pointer;
+      }
+
+      .text-helper{
+        @include font(16px, 400);
+        line-height: 24px;
+        margin-left: 20px;
+        color: rgba(130, 128, 128, 1);
+      }
     }
 
     textarea {
