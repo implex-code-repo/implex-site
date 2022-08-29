@@ -38,7 +38,7 @@ const implex = (function () {
     window.addEventListener('scroll', checkHeaderClassNames);
     uploadBtn.addEventListener('change', function () {
       if (uploadBtn.value) {
-        customText.textContent = uploadBtn.value.replace(/^.*[\\\/]/, '');
+        customText.textContent = uploadBtn.value.split('\\').pop();
       }
     })
   }
