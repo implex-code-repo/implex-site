@@ -23,7 +23,7 @@
     }
 
     .title {
-      @include tablet-screen {
+      @include small-desktop-screen {
         @include font(44px, 600);
       }
 
@@ -33,7 +33,7 @@
     }
 
     .description {
-      @include tablet-screen {
+      @include small-desktop-screen {
         @include font(22px, 300);
       }
 

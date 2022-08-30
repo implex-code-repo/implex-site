@@ -51,9 +51,18 @@
     .advantage {
       display: grid;
       grid-template-columns: 66px 294px;
+      grid-template-rows: 50px;
 
       @include small-desktop-screen {
         grid-template-columns: 66px 234px;
+      }
+
+      @include tablet-screen {
+        grid-template-columns: 66px 534px;
+      }
+
+      @include small-tablet-screen {
+        grid-template-columns: 66px 1fr;
       }
 
       .icon {
@@ -89,8 +98,13 @@
           font-size: 14px;
         }
 
+        @include tablet-screen {
+          max-width: 600px;
+        }
+
         @include small-tablet-screen {
           font-size: 12px;
+          max-width: 100%;
         }
       }
     }

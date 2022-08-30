@@ -114,6 +114,14 @@
 
         img {
           max-width: 100%;
+
+          @include tablet-screen {
+            max-width: 600px;
+          }
+
+          @include small-tablet-screen {
+            max-width: 100%;
+          }
         }
 
         @include tablet-screen {
