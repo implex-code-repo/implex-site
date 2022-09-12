@@ -14,10 +14,10 @@
         </div>
         <form class="form-wrapper">
             <label>
-                <input placeholder="Your name" type="text">
+                <input required placeholder="Your name" type="text">
             </label>
             <label>
-                <input placeholder="Your E-mail" type="text">
+                <input required placeholder="Your E-mail" type="text">
             </label>
             <label>
                 <textarea placeholder="Your text"></textarea>
@@ -26,6 +26,12 @@
                 <label id="custom-btn" class="file-label" for="file-upload">Choose file</label>
                 <input id="file-upload" type="file" hidden="hidden">
                 <div id="custom-text" class="text-helper"></div>
+                <div id="remove-file" class="remove-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="7" y="11" width="10" height="2" rx="1" fill="white"/>
+                        <circle cx="12" cy="12" r="9.5" stroke="white"/>
+                    </svg>
+                </div>
             </div>
         </form>
         <div class="button-wrapper transite transite-up sn-3">

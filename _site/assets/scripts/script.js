@@ -6,6 +6,7 @@
 const implex = (function () {
   const START_TRANSITION_CLASS = 'start';
   const HEADER_ID = 'header';
+  const defaultText = 'File size up to 10MB';
 
   let sections;
   let sectionsToshow;
@@ -13,6 +14,7 @@ const implex = (function () {
   let headerItems;
   let uploadBtn;
   let customText;
+  let removeBtn;
 
   document.addEventListener("DOMContentLoaded", init);
 
@@ -23,12 +25,13 @@ const implex = (function () {
     headerItems = document.querySelectorAll('.desktop-menu .menu-item');
     uploadBtn = document.getElementById('file-upload');
     customText = document.getElementById('custom-text');
+    removeBtn = document.getElementById('remove-file');
 
     setTimeout(() => {
       checkSectionPositions();
       setActiveMenuItem();
       checkHeaderClassNames();
-      customText.innerHTML = '5 files max, up to 10MB each';
+      customText.innerHTML = defaultText;
     }, 0);
 
     console.log(uploadBtn);
@@ -36,11 +39,27 @@ const implex = (function () {
     window.addEventListener('scroll', checkSectionPositions);
     window.addEventListener('scroll', setActiveMenuItem);
     window.addEventListener('scroll', checkHeaderClassNames);
+
+
+    // delete chosen file from input
+    removeBtn.onclick = function () {
+      if (uploadBtn.value) {
+        uploadBtn.value = '';
+        customText.innerHTML = defaultText
+        removeBtn.style.display = 'none';
+      }
+    };
+
     uploadBtn.addEventListener('change', function () {
+
+      console.log(uploadBtn)
+
       if (uploadBtn.value) {
         customText.textContent = uploadBtn.value.split('\\').pop();
+        removeBtn.style.display = 'block';
       }
     })
+
   }
 
   function setActiveMenuItem() {
