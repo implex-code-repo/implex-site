@@ -1,10 +1,10 @@
 @import 'mixins';
 
-.how-it-works-section {
+.how-it-works-section.section {
   background-color: white;
 
   @include small-tablet-screen {
-    padding: 122px 0 !important;
+    padding: 122px 0;
   }
 
   .content-block {

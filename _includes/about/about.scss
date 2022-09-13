@@ -1,6 +1,6 @@
 @import 'mixins';
 
-.about {
+.about.section {
   background-color: white;
 
   .content-block {
@@ -16,7 +16,7 @@
     }
 
     @include small-tablet-screen {
-      max-width: 460px !important;
+      max-width: 460px;
       padding: 0;
     }
 
