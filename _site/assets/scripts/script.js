@@ -117,3 +117,19 @@ const implex = (function () {
 
   return {};
 })();
+
+function onSubmit() {
+
+  const nameInputValue = document.getElementById('name-input').value;
+  const emailInputValue = document.getElementById('email-input').value;
+  const fileInputValue = document.getElementById('file-upload').value;
+  const errorBlock = document.getElementsByClassName('error-block')[0];
+  const form = document.getElementById('contact-form');
+
+
+  if (nameInputValue === '' || emailInputValue === '') {
+    errorBlock.style.display = 'flex';
+  } else {
+    errorBlock.style.display = 'none';
+  }
+}

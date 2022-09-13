@@ -567,13 +567,11 @@
             <h1 class="transite transite-up sn-1">Let's get connected to build an excellent application</h1>
             <h2 class="transite transite-up sn-2">Leave your contact details, and we will reach you within 24 hours</h2>
         </div>
-        <form class="form-wrapper">
-            <label>
-                <input required placeholder="Your name" type="text">
-            </label>
-            <label>
-                <input required placeholder="Your E-mail" type="text">
-            </label>
+        <form id="contact-form" onsubmit="return onSubmit()" class="form-wrapper">
+            <div class="input-wrapper">
+                <input id="name-input" placeholder="Your name" type="text">
+                <input id="email-input" placeholder="Your E-mail" type="text">
+            </div>
             <label>
                 <textarea placeholder="Your text"></textarea>
             </label>
@@ -588,11 +586,12 @@
                     </svg>
                 </div>
             </div>
+            <div class="button-wrapper transite transite-up sn-3">
+                <input value="Contact Us" type="submit">
+            </div>
         </form>
-        <div class="button-wrapper transite transite-up sn-3">
-            <button class="button">Contact Us</button>
-        </div>
         <div class="additional-text">By clicking on the button, you consent to the processing of personal data according to GDPR</div>
+        <div class="error-block">asd</div>
     </div>
 </section>
 

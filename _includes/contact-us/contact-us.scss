@@ -4,14 +4,23 @@
   background-color: black;
   padding: 120px 0 136px !important;
 
+  .text-center {
+    margin-bottom: 74px;
+  }
+
   .form-wrapper {
-    @include flex(row, flex-start, flex-start);
+    @include flex(column, flex-start, flex-start);
     flex-wrap: wrap;
-    max-width: 984px;
+    max-width: 960px;
     margin: 0 auto;
 
-    label {
-      padding: 12px;
+    .input-wrapper {
+      @include flex(row, space-between, flex-start);
+      padding-bottom: 24px;
+
+      #name-input {
+        margin-right: 24px;
+      }
     }
 
     input[type=text] {
@@ -26,9 +35,22 @@
       color: white;
     }
 
+    input[type=submit] {
+      width: 220px;
+      height: 60px;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: 'Roboto', Arial, sans-serif;
+      background-color: #f5914f;
+      border: 1px solid #f5914f;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+
     .file-wrapper {
       @include flex(row, center, center);
-      padding: 12px;
+      padding: 12px 0;
 
       .file-label {
         @include font(16px, 600);
@@ -65,10 +87,19 @@
       border: 1px solid rgba(122, 120, 120, 1);
       border-radius: 3px;
     }
+
+    .button-wrapper {
+      margin: 0 auto;
+    }
   }
 
-  .button-wrapper {
+  .error-block {
     @include flex(column, center, center);
+    @include size(960px, 56px);
+    display: none;
+    background-color: #F95D51;
+    margin: 0 auto;
+    border-radius: 3px;
   }
 
   .additional-text {
