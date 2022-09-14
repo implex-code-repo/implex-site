@@ -1,0 +1,16 @@
+name: Stage Build and Deploy
+on:
+  push:
+    branches: [ stage ]
+    paths-ignore:
+      - '.github/workflows/**'
+      - '**.md'
+jobs:
+  call-deployment-workflow:
+    uses: ./.github/workflows/deploy-site.yml
+    with:
+      envName: stage
+      envUrl: stage.site.implex.me
+      envRepoName: implex-code-repo/implex-site-stage
+    secrets:
+      envPAT: ${{ secrets.PAT }}
