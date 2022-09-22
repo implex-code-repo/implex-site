@@ -15,6 +15,7 @@ const implex = (function () {
   let uploadBtn;
   let customText;
   let removeBtn;
+  let form;
 
   document.addEventListener("DOMContentLoaded", init);
 
@@ -26,6 +27,7 @@ const implex = (function () {
     uploadBtn = document.getElementById('file-upload');
     customText = document.getElementById('custom-text');
     removeBtn = document.getElementById('remove-file');
+    form = document.getElementById('contact-form');
 
     setTimeout(() => {
       checkSectionPositions();
@@ -39,7 +41,6 @@ const implex = (function () {
     window.addEventListener('scroll', checkSectionPositions);
     window.addEventListener('scroll', setActiveMenuItem);
     window.addEventListener('scroll', checkHeaderClassNames);
-
 
     // delete chosen file from input
     removeBtn.onclick = function () {
@@ -59,6 +60,7 @@ const implex = (function () {
         removeBtn.style.display = 'block';
       }
     })
+    form.addEventListener('submit', onSubmit);
 
   }
 
@@ -115,21 +117,51 @@ const implex = (function () {
     }
   }
 
+  function onSubmit(e) {
+    e.preventDefault();
+
+    const xhr = new XMLHttpRequest();
+    const nameInputField = document.getElementById('name-input');
+    const emailInputField = document.getElementById('email-input');
+    const commentInputField = document.getElementById('comment-input');
+    let nameInputValue = nameInputField.value;
+    let emailInputValue = emailInputField.value;
+    let commentInputValue = commentInputField.value;
+
+    const errorBlock = document.getElementsByClassName('error-block')[0];
+    const successBlock = document.getElementById('success-block');
+
+    const FD = new FormData(form);
+
+    if (nameInputValue === '' || emailInputValue === '' || commentInputValue === '') {
+      errorBlock.style.display = 'flex';
+      errorBlock.textContent = 'Please enter valid value';
+
+      if (nameInputValue === '') {
+        nameInputField.style.borderColor = '#F95D51';
+      }
+
+      if (emailInputValue === '') {
+        emailInputField.style.borderColor = '#F95D51';
+      }
+
+      if (commentInputValue === '') {
+        commentInputField.style.borderColor = '#F95D51';
+      }
+    } else {
+      nameInputField.style.borderColor = '#7A7878';
+      emailInputField.style.borderColor = '#7A7878';
+      commentInputField.style.borderColor = '#7A7878';
+      errorBlock.style.display = 'none';
+
+      xhr.open("POST",'https://hook.eu1.make.com/kdbfhg6o36adn4j7fwvmu9kx1o9xdzyt');
+      xhr.send(FD);
+
+      form.style.display = 'none';
+      document.getElementsByClassName('additional-text')[0].style.display = 'none';
+      successBlock.style.display = 'flex';
+    }
+  }
+
   return {};
 })();
-
-function onSubmit() {
-
-  const nameInputValue = document.getElementById('name-input').value;
-  const emailInputValue = document.getElementById('email-input').value;
-  const fileInputValue = document.getElementById('file-upload').value;
-  const errorBlock = document.getElementsByClassName('error-block')[0];
-  const form = document.getElementById('contact-form');
-
-
-  if (nameInputValue === '' || emailInputValue === '') {
-    errorBlock.style.display = 'flex';
-  } else {
-    errorBlock.style.display = 'none';
-  }
-}
