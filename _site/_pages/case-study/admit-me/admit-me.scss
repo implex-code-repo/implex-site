@@ -1,0 +1,17 @@
+.admit-me {
+  #image1 {
+    height: 560px;
+    
+    @include small-desktop-screen {
+      height: 467px;
+    }
+  }
+
+  #image2 {
+    height: 560px;
+
+    @include small-desktop-screen {
+      height: 460px;
+    }
+  }
+}

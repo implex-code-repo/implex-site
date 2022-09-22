@@ -1,0 +1,46 @@
+name: Deploy site
+on:
+  workflow_call:
+    inputs:
+      envName:
+        required: true
+        type: string
+      envUrl:
+        required: true
+        type: string
+      envRepoName:
+        required: true
+        type: string
+    secrets:
+      envPAT:
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: ${{ inputs.envName }}
+      url: https://${{ inputs.envUrl }}
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          path: 'build'
+      - name: Checkout ${{ inputs.envName }} target
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ inputs.envRepoName }}
+          path: 'deploy'
+          token: ${{ secrets.envPAT }}
+      - name: Set GitHub Actions as Commit Author
+        run: |
+            git config --global user.name github-actions
+            git config --global user.email github-actions@github.com
+      - name: Push files to target
+        run: |
+          rsync -r ./build/* ./deploy --delete --exclude .github
+          cd deploy
+          echo ${{ inputs.envUrl }} > CNAME
+          git add .
+          git commit -m $GITHUB_SHA
+          git push

@@ -37,7 +37,7 @@
     font-weight: 600;
     line-height: 1.35;
 
-    @include tablet-screen {
+    @include small-desktop-screen {
       font-size: 22px;
     }
 
@@ -52,7 +52,7 @@
     line-height: 1.55;
     margin-top: 8px;
 
-    @include tablet-screen {
+    @include small-desktop-screen {
       font-size: 12px;
     }
   }

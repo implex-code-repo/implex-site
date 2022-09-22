@@ -25,6 +25,11 @@
 /* pages */
 @import "careers";
 @import "blogs";
+/* case studies */
+@import "yoy";
+@import "admit-me";
+@import "smartlane";
+@import "wikiart";
 
 * {
   box-sizing: border-box;
@@ -161,6 +166,35 @@ body {
 
   h1, h2 {
     text-align: center;
+    line-height: 1.23;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 52px;
+    margin-bottom: 60px;
+
+    @include small-desktop-screen {
+      font-size: 48px;
+    }
+
+    @include small-tablet-screen {
+      font-size: 30px;
+    }
+  }
+
+  h2 {
+    font-size: 42px;
+    margin-bottom: 34px;
+
+    @include small-desktop-screen {
+      font-size: 38px;
+    }
+
+    @include small-tablet-screen {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
   }
 
   p {
@@ -179,8 +213,21 @@ body {
     }
   }
 
+  ul {
+    margin: 0;
+  }
+
   .content {
-    max-width: 1160px;
+    box-sizing: content-box;
+    max-width: 1200px;
+
+    @include small-desktop-screen {
+      max-width: 960px;
+    }
+
+    @include tablet-screen {
+      max-width: 640px;
+    }
   }
 
   .col-2 {
@@ -189,6 +236,10 @@ body {
 
     & > div {
       margin: 0 20px;
+    }
+
+    @include tablet-screen {
+      display: block;
     }
   }
 
@@ -200,18 +251,67 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
+    padding-bottom: 100%;
+    width: 100%;
+
+    @include tablet-screen {
+      height: auto;
+    }
   }
 
-  .image-wrapper {
-    margin: 0 20px;
+  .column-wrapper {
+    max-width: 460px;
 
-    &:first-child {
-      padding-right: 100px;
+    @include small-desktop-screen {
+      max-width: 380px;
     }
 
-    &:last-child {
-      padding-left: 100px;
+    @include tablet-screen {
+      max-width: 100%;
+    }
+
+    &.huge {
+      max-width: 660px;
+
+      @include small-desktop-screen {
+        max-width: 540px;
+      }
+    }
+
+    &.big {
+      max-width: 560px;
+
+      @include small-desktop-screen {
+        max-width: 460px;
+      }
+    }
+
+    &.small {
+      max-width: 360px;
+
+      @include small-desktop-screen {
+        max-width: 300px;
+      }
+    }
+
+    &.huge,
+    &.big,
+    &.small {
+      @include tablet-screen {
+        max-width: 100%;
+      }
+    }
+
+    &.margin-left {
+      margin-left: 100px;
+
+      @include small-desktop-screen {
+        margin-left: 80px;
+      }
+
+      @include tablet-screen {
+        margin-left: 0;
+      }
     }
   }
 
@@ -244,7 +344,7 @@ body {
   font-family: 'Roboto', Arial, sans-serif;
   background-color: $orange;
   border: 1px solid $orange;
-  border-radius: 5px;
+  border-radius: 3px;
   color: white;
   cursor: pointer;
 

@@ -1,0 +1,16 @@
+name: Production Build and Deploy
+on:
+  push:
+    branches: [ master ]
+    paths-ignore:
+      - '.github/workflows/**'
+      - '**.md'
+jobs:
+  call-deployment-workflow:
+    uses: ./.github/workflows/deploy-site.yml
+    with:
+      envName: production
+      envUrl: www.implex.dev
+      envRepoName: implex-code-repo/implex-site-prod
+    secrets:
+      envPAT: ${{ secrets.PAT }}
