@@ -6,16 +6,16 @@
 const implex = (function () {
   const START_TRANSITION_CLASS = 'start';
   const HEADER_ID = 'header';
-  const defaultText = 'File size up to 10MB';
+  const defaultTextForFileLabel = 'File size up to 10MB';
 
   let sections;
   let sectionsToshow;
   let header;
   let headerItems;
-  let uploadBtn;
-  let customText;
-  let removeBtn;
-  let form;
+  let formFileUploadInput;
+  let formCustomTextForFileLabel;
+  let formFileRemoveBtn;
+  let contactForm;
 
   document.addEventListener("DOMContentLoaded", init);
 
@@ -24,44 +24,38 @@ const implex = (function () {
     sectionsToshow = sections.length;
     header = document.getElementById(HEADER_ID);
     headerItems = document.querySelectorAll('.desktop-menu .menu-item');
-    uploadBtn = document.getElementById('file-upload');
-    customText = document.getElementById('custom-text');
-    removeBtn = document.getElementById('remove-file');
-    form = document.getElementById('contact-form');
+    formFileUploadInput = document.getElementById('contact-form-file-upload');
+    formCustomTextForFileLabel = document.getElementById('contact-form-custom-text');
+    formFileRemoveBtn = document.getElementById('contact-form-remove-file');
+    contactForm = document.getElementById('contact-form');
 
     setTimeout(() => {
       checkSectionPositions();
       setActiveMenuItem();
       checkHeaderClassNames();
-      customText.innerHTML = defaultText;
+      formCustomTextForFileLabel.innerHTML = defaultTextForFileLabel;
     }, 0);
-
-    console.log(uploadBtn);
 
     window.addEventListener('scroll', checkSectionPositions);
     window.addEventListener('scroll', setActiveMenuItem);
     window.addEventListener('scroll', checkHeaderClassNames);
 
     // delete chosen file from input
-    removeBtn.onclick = function () {
-      if (uploadBtn.value) {
-        uploadBtn.value = '';
-        customText.innerHTML = defaultText
-        removeBtn.style.display = 'none';
+    formFileRemoveBtn.onclick = function () {
+      if (formFileUploadInput.value) {
+        formFileUploadInput.value = '';
+        formCustomTextForFileLabel.innerHTML = defaultTextForFileLabel;
+        formFileRemoveBtn.classList.add('hidden');
       }
     };
 
-    uploadBtn.addEventListener('change', function () {
-
-      console.log(uploadBtn)
-
-      if (uploadBtn.value) {
-        customText.textContent = uploadBtn.value.split('\\').pop();
-        removeBtn.style.display = 'block';
+    formFileUploadInput.addEventListener('change', function () {
+      if (formFileUploadInput.value) {
+        formCustomTextForFileLabel.textContent = formFileUploadInput.value.split('\\').pop();
+        formFileRemoveBtn.style.display = 'block';
       }
     })
-    form.addEventListener('submit', onSubmit);
-
+    contactForm.addEventListener('submit', onSubmit);
   }
 
   function setActiveMenuItem() {
@@ -120,45 +114,48 @@ const implex = (function () {
   function onSubmit(e) {
     e.preventDefault();
 
+    const errorBorder = 'error-border';
+    const hidden = 'hidden';
+
     const xhr = new XMLHttpRequest();
-    const nameInputField = document.getElementById('name-input');
-    const emailInputField = document.getElementById('email-input');
-    const commentInputField = document.getElementById('comment-input');
+    const nameInputField = document.getElementById('contact-form-name-input');
+    const emailInputField = document.getElementById('contact-form-email-input');
+    const commentInputField = document.getElementById('contact-form-comment-input');
     let nameInputValue = nameInputField.value;
     let emailInputValue = emailInputField.value;
     let commentInputValue = commentInputField.value;
 
-    const errorBlock = document.getElementsByClassName('error-block')[0];
-    const successBlock = document.getElementById('success-block');
+    const errorBlock = document.getElementById('contact-form-error-block');
+    const successBlock = document.getElementById('contact-form-success-block');
 
-    const FD = new FormData(form);
+    const formData = new FormData(contactForm);
 
-    if (nameInputValue === '' || emailInputValue === '' || commentInputValue === '') {
+    if (!nameInputValue || !emailInputValue || !commentInputValue) {
       errorBlock.style.display = 'flex';
-      errorBlock.textContent = 'Please enter valid value';
 
-      if (nameInputValue === '') {
-        nameInputField.style.borderColor = '#F95D51';
+      if (!nameInputValue) {
+        nameInputField.classList.add(errorBorder);
       }
 
-      if (emailInputValue === '') {
-        emailInputField.style.borderColor = '#F95D51';
+      if (!emailInputValue) {
+        emailInputField.classList.add(errorBorder);
       }
 
-      if (commentInputValue === '') {
-        commentInputField.style.borderColor = '#F95D51';
+      if (!commentInputValue) {
+        commentInputField.classList.add(errorBorder);
       }
     } else {
       nameInputField.style.borderColor = '#7A7878';
       emailInputField.style.borderColor = '#7A7878';
       commentInputField.style.borderColor = '#7A7878';
-      errorBlock.style.display = 'none';
+      errorBlock.classList.add(hidden)
 
       xhr.open("POST",'https://hook.eu1.make.com/kdbfhg6o36adn4j7fwvmu9kx1o9xdzyt');
-      xhr.send(FD);
+      xhr.send(formData);
 
-      form.style.display = 'none';
-      document.getElementsByClassName('additional-text')[0].style.display = 'none';
+      contactForm.classList.add(hidden)
+      document.getElementById('contact-form-additional-text').classList.add(hidden);
+      document.getElementById('contact-form-subtitle').classList.add(hidden);
       successBlock.style.display = 'flex';
     }
   }

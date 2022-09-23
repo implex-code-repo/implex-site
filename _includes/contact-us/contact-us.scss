@@ -18,7 +18,7 @@
       @include flex(row, space-between, flex-start);
       padding-bottom: 24px;
 
-      #name-input {
+      #contact-form-name-input {
         margin-right: 24px;
       }
     }
@@ -30,20 +30,18 @@
       width: 468px;
       height: 56px;
       background-color: transparent;
-      border: 1px solid rgba(122, 120, 120, 1);
-      border-radius: 3px;
+      border: 1px solid $grey;
+      border-radius: $borderRadius3;
       color: white;
     }
 
     input[type=submit] {
+      @include font(16px, 700);
       width: 220px;
       height: 60px;
-      font-size: 16px;
-      font-weight: 700;
-      font-family: 'Roboto', Arial, sans-serif;
-      background-color: #f5914f;
-      border: 1px solid #f5914f;
-      border-radius: 5px;
+      background-color: $orange;
+      border: 1px solid $orange;
+      border-radius: $borderRadius3;
       color: white;
       cursor: pointer;
     }
@@ -57,8 +55,8 @@
         line-height: 24px;
         background-color: transparent;
         padding: 8px 20px;
-        border-radius: 3px;
-        border: 1px solid rgba(122, 120, 120, 1);
+        border-radius: $borderRadius3;
+        border: 1px solid $grey;
         height: auto;
         cursor: pointer;
       }
@@ -77,15 +75,15 @@
       }
     }
 
-    #comment-input {
+    #contact-form-comment-input {
       @include font(16px, 400);
       font-family: 'Roboto', Arial, sans-serif;
-      width: 960px;
+      width: 100%;
       line-height: 24px;
       padding: 16px 20px;
       background-color: transparent;
-      border: 1px solid rgba(122, 120, 120, 1);
-      border-radius: 3px;
+      border: 1px solid $grey;
+      border-radius: $borderRadius3;
       color: white;
       resize: none;
     }
@@ -101,7 +99,15 @@
     display: none;
     background-color: #F95D51;
     margin: 0 auto;
-    border-radius: 3px;
+    border-radius: $borderRadius3;
+  }
+
+  .error-border {
+    border-color: #F95D51 !important;
+  }
+
+  .hidden {
+    display: none !important;
   }
 
   .additional-text {
@@ -113,13 +119,14 @@
     @include flex(column, center, center);
     display: none;
     @include size(960px, 380px);
-    border: 1px solid #7A7878;
+    border: 1px solid $grey;
     margin: 30px auto 0;
     position: relative;
 
     .success-icon {
       position: absolute;
-      bottom: 87%;
+      top: 0;
+      transform: translateY(-40%);
     }
 
     .success-title {
@@ -132,7 +139,7 @@
       line-height: 36px;
       max-width: 640px;
       text-align: center;
+      padding-top: 20px;
     }
-
   }
 }
