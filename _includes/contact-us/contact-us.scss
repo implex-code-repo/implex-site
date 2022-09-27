@@ -24,24 +24,22 @@
     }
 
     input[type=text] {
+      @include size(468px, 56px);
       @include font(16px, 400);
       line-height: 24px;
       padding: 16px 20px;
-      width: 468px;
-      height: 56px;
       background-color: transparent;
       border: 1px solid $grey;
-      border-radius: $borderRadius3;
+      border-radius: $formInputBorderRadius;
       color: white;
     }
 
     input[type=submit] {
+      @include size(220px, 60px);
       @include font(16px, 700);
-      width: 220px;
-      height: 60px;
       background-color: $orange;
       border: 1px solid $orange;
-      border-radius: $borderRadius3;
+      border-radius: $formInputBorderRadius;
       color: white;
       cursor: pointer;
     }
@@ -55,7 +53,7 @@
         line-height: 24px;
         background-color: transparent;
         padding: 8px 20px;
-        border-radius: $borderRadius3;
+        border-radius: $formInputBorderRadius;
         border: 1px solid $grey;
         height: auto;
         cursor: pointer;
@@ -69,7 +67,6 @@
       }
 
       .remove-btn {
-        display: none;
         cursor: pointer;
         margin-left: 26px;
       }
@@ -83,7 +80,7 @@
       padding: 16px 20px;
       background-color: transparent;
       border: 1px solid $grey;
-      border-radius: $borderRadius3;
+      border-radius: $formInputBorderRadius;
       color: white;
       resize: none;
     }
@@ -96,10 +93,9 @@
   .error-block {
     @include flex(column, center, center);
     @include size(960px, 56px);
-    display: none;
     background-color: #F95D51;
     margin: 0 auto;
-    border-radius: $borderRadius3;
+    border-radius: $formInputBorderRadius;
   }
 
   .error-border {
@@ -117,7 +113,6 @@
 
   .success-block {
     @include flex(column, center, center);
-    display: none;
     @include size(960px, 380px);
     border: 1px solid $grey;
     margin: 30px auto 0;

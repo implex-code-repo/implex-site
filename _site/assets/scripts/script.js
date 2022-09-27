@@ -52,7 +52,7 @@ const implex = (function () {
     formFileUploadInput.addEventListener('change', function () {
       if (formFileUploadInput.value) {
         formCustomTextForFileLabel.textContent = formFileUploadInput.value.split('\\').pop();
-        formFileRemoveBtn.style.display = 'block';
+        formFileRemoveBtn.classList.remove('hidden');
       }
     })
     contactForm.addEventListener('submit', onSubmit);
@@ -114,8 +114,8 @@ const implex = (function () {
   function onSubmit(e) {
     e.preventDefault();
 
-    const errorBorder = 'error-border';
-    const hidden = 'hidden';
+    const errorBorderClassName = 'error-border';
+    const hiddenClassName = 'hidden';
 
     const xhr = new XMLHttpRequest();
     const nameInputField = document.getElementById('contact-form-name-input');
@@ -131,32 +131,32 @@ const implex = (function () {
     const formData = new FormData(contactForm);
 
     if (!nameInputValue || !emailInputValue || !commentInputValue) {
-      errorBlock.style.display = 'flex';
+      errorBlock.classList.remove(hiddenClassName);
 
       if (!nameInputValue) {
-        nameInputField.classList.add(errorBorder);
+        nameInputField.classList.add(errorBorderClassName);
       }
 
       if (!emailInputValue) {
-        emailInputField.classList.add(errorBorder);
+        emailInputField.classList.add(errorBorderClassName);
       }
 
       if (!commentInputValue) {
-        commentInputField.classList.add(errorBorder);
+        commentInputField.classList.add(errorBorderClassName);
       }
     } else {
-      nameInputField.style.borderColor = '#7A7878';
-      emailInputField.style.borderColor = '#7A7878';
-      commentInputField.style.borderColor = '#7A7878';
-      errorBlock.classList.add(hidden)
+      nameInputField.classList.remove(errorBorderClassName);
+      emailInputField.classList.remove(errorBorderClassName);
+      commentInputField.classList.remove(errorBorderClassName);
+      errorBlock.classList.add(hiddenClassName)
 
       xhr.open("POST",'https://hook.eu1.make.com/kdbfhg6o36adn4j7fwvmu9kx1o9xdzyt');
       xhr.send(formData);
 
-      contactForm.classList.add(hidden)
-      document.getElementById('contact-form-additional-text').classList.add(hidden);
-      document.getElementById('contact-form-subtitle').classList.add(hidden);
-      successBlock.style.display = 'flex';
+      contactForm.classList.add(hiddenClassName)
+      document.getElementById('contact-form-additional-text').classList.add(hiddenClassName);
+      document.getElementById('contact-form-subtitle').classList.add(hiddenClassName);
+      successBlock.classList.remove(hiddenClassName);
     }
   }
 

@@ -23,7 +23,7 @@
                     file</label>
                 <input id="contact-form-file-upload" name="file" type="file" hidden="hidden">
                 <div id="contact-form-custom-text" class="text-helper"></div>
-                <div id="contact-form-remove-file" class="remove-btn">
+                <div id="contact-form-remove-file" class="remove-btn hidden">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="7" y="11" width="10" height="2" rx="1" fill="white"/>
                         <circle cx="12" cy="12" r="9.5" stroke="white"/>
@@ -35,8 +35,8 @@
             </div>
         </form>
         <div id="contact-form-additional-text" class="additional-text transite transite-up sn-3">{{ content.additionalText }}</div>
-        <div id="contact-form-error-block" class="error-block">Please enter valid value</div>
-        <div id="contact-form-success-block" class="success-block">
+        <div id="contact-form-error-block" class="error-block hidden">Please enter valid value</div>
+        <div id="contact-form-success-block" class="success-block hidden">
             <div class="success-icon">
                 <svg width="127" height="76" viewBox="0 0 127 76" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_119_121)">
