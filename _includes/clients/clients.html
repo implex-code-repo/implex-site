@@ -13,24 +13,33 @@
       <h1 class="title transite transite-up sn-1">{{ content.title }}</h1>
       <h2 class="subtitle transite transite-up sn-2">{{ content.subTitle }}</h2>
     </div>
+      <div>SPLIDE</div>
     <div class="clients-container">
-      {% for item in content.clients %}
-        {% assign animationTextIndex = forloop.index | times: 2 | plus: 1 %}
-        {% assign animationIndex = forloop.index | times: 2 | plus: 2 %}
-        {% assign imageAnimationDirection = "left" %}
-        {% assign mod = forloop.index | modulo: 2 %}
-        {% if mod == 1 %}
-          {% assign imageAnimationDirection = "right" %}
-        {% endif %}
-        <div class="clients-block">
-          <div class="title transite transite-up sn-{{ animationTextIndex }}">{{ item.title }}</div>
-          <div class="description transite transite-up sn-{{ animationTextIndex }}">{{ item.description }}</div>
-          <a href="{{ item.link }}" class="button button-outline transite transite-up sn-{{ animationIndex }}">View Case Study</a>
-          <div class="image transite transite-{{imageAnimationDirection}} sn-{{ animationIndex }}">
-            <img src="{{ prefix }}{{ item.image }}">
-          </div>
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                  {% for item in content.clients %}
+                    {% assign animationTextIndex = forloop.index | times: 2 | plus: 1 %}
+                    {% assign animationIndex = forloop.index | times: 2 | plus: 2 %}
+                    {% assign imageAnimationDirection = "left" %}
+                    {% assign mod = forloop.index | modulo: 2 %}
+                    {% if mod == 1 %}
+                      {% assign imageAnimationDirection = "right" %}
+                    {% endif %}
+                    <li class="splide__slide">
+                        <div class="clients-block">
+                        <div class="title transite transite-up sn-{{ animationTextIndex }}">{{ item.title }}</div>
+                        <div class="description transite transite-up sn-{{ animationTextIndex }}">{{ item.description }}</div>
+                        <a href="{{ item.link }}" class="button button-outline transite transite-up sn-{{ animationIndex }}">View Case Study</a>
+                        <div class="image transite transite-{{imageAnimationDirection}} sn-{{ animationIndex }}">
+                            <img src="{{ prefix }}{{ item.image }}">
+                        </div>
+                    </div>
+                    </li>
+                  {% endfor %}
+                </ul>
+            </div>
         </div>
-      {% endfor %}
     </div>
   </div>
 </section>

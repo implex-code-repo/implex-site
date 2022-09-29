@@ -15,6 +15,9 @@ const implex = (function () {
   document.addEventListener("DOMContentLoaded", init);
 
   function init() {
+    const splide = new Splide( '.splide' );
+    splide.mount();
+
     sections = document.getElementsByTagName('section');
     sectionsToshow = sections.length;
     header = document.getElementById(HEADER_ID);
@@ -27,7 +30,7 @@ const implex = (function () {
     }, 0);
 
     window.addEventListener('scroll', checkSectionPositions);
-    window.addEventListener('scroll', setActiveMenuItem); 
+    window.addEventListener('scroll', setActiveMenuItem);
     window.addEventListener('scroll', checkHeaderClassNames);
   }
 
