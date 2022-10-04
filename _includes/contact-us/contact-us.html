@@ -9,15 +9,16 @@
     {% assign content = site.data.contact-us %}
     <div class="content">
         <div class="text-center">
-            <h1 class="transite transite-up sn-1">{{ content.title }}</h1>
-            <h2 id="contact-form-subtitle" class="transite transite-up sn-2">{{ content.subTitle }}</h2>
+            <h1 class="title transite transite-up sn-1">{{ content.title }}</h1>
+            <h2 id="contact-form-subtitle" class="subtitle transite transite-up sn-2">{{ content.subTitle }}</h2>
         </div>
         <form id="contact-form" class="form-wrapper transite transite-up sn-3">
             <div class="input-wrapper">
                 <input id="contact-form-name-input" name="name" placeholder="Your name" type="text">
                 <input id="contact-form-email-input" name="email" placeholder="Your E-mail" type="text">
             </div>
-            <textarea id="contact-form-comment-input" name="comment" placeholder="Your text" rows="10"></textarea>
+            <textarea id="contact-form-comment-input" name="comment" placeholder="Your text"
+                      onkeyup="textAreaSizesDependContent(this)"></textarea>
             <div class="file-wrapper">
                 <label id="contact-form-custom-btn" class="file-label" for="contact-form-file-upload">Choose
                     file</label>
@@ -34,7 +35,9 @@
                 <input value="Contact Us" type="submit">
             </div>
         </form>
-        <div id="contact-form-additional-text" class="additional-text transite transite-up sn-3">{{ content.additionalText }}</div>
+        <div id="contact-form-additional-text" class="additional-text transite transite-up sn-3">{{
+            content.additionalText }}
+        </div>
         <div id="contact-form-error-block" class="error-block hidden">Please enter valid value</div>
         <div id="contact-form-success-block" class="success-block hidden">
             <div class="success-icon">

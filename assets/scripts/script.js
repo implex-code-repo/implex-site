@@ -162,3 +162,9 @@ const implex = (function () {
 
   return {};
 })();
+
+// its help change text-area size depending content
+function textAreaSizesDependContent(element) {
+  element.style.height = "1px";
+  element.style.height = (26+element.scrollHeight)+"px";
+}
