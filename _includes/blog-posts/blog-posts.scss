@@ -5,6 +5,10 @@
     }
 
     @include tablet-screen {
+      font-size: 38px;
+    }
+
+    @include small-tablet-screen {
       @include font(30px, 600);
     }
   }
@@ -17,6 +21,10 @@
     }
 
     @include tablet-screen {
+      font-size: 22px;
+    }
+
+    @include small-tablet-screen {
       @include font(20px, 300);
       margin-bottom: 45px;
 
