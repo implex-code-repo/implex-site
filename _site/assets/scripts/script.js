@@ -15,7 +15,11 @@ const implex = (function () {
   document.addEventListener("DOMContentLoaded", init);
 
   function init() {
-    const splide = new Splide( '.splide' );
+    const splide = new Splide('.splide', {
+      drag: !!isTouchScreen(),
+
+    });
+
     splide.mount();
 
     sections = document.getElementsByTagName('section');
@@ -85,6 +89,10 @@ const implex = (function () {
     } else {
       header.classList.remove(additionalClassName);
     }
+  }
+
+  function isTouchScreen() {
+    return ( 'ontouchstart' in window ) ||( navigator.maxTouchPoints > 0 ) ||( navigator.msMaxTouchPoints > 0 );
   }
 
   return {};
