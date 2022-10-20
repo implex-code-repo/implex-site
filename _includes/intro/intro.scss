@@ -29,7 +29,7 @@
         max-width: 960px;
         white-space:nowrap;
 
-        @include tablet-screen {
+        @include small-desktop-screen {
           font-size: 68px;
         }
 
@@ -41,6 +41,7 @@
           @include font(30px, 600);
           padding-inline: 10px;
           letter-spacing: 1px;
+          white-space: normal;
         }
       }
 
@@ -63,12 +64,13 @@
         line-height: 1.55;
 
         @include small-desktop-screen {
+          font-size: 20px;
           width: 780px;
         }
 
         @include tablet-screen {
           font-size: 20px;
-          max-width: 640px;
+          width: 100%;
         }
 
         @include small-tablet-screen {

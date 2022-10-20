@@ -1,12 +1,16 @@
 @import 'mixins';
 
-.how-it-works-section {
+.how-it-works-section.section {
   background-color: white;
+
+  @include small-tablet-screen {
+    padding: 122px 0;
+  }
 
   .content-block {
 
     .title {
-      @include tablet-screen {
+      @include small-desktop-screen {
         @include font(38px, 600);
       }
 
@@ -16,18 +20,19 @@
     }
 
     .description {
-      @include tablet-screen {
+      @include small-desktop-screen {
         @include font(22px, 300);
       }
 
       @include small-tablet-screen {
         @include font(20px, 300);
+        padding: 0 20px;
       }
     }
   }
 
   .product-container {
-    @include flex(row, center, center);
+    @include flex(row, center, flex-start);
     flex: 1 1 0;
     margin-top: 80px;
 
@@ -38,10 +43,24 @@
 
     .product-block {
       @include flex(column, center, center);
-      padding: 0 44px;
+      padding: 0 24px;
+      margin: 0 20px;
+      width: 360px;
+
+      @include small-desktop-screen {
+        width: 300px;
+        margin: 0 10px;
+      }
 
       @include tablet-screen {
+        width: 576px;
         padding: 44px 0;
+      }
+
+      @include small-tablet-screen {
+        padding: 44px 5%;
+        width: 100%;
+        margin: 0;
       }
 
       &:nth-child(n + 2):nth-child(-n + 2) {
@@ -68,7 +87,7 @@
         letter-spacing: 2.5px;
         padding-bottom: 16px;
 
-        @include tablet-screen {
+        @include small-desktop-screen {
           @include font(14px, 600);
         }
 
@@ -82,7 +101,7 @@
         line-height: 1.35;
         padding-bottom: 20px;
 
-        @include tablet-screen {
+        @include small-desktop-screen {
           @include font(22px, 600px);
         }
 
@@ -95,15 +114,19 @@
         @include font(18px, 300);
         text-align: center;
         line-height: 1.55;
+        max-width: 310px;
+
+        @include small-desktop-screen {
+          @include font(16px, 300);
+          max-width: 250px;
+        }
 
         @include tablet-screen {
-          @include font(16px, 300);
           max-width: 576px;
         }
 
         @include small-tablet-screen {
           @include font(14px, 300);
-          max-width: 576px;
         }
       }
     }

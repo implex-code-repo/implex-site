@@ -10,6 +10,10 @@
     .title {
       padding-bottom: 60px;
 
+      @include small-desktop-screen {
+        font-size: 38px;
+      }
+
       @include tablet-screen {
         @include font(38px, 600);
         padding-bottom: 0;
@@ -22,7 +26,7 @@
     }
 
     .services-container {
-      @include flex(row, center, center);
+      @include flex(row, center, flex-start);
 
       @include tablet-screen {
         @include flex(column, center, center);
@@ -36,15 +40,20 @@
 
         @include small-desktop-screen {
           max-width: 460px;
-          padding: 0 20px;
+          margin: 0;
         }
 
         @include tablet-screen {
           max-width: 640px;
         }
 
+        @include small-tablet-screen {
+          width: 100%;
+          padding: 0;
+        }
+
         @include mobile-screen {
-          padding-inline: 20px;
+          padding: 0;
         }
 
         &:nth-child(n + 1):nth-child(-n + 1) {
@@ -66,7 +75,7 @@
           line-height: 1.17;
           padding-bottom: 26px;
 
-          @include tablet-screen {
+          @include small-desktop-screen {
             @include font(28px, 600);
             padding: 26px 0;
           }
@@ -81,12 +90,20 @@
           text-align: center;
           line-height: 1.55;
 
-          @include tablet-screen {
+          @include small-desktop-screen {
             @include font(14px, 300);
+            max-width: 420px;
+          }
+
+          @include tablet-screen {
+            min-width: 560px;
           }
 
           @include small-tablet-screen {
             @include font(12px, 300);
+            padding: 0 20px;
+            max-width: 100%;
+            min-width: 0;
           }
         }
       }
