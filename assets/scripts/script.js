@@ -19,9 +19,6 @@ const implex = (function () {
       drag: !!isTouchScreen(),
 
     });
-    // splide.on('pagination:mounted', (data) => {
-    //   data.list.classList.add( 'red-dot' );
-    // })
 
     splide.mount();
 
