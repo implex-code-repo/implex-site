@@ -84,8 +84,6 @@
       }
 
       .button {
-        text-transform: uppercase;
-
         @include tablet-screen {
           @include size(220px, 60px);
         }
