@@ -1,0 +1,46 @@
+---
+permalink: '/case-study'
+title: 'Case study'
+layout: default-static-header
+---
+
+{% comment %}
+<!--
+  ~ Copyright (c) 2022. Implex
+  ~ All rights reserved
+  -->
+{% endcomment %}
+
+<div class="case-study-list">
+    {% assign prefix = site.imgPrefix %}
+    {% assign content = site.data.clients %}
+    <section>
+        <div class="case-study-list-content">
+            <div class="text-center title-wrapper">
+                <h1 class="title transite transite-up sn-1">{{ content.title }}</h1>
+                <h2 class="subtitle transite transite-up sn-2">{{ content.subTitle }}</h2>
+            </div>
+            <div class="clients-container">
+                {% for item in content.clients %}
+                {% assign animationTextIndex = forloop.index | times: 2 | plus: 1 %}
+                {% assign animationIndex = forloop.index | times: 2 | plus: 2 %}
+                {% assign imageAnimationDirection = "left" %}
+                {% assign mod = forloop.index | modulo: 2 %}
+                {% if mod == 1 %}
+                {% assign imageAnimationDirection = "right" %}
+                {% endif %}
+                <div class="clients-block-background" style="background-color: #3455A0">
+                    <div class="clients-block">
+                        <div class="title transite transite-up sn-{{ animationTextIndex }}">{{ item.title }}</div>
+                        <div class="description transite transite-up sn-{{ animationTextIndex }}">{{ item.description }}</div>
+                        <a href="{{ item.link }}" class="button button-outline transite transite-up sn-{{ animationIndex }}">View Case Study</a>
+                        <div class="image transite transite-{{imageAnimationDirection}} sn-{{ animationIndex }}">
+                            <img src="{{ prefix }}{{ item.image }}">
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</div>
