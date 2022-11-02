@@ -118,10 +118,10 @@ const implex = (function () {
     }
   }
 
-<<<<<<< HEAD
   function isTouchScreen() {
     return ( 'ontouchstart' in window ) ||( navigator.maxTouchPoints > 0 ) ||( navigator.msMaxTouchPoints > 0 );
-=======
+  }
+
   function onSubmit(e) {
     e.preventDefault();
 
@@ -169,7 +169,6 @@ const implex = (function () {
       document.getElementById('contact-form-subtitle').classList.add(hiddenClassName);
       successBlock.classList.remove(hiddenClassName);
     }
->>>>>>> b215088e208b3b7d044b09056306cbdfd70d1da0
   }
 
   return {};
