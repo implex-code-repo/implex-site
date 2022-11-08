@@ -47,7 +47,6 @@
 
           .description {
             grid-column: 1;
-
           }
 
           .image {
@@ -56,7 +55,6 @@
             @include tablet-screen {
               grid-column: 1;
             }
-
           }
 
           .button {
@@ -97,7 +95,6 @@
 
           .description {
             grid-column: 1;
-
           }
 
           .image {
@@ -106,7 +103,6 @@
             @include tablet-screen {
               grid-column: 1;
             }
-
           }
 
           .button {
@@ -153,7 +149,6 @@
             font-size: 14px;
             grid-column: 1;
           }
-
         }
 
         .image {
