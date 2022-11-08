@@ -47,6 +47,7 @@
     }
 
     .button {
+      margin: 0 auto;
       font-family: 'Roboto', Arial, sans-serif;
 
       @include tablet-screen {
