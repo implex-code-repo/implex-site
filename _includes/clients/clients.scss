@@ -25,7 +25,10 @@
 
   .clients-container {
     @include tablet-screen {
-      @include flex(column, center, center);
+      box-sizing: border-box;
+      flex: 0 0 100%;
+      padding: 30px;
+      position: relative;
     }
 
     .clients-block {
@@ -113,14 +116,10 @@
         grid-row: 4 / 1;
 
         img {
-          max-width: 100%;
+          @include size(560px, 420px);
 
-          @include tablet-screen {
-            max-width: 600px;
-          }
-
-          @include small-tablet-screen {
-            max-width: 100%;
+          @include small-desktop-screen {
+            @include size(100%, 100%);
           }
         }
 
@@ -141,6 +140,62 @@
           grid-column: 1;
           width: 186px;
         }
+      }
+    }
+  }
+
+  .cases-button {
+    @include flex(column, center, center);
+    margin: 110px auto 0;
+  }
+}
+
+.splide {
+
+  .splide__slide {
+    width: calc(100% + 4px);
+  }
+
+  .splide__arrow {
+
+    &:hover {
+      svg {
+        fill: #cbcaca;
+      }
+    }
+
+    &.splide__arrow--prev {
+      left: -38px;
+    }
+
+    &.splide__arrow--next {
+      right: -38px;
+    }
+
+    svg {
+      fill: #D9D9D9;
+    }
+  }
+
+  .splide__pagination {
+    padding-top: 100px;
+    position: relative;
+
+    @include tablet-screen {
+      padding: 0;
+      display: none;
+    }
+
+    .splide__pagination__page {
+      @include size(10px, 10px);
+
+      &.is-active {
+        border: 2px solid $orange;
+        background: white;
+      }
+
+      &:hover {
+        background: $orange;
       }
     }
   }
