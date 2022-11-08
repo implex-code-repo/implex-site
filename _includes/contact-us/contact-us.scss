@@ -143,9 +143,14 @@
   }
 
   .additional-text {
-    @include font(16px, 300);
+    @include font(15px, 300);
     padding: 24px 0;
+    line-height: 1.55;
     text-align: center;
+
+    @include small-desktop-screen {
+      font-size: 14px;
+    }
   }
 
   .success-block {
