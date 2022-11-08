@@ -22,7 +22,6 @@ const implex = (function () {
   function init() {
     const splide = new Splide('.splide', {
       drag: !!isTouchScreen(),
-
     });
 
     splide.mount();
@@ -119,7 +118,7 @@ const implex = (function () {
   }
 
   function isTouchScreen() {
-    return ( 'ontouchstart' in window ) ||( navigator.maxTouchPoints > 0 ) ||( navigator.msMaxTouchPoints > 0 );
+    return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
   }
 
   function onSubmit(e) {
@@ -161,7 +160,7 @@ const implex = (function () {
       commentInputField.classList.remove(errorBorderClassName);
       errorBlock.classList.add(hiddenClassName)
 
-      xhr.open("POST",'https://hook.eu1.make.com/kdbfhg6o36adn4j7fwvmu9kx1o9xdzyt');
+      xhr.open("POST", 'https://hook.eu1.make.com/kdbfhg6o36adn4j7fwvmu9kx1o9xdzyt');
       xhr.send(formData);
 
       contactForm.classList.add(hiddenClassName)
@@ -177,5 +176,5 @@ const implex = (function () {
 // its help change text-area size depending content
 function textAreaSizesDependContent(element) {
   element.style.height = "1px";
-  element.style.height = (26+element.scrollHeight)+"px";
+  element.style.height = (26 + element.scrollHeight) + "px";
 }
