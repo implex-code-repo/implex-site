@@ -186,6 +186,10 @@
       display: none;
     }
 
+    li {
+      display: inline-flex;
+    }
+
     .splide__pagination__page {
       @include size(10px, 10px);
 
