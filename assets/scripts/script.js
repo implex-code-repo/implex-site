@@ -20,6 +20,14 @@ const implex = (function () {
   document.addEventListener("DOMContentLoaded", init);
 
   function init() {
+    if (document.getElementsByClassName('carousel').length !== 0) {
+      const splide = new Splide('.splide', {
+        drag: !!isTouchScreen(),
+      });
+
+      splide.mount();
+    }
+
     sections = document.getElementsByTagName('section');
     sectionsToshow = sections.length;
     header = document.getElementById(HEADER_ID);
@@ -28,8 +36,6 @@ const implex = (function () {
     formCustomTextForFileLabel = document.getElementById('contact-form-custom-text');
     formFileRemoveBtn = document.getElementById('contact-form-remove-file');
     contactForm = document.getElementById('contact-form');
-
-    console.log(document.getElementsByClassName('carousel'));
 
     setTimeout(() => {
       checkSectionPositions();
@@ -162,25 +168,17 @@ const implex = (function () {
     }
   }
 
-  return {};
-})();
+  function isTouchScreen() {
+    return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
+  }
 
 // its help change text-area size depending content
-function textAreaSizesDependContent(element) {
-  element.style.height = "1px";
-  element.style.height = (26 + element.scrollHeight) + "px";
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  if (document.getElementsByClassName('carousel').length !== 0) {
-    const splide = new Splide('.splide', {
-      drag: !!isTouchScreen(),
-    });
-
-    splide.mount();
+  function textAreaSizesDependContent(element) {
+    element.style.height = "1px";
+    element.style.height = (26 + element.scrollHeight) + "px";
   }
-});
 
-function isTouchScreen() {
-  return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
-}
+  return {
+    textAreaSizesDependContent: (el) => textAreaSizesDependContent(el)
+  };
+})();
