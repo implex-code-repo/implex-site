@@ -20,11 +20,13 @@ const implex = (function () {
   document.addEventListener("DOMContentLoaded", init);
 
   function init() {
-    const splide = new Splide('.splide', {
-      drag: !!isTouchScreen(),
-    });
+    if (document.getElementsByClassName('carousel').length !== 0) {
+      const splide = new Splide('.splide', {
+        drag: !!isTouchScreen(),
+      });
 
-    splide.mount();
+      splide.mount();
+    }
 
     sections = document.getElementsByTagName('section');
     sectionsToshow = sections.length;
@@ -117,10 +119,6 @@ const implex = (function () {
     }
   }
 
-  function isTouchScreen() {
-    return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
-  }
-
   function onSubmit(e) {
     e.preventDefault();
 
@@ -170,11 +168,17 @@ const implex = (function () {
     }
   }
 
-  return {};
-})();
+  function isTouchScreen() {
+    return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
+  }
 
 // its help change text-area size depending content
-function textAreaSizesDependContent(element) {
-  element.style.height = "1px";
-  element.style.height = (26 + element.scrollHeight) + "px";
-}
+  function textAreaSizesDependContent(element) {
+    element.style.height = "1px";
+    element.style.height = (26 + element.scrollHeight) + "px";
+  }
+
+  return {
+    textAreaSizesDependContent: (el) => textAreaSizesDependContent(el)
+  };
+})();
