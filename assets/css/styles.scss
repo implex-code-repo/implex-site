@@ -230,6 +230,11 @@ body {
     @include tablet-screen {
       max-width: 640px;
     }
+
+    h1 {
+      max-width: 600px;
+      margin: 0 auto;
+    }
   }
 
   .col-2 {
@@ -247,6 +252,16 @@ body {
 
   .sub-heading {
     margin: 40px 0 45px;
+
+    @include small-desktop-screen {
+      font-size: 22px;
+      max-width: 560px;
+      margin: 40px auto 45px;
+    }
+
+    @include small-tablet-screen {
+      font-size: 20px;
+    }
   }
 
   .image {
@@ -261,6 +276,21 @@ body {
     }
   }
 
+  .column-content {
+    @include small-desktop-screen {
+      @include font(18px, 300);
+      line-height: 1.55;
+    }
+
+    @include small-tablet-screen {
+      font-size: 16px;
+    }
+
+    &.padding-top {
+      padding-top: 28px;
+    }
+  }
+
   .column-wrapper {
     max-width: 460px;
 
@@ -269,7 +299,11 @@ body {
     }
 
     @include tablet-screen {
-      max-width: 100%;
+      max-width: 600px;
+    }
+
+    @include small-tablet-screen {
+      padding: 0 20px;
     }
 
     &.huge {
@@ -285,6 +319,14 @@ body {
 
       @include small-desktop-screen {
         max-width: 460px;
+      }
+
+      @include tablet-screen {
+        margin-top: 100px;
+      }
+
+      & > h2 {
+        font-size: 42px;
       }
     }
 
@@ -312,18 +354,30 @@ body {
       }
 
       @include tablet-screen {
-        margin-left: 0;
+        margin: 0 auto;
       }
     }
   }
 
   .technologies {
     margin-top: 55px;
+
+    @include small-desktop-screen {
+      font-size: 22px;
+    }
+
+    @include small-tablet-screen {
+      font-size: 20px;
+    }
   }
 
   .logos-row {
     @include flex(row, space-between, center);
     flex-wrap: wrap;
+
+    @include tablet-screen {
+      justify-content: center;
+    }
 
     img {
       max-width: 160px;

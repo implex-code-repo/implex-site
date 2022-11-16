@@ -17,6 +17,9 @@
 <body>
   {% include header/header.html black=true %}
   {{ content }}
+  {% if page.showSlider %}
+  {% include cases-list/cases-list.html %}
+  {% endif %}
   {% include contact-us/contact-us.html %}
   {% include footer/footer.html %}
   <script src="../assets/scripts/script.js?q=20220805"></script>
