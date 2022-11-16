@@ -93,6 +93,7 @@
         @include font(18px, 300);
         line-height: 1.55;
         grid-column: 2;
+        text-align: justify;
 
         @include small-desktop-screen {
           font-size: 16px;

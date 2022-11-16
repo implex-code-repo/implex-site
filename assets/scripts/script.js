@@ -22,7 +22,7 @@ const implex = (function () {
   function init() {
     if (document.getElementsByClassName('carousel').length !== 0) {
       const splide = new Splide('.splide', {
-        drag: !!isTouchScreen(),
+        drag: isTouchScreen(),
       });
 
       splide.mount();
