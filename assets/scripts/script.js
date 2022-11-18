@@ -23,6 +23,7 @@ const implex = (function () {
     if (document.getElementsByClassName('carousel').length !== 0) {
       const splide = new Splide('.splide', {
         drag: isTouchScreen(),
+        type: 'loop',
       });
 
       splide.mount();
