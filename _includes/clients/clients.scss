@@ -147,7 +147,12 @@
 
   .cases-button {
     @include flex(column, center, center);
-    margin: 110px auto 0;
+    margin: 60px auto 0;
+
+    @include tablet-screen {
+      margin-top: 30px;
+      width: 100%;
+    }
   }
 }
 

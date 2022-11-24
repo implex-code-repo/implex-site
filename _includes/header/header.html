@@ -20,9 +20,9 @@
             {% include header/menu-item.html item=item %}
           {% endfor %}
         </div>
-        <div class="logo">
+        <a href="/" class="logo">
           <img src="{{ prefix }}logo.png" alt="Implex logo">
-        </div>
+        </a>
         <div class="menu-block">
           {% for item in navBar offset: 3 %}
             {% include header/menu-item.html item=item %}
