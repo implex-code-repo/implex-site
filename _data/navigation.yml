@@ -4,6 +4,7 @@
       link: /#about
     - name: Careers
       link: /careers
+  id: company
 - name: Services
   link: /#services
   id: services
@@ -19,3 +20,4 @@
 - name: Contact Us
   link: /#contact-us
   button: true
+  id: contact-us
