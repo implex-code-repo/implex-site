@@ -30,13 +30,15 @@
       {% assign author = site.authors | where: 'name', page.author | first %}
       {% if author %}
       <div >
-        <a href="{{ author.linkedinProfile }}" class="author">  
+        <a href="{{ author.linkedinProfile }}" class="author">
           <div class="author-avatar" style="background-image: url({{author.avatarUrl}})"></div>{{ author.name }}
         </a>
       </div>
       {% endif %}
     </p>
   </div>
+  {% include contact-us/contact-us.html %}
   {% include footer/footer.html %}
+  <script src="../assets/scripts/script.js?q=20220805"></script>
 </body>
 </html>

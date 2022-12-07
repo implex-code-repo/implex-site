@@ -1,5 +1,5 @@
 ---
 name: "Orysya Sklyar"
-avatarUrl: 'https://media-exp1.licdn.com/dms/image/C4E03AQHdf00R5ngWBg/profile-displayphoto-shrink_400_400/0/1639149920031?e=1665014400&v=beta&t=C5PGbFGkBeE2QQOvGtX190VEXryQ9k1HGH2Ti4dgI1Q'
+avatarUrl: 'https://thumb.tildacdn.com/tild3065-6663-4136-a164-376461393364/-/cover/30x30/center/center/-/format/webp/image.png'
 linkedinProfile: 'https://www.linkedin.com/in/orysyasklyar/'
 ---
