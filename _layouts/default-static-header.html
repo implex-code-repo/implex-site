@@ -18,8 +18,11 @@
 <body>
   {% include header/header.html black=true %}
   {{ content }}
+  {% if page.hideContactForm %}
+  {% else %}
   {% include contact-us/contact-us.html %}
-  {% include footer/footer.html %}
+  {% endif %}
+  {% include footer/footer.html careers = page.careers %}
   <script src="../assets/scripts/script.js?q=20220805"></script>
   <script src="../assets/scripts/splide.min.js"></script>
 </body>

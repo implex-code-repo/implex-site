@@ -7,6 +7,9 @@
 
 <footer>
   {% assign content = site.data.footer %}
+  {% if include.careers %}
+    {% assign content = site.data.footer-careers %}
+  {% endif %}
   {% assign prefix = site.url | append: '/' | append: site.imgPrefix %}
   <div class="white-part">
     <div class="content text-center">
