@@ -32,11 +32,16 @@
   }
 
   .posts-list {
+    @include flex(column, center, center);
     max-width: 960px;
     margin: 0 auto;
 
     @include small-desktop-screen {
       max-width: 780px;
+    }
+
+    @include small-tablet-screen {
+      padding: 0 20px;
     }
   }
 }
