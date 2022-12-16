@@ -28,8 +28,15 @@
             {% endif %}
             <li class="splide__slide">
               <div class="{{ clients_block_classes }}">
-                <div class="title transite transite-up sn-{{ animationTextIndex }}">{{ item.title }}
+                {% if include.showButton %}
+                <div class="title transite transite-up sn-{{ animationTextIndex }}">
+                  {{ item.title }}
                 </div>
+                {% else %}
+                <a href="{{ item.link }}" class="title title-button transite transite-up sn-{{ animationTextIndex }}">
+                  {{ item.title }}
+                </a>
+                {% endif %}
                 <div class="description transite transite-up sn-{{ animationTextIndex }}">{{
                   item.description }}
                 </div>
