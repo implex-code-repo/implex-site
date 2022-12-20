@@ -47,8 +47,15 @@
     }
   }
 
-  .icon {
-    margin-top: 44px;
+  .icons-wrapper {
+    @include flex(row, center, center);
+    .icon {
+      margin-top: 44px;
+
+      &:nth-child(2) {
+        padding-left: 10px;
+      }
+    }
   }
 }
 

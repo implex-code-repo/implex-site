@@ -13,10 +13,17 @@
       <div class="title">{{ content.title }}</div>
       <div class="email">{{ content.email }}</div>
       <div class="subtitle">{{ content.subtitle }}</div>
-      <div class="icon">
-        <a target="_blank" rel="noopener noreferrer" href="{{ content.href }}">
-          <img src="{{ prefix }}{{ content.icon }}">
-        </a>
+      <div class="icons-wrapper">
+        <div class="icon">
+          <a target="_blank" rel="noopener noreferrer" href="{{ content.linkedinHref }}">
+            <img src="{{ prefix }}{{ content.linkedinIcon }}">
+          </a>
+        </div>
+        <div class="icon">
+          <a target="_blank" rel="noopener noreferrer" href="{{ content.youtubeHref }}">
+            <img src="{{ prefix }}{{ content.youtubeIcon }}">
+          </a>
+        </div>
       </div>
     </div>
   </div>
