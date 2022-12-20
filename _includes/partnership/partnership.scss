@@ -43,7 +43,41 @@
     }
 
     .button-wrapper {
-      margin-top: 88px;
+      display: table;
+      position: relative;
+      margin: 88px auto 0;
+
+      @include small-tablet-screen {
+        width: 100%;
+      }
+
+      .arrow-icon {
+        width: 45px;
+        position: absolute;
+        left: -30px;
+        transform: translateX(-100%);
+        fill: #fff;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+
+      .arrow-icon-mobile {
+        display: none;
+      }
+
+      @include tablet-screen {
+        .arrow-icon {
+          display: none;
+        }
+
+        .arrow-icon-mobile {
+          display: block;
+          width: 20px;
+          margin: 0 auto 20px;
+          fill: #fff;
+        }
+      }
     }
 
     .button {
