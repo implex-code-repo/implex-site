@@ -20,6 +20,9 @@
   {{ content }}
   {% if page.hideContactForm %}
   {% else %}
+  {% if page.showSlider %}
+  {% include clients-carousel/clients-carousel.html black=true %}
+  {% endif %}
   {% include contact-us/contact-us.html %}
   {% endif %}
   {% include footer/footer.html careers = page.careers %}
