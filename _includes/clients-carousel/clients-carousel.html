@@ -1,0 +1,59 @@
+<!--
+  ~ Copyright (c) 2022. Implex
+  ~ All rights reserved
+  -->
+
+{% assign prefix = site.imgPrefix %}
+{% assign content = site.data.clients %}
+{% assign carousel_wrapper_classes = 'carousel-wrapper' %}
+{% assign clients_block_classes = 'clients-block' %}
+{% if include.black %}
+  {% assign carousel_wrapper_classes = carousel_wrapper_classes | append: ' black' %}
+  {% assign clients_block_classes = clients_block_classes | append: ' without-button' %}
+{% endif %}
+
+<div class="{{ carousel_wrapper_classes }}">
+  <div class="content carousel-content">
+    <div class="clients-container carousel transite transite-up sn-3">
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            {% for item in content.clients %}
+            {% assign animationTextIndex = forloop.index | times: 2 | plus: 1 %}
+            {% assign animationIndex = forloop.index | times: 2 | plus: 2 %}
+            {% assign imageAnimationDirection = "left" %}
+            {% assign mod = forloop.index | modulo: 2 %}
+            {% if mod == 1 %}
+            {% assign imageAnimationDirection = "right" %}
+            {% endif %}
+            <li class="splide__slide">
+              <div class="{{ clients_block_classes }}">
+                {% if include.showButton %}
+                <div class="title transite transite-up sn-{{ animationTextIndex }}">
+                  {{ item.title }}
+                </div>
+                {% else %}
+                <a href="{{ item.link }}" class="title title-button transite transite-up sn-{{ animationTextIndex }}">
+                  {{ item.title }}
+                </a>
+                {% endif %}
+                <div class="description transite transite-up sn-{{ animationTextIndex }}">{{
+                  item.description }}
+                </div>
+                {% if include.showButton %}
+                  <a href="{{ item.link }}"
+                     class="button button-outline transite transite-up sn-{{ animationIndex }}">View Case
+                    Study</a>
+                {% endif %}
+                <div class="image transite transite-{{imageAnimationDirection}} sn-{{ animationIndex }}">
+                  <img src="../{{ prefix }}{{ item.image }}">
+                </div>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
