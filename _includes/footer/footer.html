@@ -7,11 +7,17 @@
 
 <footer>
   {% assign content = site.data.footer %}
+  {% assign title = content.title %}
+  {% assign email = content.email %}
+  {% if include.careers %}
+    {% assign title = content.careersTitle %}
+    {% assign email = content.careersEmail %}
+  {% endif %}
   {% assign prefix = site.url | append: '/' | append: site.imgPrefix %}
   <div class="white-part">
     <div class="content text-center">
-      <div class="title">{{ content.title }}</div>
-      <div class="email">{{ content.email }}</div>
+      <div class="title">{{ title }}</div>
+      <div class="email">{{ email }}</div>
       <div class="subtitle">{{ content.subtitle }}</div>
       <div class="icon">
         <a target="_blank" rel="noopener noreferrer" href="{{ content.href }}">
