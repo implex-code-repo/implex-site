@@ -9,6 +9,14 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 1.35;
+
+    @include small-desktop-screen {
+      font-size: 20px;
+    }
+
+    @include small-tablet-screen {
+      font-size: 16px;
+    }
   }
 
   .description {
@@ -16,6 +24,10 @@
     font-size: 14px;
     line-height: 1.55;
     margin-top: 8px;
+
+    @include small-desktop-screen {
+      font-size: 12px;
+    }
   }
 
   .tag {

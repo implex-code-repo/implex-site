@@ -2,6 +2,8 @@
 permalink: '/careers'
 title: 'Careers'
 layout: default-static-header
+hideContactForm: true
+careers: true
 ---
 
 {% comment %}
@@ -11,15 +13,15 @@ layout: default-static-header
   -->
 {% endcomment %}
 <div class="careers">
-  <div class="content ">
+  <div class="content careers-content">
     <h1>Our vacancies</h1>
     {% assign category_posts = site.categories["Vacancy"] %}
-    <div class="tags">
-      <div class="tag-filter">All</div>
-      {% for tag in site.tags %}
-        <div class="tag-filter">{{ tag | first }}</div>
-      {% endfor %}
-    </div>
+<!--    <div class="tags">-->
+<!--      <div class="tag-filter">All</div>-->
+<!--      {% for tag in site.tags %}-->
+<!--        <div class="tag-filter">{{ tag | first }}</div>-->
+<!--      {% endfor %}-->
+<!--    </div>-->
 
     {% for post in category_posts %}
       {% include vacancy-preview/vacancy-preview.html post=post %}
