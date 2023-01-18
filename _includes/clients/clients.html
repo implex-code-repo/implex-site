@@ -13,38 +13,7 @@
       <h1 class="title transite transite-up sn-1">{{ content.title }}</h1>
       <h2 class="subtitle transite transite-up sn-2">{{ content.subTitle }}</h2>
     </div>
-    <div class="clients-container carousel transite transite-up sn-3">
-      <div class="splide">
-        <div class="splide__track">
-          <ul class="splide__list">
-            {% for item in content.clients %}
-            {% assign animationTextIndex = forloop.index | times: 2 | plus: 1 %}
-            {% assign animationIndex = forloop.index | times: 2 | plus: 2 %}
-            {% assign imageAnimationDirection = "left" %}
-            {% assign mod = forloop.index | modulo: 2 %}
-            {% if mod == 1 %}
-            {% assign imageAnimationDirection = "right" %}
-            {% endif %}
-            <li class="splide__slide">
-              <div class="clients-block">
-                <div class="title transite transite-up sn-{{ animationTextIndex }}">{{ item.title }}
-                </div>
-                <div class="description transite transite-up sn-{{ animationTextIndex }}">{{
-                  item.description }}
-                </div>
-                <a href="{{ item.link }}"
-                   class="button button-outline transite transite-up sn-{{ animationIndex }}">View Case
-                  Study</a>
-                <div class="image transite transite-{{imageAnimationDirection}} sn-{{ animationIndex }}">
-                  <img src="{{ prefix }}{{ item.image }}">
-                </div>
-              </div>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    </div>
+    {% include clients-carousel/clients-carousel.html showButton=true %}
     <a href="/case-study"
        class="button cases-button transite transite-up sn-3">View All Cases</a>
   </div>
