@@ -12,6 +12,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css" />
     {% include _head/head.html %}
@@ -24,12 +25,6 @@
       <div class="post-metadata">
         <span>{{ page.date | date: "%d.%m.%Y" }}</span><span>{{ page.tag }}</span>
       </div>
-      <p>
-          {% assign author = site.authors | where: 'short_name', page.author | first %}
-          {% if author %}
-          - <a href="{{ author.url }}">{{ author.name }}</a>
-          {% endif %}
-      </p>
 
       {{ content }}
 

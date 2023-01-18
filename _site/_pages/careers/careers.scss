@@ -2,22 +2,48 @@
   background-color: #f5f5f5;
   padding: 104px 0;
 
-  h1 {
-    margin-bottom: 90px;
-    text-align: center;
+  @include small-tablet-screen {
+    padding: 104px 20px;
   }
 
-  .tags {
-    @include flex(row, center, center);
-    margin-bottom: 40px;
+  @include mobile-screen {
+    padding-top: 60px;
   }
 
-  .tag-filter {
-    @include font(16px, 400);
-    border: 1px solid black;
-    border-radius: 40px;
-    cursor: pointer;
-    margin: 0 10px 10px 0;
-    padding: 6px 18px;
+  .careers-content {
+    @include small-desktop-screen {
+      max-width: 780px;
+    }
+
+    @include tablet-screen {
+      max-width: 600px;
+    }
+
+    @include small-tablet-screen {
+      max-width: 100%;
+    }
+
+    h1 {
+      margin-bottom: 90px;
+      text-align: center;
+
+      @include small-tablet-screen {
+        margin-bottom: 30px;
+      }
+    }
+
+    .tags {
+      @include flex(row, center, center);
+      margin-bottom: 40px;
+    }
+
+    .tag-filter {
+      @include font(16px, 400);
+      border: 1px solid black;
+      border-radius: 40px;
+      cursor: pointer;
+      margin: 0 10px 10px 0;
+      padding: 6px 18px;
+    }
   }
 }
