@@ -14,16 +14,13 @@
       <div class="email">{{ content.email }}</div>
       <div class="subtitle">{{ content.subtitle }}</div>
       <div class="icons-wrapper">
+        {% for item in content.icons %}
         <div class="icon">
-          <a target="_blank" rel="noopener noreferrer" href="{{ content.linkedinHref }}">
-            <img src="{{ prefix }}{{ content.linkedinIcon }}">
+          <a target="_blank" rel="noopener noreferrer" href="{{ item.href }}">
+            <img src="{{ prefix }}{{ item.icon }}">
           </a>
         </div>
-        <div class="icon">
-          <a target="_blank" rel="noopener noreferrer" href="{{ content.youtubeHref }}">
-            <img src="{{ prefix }}{{ content.youtubeIcon }}">
-          </a>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
