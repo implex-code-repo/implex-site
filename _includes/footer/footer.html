@@ -19,10 +19,14 @@
       <div class="title">{{ title }}</div>
       <div class="email">{{ email }}</div>
       <div class="subtitle">{{ content.subtitle }}</div>
-      <div class="icon">
-        <a target="_blank" rel="noopener noreferrer" href="{{ content.href }}">
-          <img src="{{ prefix }}{{ content.icon }}">
-        </a>
+      <div class="icons-wrapper">
+        {% for item in content.icons %}
+        <div class="icon">
+          <a target="_blank" rel="noopener noreferrer" href="{{ item.href }}">
+            <img src="{{ prefix }}{{ item.icon }}">
+          </a>
+        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
