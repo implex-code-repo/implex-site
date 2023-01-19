@@ -2,13 +2,13 @@
 layout: post
 title: "Is It Possible to Find 100+ Tech Specialists at Affordable Rates in a Fortnight? Yes!"
 description: "We analyzed the market, various hiring channels, and payment models. Our experience has shown you CAN subcontract 100 specialists in a fortnight, but boy, will you have to work for it."
-image: "https://static.tildacdn.com/tild3862-3862-4934-a565-383663323131/web-3706562_1920.jpg"
+image: "../../assets/img/articles/rates.jpg"
 author: "Orysya Sklyar"
 category: "Blog"
 permalink: "/tpost/j7m9itycp1-is-it-possible-to-find-100-tech-speciali"
 ---
 
-![](https://static.tildacdn.com/tild3862-3862-4934-a565-383663323131/web-3706562_1920.jpg)
+![](../../assets/img/articles/rates.jpg)
 
 According to the [US Bureau of Labor Statistics](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm), the demand for software developers will grow by 21% by 2028. Yet, despite that and the [hiring landscape shift](https://www.computerweekly.com/news/252487612/Coronavirus-The-pandemics-impact-on-tech-jobs-now-and-in-the-future) caused by the pandemic, hiring really good IT professionals is not easy, especially when it comes to short-term contracts. Not easy, but still doable. And we know that because one of our clients asked us to find 100+ tech specialists ASAP.
 
