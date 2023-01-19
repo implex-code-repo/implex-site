@@ -2,13 +2,13 @@
 layout: post
 title: "Tips for Outsourcing MVP Development. Part I"
 description: "Project preparation, documentation and right tech stack — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup"
-image: "https://static.tildacdn.com/tild6435-3836-4034-b934-613439336233/Minimal_viable_produ.jpg"
+image: "../../assets/img/articles/tips-1.jpg"
 author: "Slava Hraichenko"
 category: "Blog"
 permalink: '/tpost/m6n0b6l511-tips-for-outsourcing-mvp-development-par'
 showOnMainPage: true
 ---
-![](https://static.tildacdn.com/tild6435-3836-4034-b934-613439336233/Minimal_viable_produ.jpg)
+![](../../assets/img/articles/tips-1.jpg)
 
 It’s no secret that nine out of ten startups fail, mostly because of the lack of interest and problems with the product-market fit. But validating your hypothesis from the beginning can dramatically improve your odds for success. How? With the Lean startup approach.
 
@@ -22,7 +22,7 @@ So let’s get down to it!
 
 ## Lean startups: getting to the market faster
 
-![](https://static.tildacdn.com/tild6137-6234-4933-b264-343032646530/Lean_startups-2.jpg)
+![](../../assets/img/articles/tips-1/lean-startups.jpg)
 
 Dropbox, Slack, or General Electric's project FastWorks are just some successful startups that used the Lean approach. And for a good reason. The method is based on three main principles:
 
@@ -59,7 +59,7 @@ Before jumping aboard the MVP train, make sure you have a clear vision of your f
 
 ## Understanding the concept
 
-![](https://static.tildacdn.com/tild6539-6435-4530-b434-663432333934/Lean_development-2.png)
+![](../../assets/img/articles/tips-1/lean-development.png)
 
 We’ve seen many companies that don’t understand the concept of an MVP right. Here are four principles to bear in mind before you start the development process:
 
@@ -91,7 +91,7 @@ Regardless of how genius your developers are, they don’t know the project as p
 
 At Implex, we prefer the story mapping technique for describing the future product and its requirements. When making the map, we arrange user activities along the horizontal axis according to their priority or system requirements. Down the vertical axis, we place product features in the order of descending priority.
 
-![](https://static.tildacdn.com/tild3437-3037-4465-a164-373833316438/Story_mapping.jpg)
+![](../../assets/img/articles/tips-1/story-mapping.jpg)
 
 Story mapping is equally effective and insightful for both: software development teams and product owners. On a single sheet of paper or a board, developers can see product goals and features arranged in a strict order. Product owners, on the other hand, can see the efforts and costs necessary for every additional feature. They can also change priorities or discard non-important features from the MVP.
 

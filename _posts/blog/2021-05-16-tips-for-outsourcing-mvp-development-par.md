@@ -2,15 +2,15 @@
 layout: post
 title: "Tips for Outsourcing MVP Development. Part II"
 description: "Team, requirements management, sprint planning  estimation and communication for successful MVP delivery — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup"
-image: "https://thumb.tildacdn.com/tild3764-3039-4164-a430-353139626537/-/cover/380x300/center/center/-/format/webp/Time_is_ticking.jpg"
-ogImage: "https://static.tildacdn.com/tild3764-3039-4164-a430-353139626537/Time_is_ticking.jpg"
+image: "../../assets/img/articles/tips-2.jpg"
+ogImage: "../../assets/img/articles/tips-2.jpg"
 author: "Slava Hraichenko"
 permalink: "/tpost/ye6u7ml161-tips-for-outsourcing-mvp-development-par"
 showOnMainPage: true
 category: "Blog"
 ---
 
-![](https://static.tildacdn.com/tild3764-3039-4164-a430-353139626537/Time_is_ticking.jpg)
+![](../../assets/img/articles/tips-2.jpg)
 
 In the previous part of this article, we talked about the Lean approach, and why successful startups use it to accelerate time to market. We’ve also defined a minimal viable product (MVP) and gave the lowdown on the preparation to be made before the MVP development.
 
@@ -18,7 +18,7 @@ In this part, we’ll get down to the nitty-gritty of the development process, a
 
 ## Top tips for building a startup team
 
-![](https://static.tildacdn.com/tild3432-6464-4532-b066-616234303666/The_Team.jpg)
+![](../../assets/img/articles/tips-2/the-team.jpg)
 
 The team of experts in your corner is the backbone of your project. But building your software development team is often challenging. Here are some ideas on how we reduced headaches when working on the SmartLane project.
 
@@ -80,13 +80,13 @@ For planning the development phases, we used the Waterfall model and Gantt chart
 
 ## Information exchange
 
-![](https://static.tildacdn.com/tild6236-3734-4739-a662-386134383265/Team_information_exc.jpg)
+![](../../assets/img/articles/tips-2/team-information-exchange.jpg)
 
 Soft skills such as communication, collaboration, and accountability are vital for professional developers, so make sure that all specialists in your team have them. Opt for face-to-face or real-time communication using tools built for collaboration like Figma or Miro. They allow multiple active users to work together on the same document or design and share comments.
 
 According to the research on computer-mediated communication, the "question and answer" approach has proved to be the most effective way of communication. It also improves relationships between team members.
 
-![](https://static.tildacdn.com/tild6433-3436-4530-b465-363166343233/Communication_effect.png)
+![](../../assets/img/articles/tips-2/communication-effectiveness.png)
 
 That’s why, at Implex, we encourage verbal discussions instead of the “read and confirm” principle and detailed written specifications. We do this by inviting another team member to look through the document together and discuss everything that isn’t clear.
 
