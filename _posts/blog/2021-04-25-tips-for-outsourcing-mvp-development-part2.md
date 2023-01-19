@@ -3,6 +3,7 @@ layout: post
 title: "Tips for Outsourcing MVP Development. Part I"
 description: "Project preparation, documentation and right tech stack — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup"
 image: "../../assets/img/articles/tips-1.jpg"
+ogImage: "../../assets/img/articles/tips-1.jpg"
 author: "Slava Hraichenko"
 category: "Blog"
 permalink: '/tpost/m6n0b6l511-tips-for-outsourcing-mvp-development-par'
