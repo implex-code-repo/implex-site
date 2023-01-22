@@ -53,11 +53,11 @@ layout: default-static-header
   <section class="section-black">
     <div class="content">
       {% include quote/quote.html
-        avatarUrl="../../assets/img/case-study/smartlane/avatar.jpeg"
-        authorName="Daniel Rodriguez"
-        authorPosition="Adventurer Entrepreneur Developer"
-        authorUrl="https://www.linkedin.com/in/danielwrodriguez/"
-        content="\"I've worked with Slava on 3 projects thus far (Admit.me, Zeroth, and SmartLane), and his professionalism, acumen, and expertise are second to none. He excels at managing client expectations, all the while sourcing talent, delegating tasks, and delivering on schedule. I continue to look for opportunities to work with him and would highly recommend Slava him and his team to any company seeking to outsource some of their development needs.\""
+        avatarUrl="../../assets/img/case-study/bsg/avatar.jpeg"
+        authorName="Andriy Varusha"
+        authorPosition="COO and co-founder"
+        authorUrl="https://www.linkedin.com/in/andriyvarusha/"
+        content="\"With Implex's help, we were able to achieve the proper look and feel for our website, with the required metrics for the response time and page loading time. I think the engagement of the management, who are the co-founders at the same time and who are focused on problem-solving, is definitely a positive differentiator of Implex.\""
       %}
     </div>
   </section>
@@ -66,46 +66,33 @@ layout: default-static-header
       <h1>Solution</h1>
       <div class="text-center sub-heading">Our cooperation lasted for several years and consisted of two active development phases with a stabilization and maintenance period in between.</div>
       <div class="col-2">
-        <div>
-          <div><strong>Phase 1</strong></div>
+        <div class="column-content">
+          <div><strong>Design</strong></div>
           <br />
-          <div>The scope of work included full architecture engineering. Our team started by implementing the core architecture that was later successfully used during the entire development process without significant changes. Other tasks covered design and back-end, front-end, and mobile development for a series of modules.</div>
-          <br />
-          <div>In the first stage, we coded a <strong>demo platform</strong> with the back-end and the admin panel offered to the first customers and angel investors. The mobile app for auto dealers was coded and released to AppStore, too. At the same time, our front-end engineers developed the Web UI for entering car inspection data. We also developed an <strong>emulation module</strong> with a sophisticated logic and human-like behavior to enable proxy bidding. The platform relies on <strong>fault-tolerant stateless back-end architecture</strong> that allows scaling the bidding logic and implements immediate bidding using web sockets.</div>
+          <div>Our UI/UX specialist collaborated with BSG's marketing director to create a new design fully matching the updated brand book and the client's expectations. An Implex engineer developed a sophisticated dynamic wizard form to pre-qualify leads and integrated it into a static website.</div>
+          <div>The company's blog was kept as a separate WordPress website. It was only redesigned to fit the new brand book.</div>
         </div>
-        <div>
-          <div><strong>Phase 2</strong></div>
+        <div class="column-content">
+          <div><strong>Optimization</strong></div>
           <br />
-          <div>At the second stage, our engineers developed a mobile app for SmartLane inspectors coming to review cars and provide their feedback on 50+ parameters. Dealers now had access to a full-service Web UI.</div>
+          <div>The updated website works much faster, as static pages are now generated at frontend build-time using React components.</div>
           <br />
-          <div>The platform supports a <strong>full range of features</strong>:</div>
-          <ul>
-            <li>integration with on-board diagnostic (OBD)</li>
-            <li>special workflow for sellers to input the info about their cars to SmartLane and for the admin to review and proceed with it</li>
-            <li>counter offers functionality for the vehicles no one bought at an auction</li>
-            <li>saved searches and user notifications</li>
-            <li>making-a-deal flow after an auction end</li>
-          </ul>
-          <br />
-          <div>The platform integrates with a number of APIs, including VIN API and Carfax, vehicle history report database, as well as with the bar code reader.</div>
+          <div>Building a new CMS from scratch equaled budget overrun. To avoid that, we reused the repository web editor. The website admin can edit existing pages or create new ones using readily available blocks.</div>
         </div>
       </div>
       <div class="text-center technologiess"><strong>The tools and technologies we used were:</strong></div>
       <div class="logos-row">
         <div>
-          <img src="../../assets/img/case-study/icons/C-sharp.png" alt="C# ASP .Net back-end">
+          <img src="../../assets/img/case-study/icons/logo_html.png" alt="HTML 5">
         </div>
         <div>
-          <img src="../../assets/img/case-study/icons/Angular.png" alt="AngularJS front-end">
+          <img src="../../assets/img/case-study/icons/logo_css.png" alt="CSS 3">
         </div>
         <div>
-          <img src="../../assets/img/case-study/icons/mongoDB.png" alt="MongoDB replica set">
+          <img src="../../assets/img/case-study/icons/javascript-logo.png" alt="Vanilla Javascript">
         </div>
         <div>
-          <img src="../../assets/img/case-study/icons/swift.png" alt="SWIFT mobile iOS">
-        </div>
-        <div>
-          <img src="../../assets/img/case-study/icons/kotlin.png" alt="Kotlin mobile Android">
+          <img src="../../assets/img/case-study/icons/react-logo.png" alt="React components">
         </div>
       </div>
     </div>
@@ -115,12 +102,19 @@ layout: default-static-header
       <div class="col-2">
         <div class="column-wrapper big">
           <h2>Results</h2>
+          <ul>
+            <li>A brand-new design comes with perfect usability and successfully represents the BSG brand.</li>
+            <li>The website scores a gorgeous 95-100 on Google PageSpeed Insights for desktop and mobile.</li>
+            <li>Modular code lets the website admin reuse the existing elements to create new pages.</li>
+            <li>An updated deployment scheme empowers the admin to make changes, deploy them in the test environment in one click, run tests, and send them to the production environment – again in just one click.</li>
+            <li>If an error pops up, the admin can easily roll back to any of the previous website versions.</li>
+          </ul>
           <div>It was critical for our client to demonstrate a fully functional MVP on time to get the next round of financing. We did our best to make that happen. We also delivered a full set of technical documentation required for Series A investing.</div>
           <br />
           <div>In the end, the new functions and workflows in the mobile and web apps greatly extended the capabilities of dealers. The automation of the inspection process made it possible to thoroughly inspect a car in 45 minutes, compared to 1-2 hours it took to do this manually. Even more, a brief examination took only 15 minutes.</div>
         </div>
         <div class="column-wrapper margin-left">
-          <div class="image" id="image3" style="background-image: url('../../assets/img/case-study/smartlane/smartlane-3.jpg')"></div>
+          <div class="image" id="image3" style="background-image: url('../../assets/img/case-study/bsg/results.webp')"></div>
         </div>
       </div>
     </div>
