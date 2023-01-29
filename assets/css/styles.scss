@@ -212,12 +212,22 @@ body {
   section {
     padding: 75px 0;
 
+    @include mobile-screen {
+      padding: 30px 0 45px;
+    }
+
     &.section-black {
       background-color: #000;
     }
 
     &.section-grey {
       background-color: #f5f5f5;
+    }
+
+    &.remove-padding {
+      @include mobile-screen {
+        padding-bottom: 0;
+      }
     }
   }
 
@@ -238,7 +248,6 @@ body {
     }
 
     h1 {
-      max-width: 600px;
       margin: 0 auto;
     }
   }
@@ -249,6 +258,10 @@ body {
 
     & > div {
       margin: 0 20px;
+    }
+
+    &.margin-top {
+      margin-top: 30px;
     }
 
     @include tablet-screen {
@@ -267,6 +280,11 @@ body {
 
     @include small-tablet-screen {
       font-size: 20px;
+    }
+
+    @include mobile-screen {
+      margin-left: 20px;
+      margin-right: 20px;
     }
   }
 
@@ -294,6 +312,12 @@ body {
 
     &.padding-top {
       padding-top: 28px;
+    }
+  }
+
+  .column-content + .column-content {
+    @include tablet-screen {
+      padding-top: 10px;
     }
   }
 
@@ -331,6 +355,10 @@ body {
         margin-top: 100px;
       }
 
+      @include mobile-screen {
+        margin-top: 30px;
+      }
+
       & > h2 {
         font-size: 42px;
       }
@@ -361,6 +389,18 @@ body {
 
       @include tablet-screen {
         margin: 0 auto;
+      }
+    }
+
+    &.margin-top {
+      @include mobile-screen {
+        margin-top: 20px;
+      }
+    }
+
+    &.remove-padding {
+      @include mobile-screen {
+        padding: 0;
       }
     }
   }
