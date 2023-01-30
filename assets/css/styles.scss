@@ -267,6 +267,12 @@ body {
     @include tablet-screen {
       display: block;
     }
+
+    .quote + .quote {
+      @include mobile-screen {
+        margin-top: 20px;
+      }
+    }
   }
 
   .sub-heading {
@@ -393,7 +399,7 @@ body {
     }
 
     &.margin-top {
-      @include mobile-screen {
+      @include tablet-screen {
         margin-top: 20px;
       }
     }
