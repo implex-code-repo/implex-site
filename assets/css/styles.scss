@@ -367,6 +367,10 @@ body {
 
       & > h2 {
         font-size: 42px;
+
+        @include mobile-screen {
+          font-size: 30px;
+        }
       }
     }
 
