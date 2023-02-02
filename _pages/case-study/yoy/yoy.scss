@@ -4,6 +4,7 @@
 
     @include small-desktop-screen {
       height: 100%;
+      background-size: contain;
     }
   }
 
@@ -12,6 +13,10 @@
 
     @include small-desktop-screen {
       height: 493px;
+    }
+
+    @include tablet-screen {
+      background-size: contain;
     }
   }
 

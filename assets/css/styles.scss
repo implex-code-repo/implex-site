@@ -413,6 +413,10 @@ body {
         padding: 0;
       }
     }
+
+    &.center-content {
+      @include flex(column, center, center);
+    }
   }
 
   .technologies {
