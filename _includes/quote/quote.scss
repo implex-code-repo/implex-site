@@ -3,6 +3,7 @@
   color: white;
   text-align: left;
   line-height: 1.55;
+  padding: 0 20px;
 
   @include small-tablet-screen {
     flex-direction: column;
