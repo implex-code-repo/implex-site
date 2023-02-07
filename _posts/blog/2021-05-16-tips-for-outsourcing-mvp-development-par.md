@@ -8,6 +8,7 @@ author: "Slava Hraichenko"
 permalink: "/tpost/ye6u7ml161-tips-for-outsourcing-mvp-development-par"
 showOnMainPage: true
 category: "Blog"
+showContactForm: true
 ---
 
 ![](../../assets/img/articles/tips-2.jpg)

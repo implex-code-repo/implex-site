@@ -7,6 +7,7 @@ ogImage: "../../assets/img/articles/rates.jpg"
 author: "Orysya Sklyar"
 category: "Blog"
 permalink: "/tpost/j7m9itycp1-is-it-possible-to-find-100-tech-speciali"
+showContactForm: true
 ---
 
 ![](../../assets/img/articles/rates.jpg)
