@@ -59,9 +59,9 @@
 
       .description {
         padding: 15px 0 30px;
-        font-size: 22px;
+        font-size: 24px;
         max-width: 960px;
-        line-height: 1.55;
+        line-height: 36px;
 
         @include small-desktop-screen {
           font-size: 20px;
@@ -71,25 +71,35 @@
         @include tablet-screen {
           font-size: 20px;
           width: 100%;
+          padding: 0 20px;
         }
 
         @include small-tablet-screen {
           font-size: 14px;
-          padding-inline: 10px;
+          line-height: 30px;
         }
       }
 
       .button-wrapper {
         margin-top: 44px;
+        padding: 0 20px;
+
+        @include mobile-screen {
+          width: 100%;
+        }
       }
 
       .button {
         @include tablet-screen {
-          @include size(220px, 60px);
+          @include size(220px, 56px);
         }
 
         @include small-tablet-screen {
-          @include size(160px, 60px);
+          @include size(160px, 56px);
+        }
+
+        @include mobile-screen {
+          @include size(100%, 56px);
         }
       }
     }

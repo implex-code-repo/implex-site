@@ -84,15 +84,25 @@ body {
 
 .section {
   overflow: hidden;
-  padding: 120px 0;
+  padding: 150px 0;
+
+  @include tablet-landscape-screen {
+    padding: 120px 0;
+  }
 
   @include tablet-screen {
-    padding: 62px 20px;
+    padding: 80px 20px;
   }
 
   h1 {
     @include font(42px, 600);
     line-height: 1.23;
+    margin: 0 auto;
+    padding-bottom: 40px;
+
+    @include small-tablet-screen {
+      padding-bottom: 16px;
+    }
   }
 
   h2 {
@@ -484,7 +494,7 @@ body {
 }
 
 .button {
-  @include size(220px, 60px);
+  @include size(330px, 56px);
   @include font(16px, 700);
   font-family: 'Roboto', Arial, sans-serif;
   background-color: $orange;
