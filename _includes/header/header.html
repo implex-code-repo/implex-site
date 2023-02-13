@@ -38,9 +38,9 @@
         <div class='menu-button'></div>
       </label>
       <div class="wrapper">
-        <div class="logo">
+        <a href="/" class="logo">
           <img src="{{ prefix }}logo.png" alt="Implex logo">
-        </div>
+        </a>
         {% for item in navBar %}
           {% include header/menu-item.html item=item %}
         {% endfor %}
