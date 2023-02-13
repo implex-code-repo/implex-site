@@ -1,9 +1,10 @@
 ---
 layout: vacancy
 title: "Sales & Marketing Director"
-description: "Experienced sales and marketing leader , who will define and implement the marketing strategy and drive sales processes"
+ogDescription: "Experienced sales and marketing leader , who will define and implement the marketing strategy and drive sales processes"
 category: "Vacancy"
 tag: "Management"
+keywords: ''
 ---
 ![](../../../../assets/img/vacancy/implex.png)
 

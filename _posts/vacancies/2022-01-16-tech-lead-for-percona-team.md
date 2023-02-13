@@ -1,9 +1,10 @@
 ---
 layout: vacancy
 title: "Tech Lead for Percona team"
-description: "Full-time or part-time experienced Software Engineer with solution architecture and team managememt skills for PMM product - free and open-source platform for monitoring and managing the performance of SQL/NoSQL based databases"
+ogDescription: "Full-time or part-time experienced Software Engineer with solution architecture and team managememt skills for PMM product - free and open-source platform for monitoring and managing the performance of SQL/NoSQL based databases"
 category: "Vacancy"
 tag: "Software engeneering"
+keywords: ''
 ---
 
 _We are working with a cutting-edge technology stack! Golang, k8s, clickhouse, gRPC and many more. It’s a product company, not a typical outsource where nobody cares about your results. It’s so cool to work on products that are used by thousands of people every day. We are driven by delivering results, not closed tickets, we are always open to new ideas. And this is OSS, so you can proudly show your friends how cool you are!_
