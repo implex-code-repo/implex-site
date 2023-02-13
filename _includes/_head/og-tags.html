@@ -1,9 +1,15 @@
 <meta property="og:title" content="{{ page.title }}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ site.url }}{{ page.url}} " />
-{% if page.description %}
-  <meta property="og:description" content="{{ page.description }}" />
+{% if page.ogDescription %}
+  <meta property="og:description" content="{{ page.ogDescription }}" />
 {% endif %}
 {% if page.ogImage %}
   <meta property="og:image" content="{{ page.ogImage }}" />
+{% endif %}
+{% if page.description %}
+  <meta name="description" content="{{ page.description }}" />
+{% endif %}
+{% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}" />
 {% endif %}

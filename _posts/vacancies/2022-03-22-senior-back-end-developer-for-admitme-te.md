@@ -1,9 +1,10 @@
 ---
 layout: vacancy
 title: "Senior Back End Developer for Admit.me team"
-description: "Full-time Backend Software Engineer with strong skills in C# and .NET for a platform that offers step-by-step guides through the admissions process of the best high schools in USA."
+ogDescription: "Full-time Backend Software Engineer with strong skills in C# and .NET for a platform that offers step-by-step guides through the admissions process of the best high schools in USA."
 category: "Vacancy"
 tag: "Software engeneering"
+keywords: ''
 ---
 
 You will be working at the https://www.admit.me product. The project is aimed to help an applicant applying to college: we propose the only automated profile review for full-time MBA candidates. By analyzing the many factors used in admissions decisions across six primary areas, it conducts a detailed review of a candidate’s profile. At its core, the score is a numerical representation of the strength of your candidacy, scored out of 1000.
