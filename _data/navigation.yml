@@ -18,6 +18,6 @@
   link: /blog
   id: blog
 - name: Contact Us
-  link: /#contact-us
+  link: '#contact-us'
   button: true
   id: contact-us
