@@ -358,11 +358,17 @@ body {
     &.padding-top {
       padding-top: 28px;
     }
+
+    .subtitle {
+      @include tablet-screen {
+        padding-bottom: 16px;
+      }
+    }
   }
 
   .column-content + .column-content {
     @include tablet-screen {
-      padding-top: 10px;
+      padding-top: 40px;
     }
   }
 
