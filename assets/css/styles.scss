@@ -42,6 +42,7 @@
   font-display: swap;
   src: url(/assets/font/Roboto-Light.ttf);
 }
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -49,6 +50,7 @@
   font-display: swap;
   src: url(/assets/font/Roboto-Regular.ttf);
 }
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -56,6 +58,7 @@
   font-display: swap;
   src: url(/assets/font/Roboto-Medium.ttf);
 }
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -160,7 +163,8 @@ body {
 
     span + span {
       margin-left: 16px;
-    };
+    }
+  ;
   }
 
   a {
@@ -309,8 +313,15 @@ body {
     }
 
     .quote + .quote {
-      @include mobile-screen {
+      @include tablet-screen {
         margin-top: 20px;
+      }
+    }
+
+    & > .quote {
+      @include tablet-screen {
+        margin-left: 0;
+        margin-right: 0;
       }
     }
   }
