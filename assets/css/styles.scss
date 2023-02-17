@@ -220,6 +220,7 @@ body {
   h1 {
     font-size: 52px;
     margin-bottom: 60px;
+    padding: 0 20px;
 
     @include small-desktop-screen {
       font-size: 48px;
@@ -325,9 +326,6 @@ body {
 
     @include small-tablet-screen {
       font-size: 20px;
-    }
-
-    @include mobile-screen {
       margin-left: 20px;
       margin-right: 20px;
     }
@@ -383,15 +381,19 @@ body {
       max-width: 600px;
     }
 
-    @include small-tablet-screen {
-      padding: 0 20px;
-    }
-
     &.huge {
       max-width: 660px;
 
       @include small-desktop-screen {
         max-width: 540px;
+      }
+
+      @include tablet-screen {
+        padding: 0 20px;
+      }
+
+      @include small-tablet-screen {
+        padding: 0;
       }
     }
 
@@ -404,6 +406,11 @@ body {
 
       @include tablet-screen {
         margin-top: 100px;
+        padding: 0 20px;
+      }
+
+      @include small-tablet-screen {
+        padding: 0;
       }
 
       @include mobile-screen {
@@ -445,6 +452,10 @@ body {
       @include tablet-screen {
         margin: 0 auto;
       }
+
+      @include small-tablet-screen {
+        margin: 0 20px;
+      }
     }
 
     &.margin-top {
@@ -482,6 +493,10 @@ body {
 
     @include tablet-screen {
       justify-content: center;
+    }
+
+    @include mobile-screen {
+      padding: 0 20px;
     }
 
     img {
