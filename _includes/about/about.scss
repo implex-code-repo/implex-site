@@ -40,6 +40,8 @@
       .title {
         @include font(42px, 700);
         line-height: 1.23;
+        padding: 0;
+        margin: 0;
 
         @include small-desktop-screen {
           font-size: 38px;

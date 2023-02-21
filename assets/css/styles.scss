@@ -97,7 +97,18 @@ body {
     padding: 80px 20px;
   }
 
-  h1 {
+  //h1 {
+  //  @include font(42px, 600);
+  //  line-height: 1.23;
+  //  margin: 0 auto;
+  //  padding-bottom: 40px;
+  //
+  //  @include small-tablet-screen {
+  //    padding-bottom: 16px;
+  //  }
+  //}
+
+  h2 {
     @include font(42px, 600);
     line-height: 1.23;
     margin: 0 auto;
@@ -108,7 +119,7 @@ body {
     }
   }
 
-  h2 {
+  h3 {
     @include font(24px, 300);
     line-height: 1.5;
     max-width: 560px;
@@ -128,7 +139,7 @@ body {
     padding: 0;
     color: white;
 
-    h2 {
+    h3 {
       max-width: 600px;
     }
   }
