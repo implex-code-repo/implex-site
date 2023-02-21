@@ -7,7 +7,7 @@ image: "../../assets/img/articles/tips-1.jpg"
 ogImage: "../../assets/img/articles/tips-1.jpg"
 author: "Slava Hraichenko"
 category: "Blog"
-permalink: '/tpost/m6n0b6l511-tips-for-outsourcing-mvp-development-par'
+permalink: '/tpost/ye6u7ml161-tips-for-outsourcing-mvp-development-par'
 showOnMainPage: true
 showContactForm: true
 ---
