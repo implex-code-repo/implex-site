@@ -97,16 +97,16 @@ body {
     padding: 80px 20px;
   }
 
-  //h1 {
-  //  @include font(42px, 600);
-  //  line-height: 1.23;
-  //  margin: 0 auto;
-  //  padding-bottom: 40px;
-  //
-  //  @include small-tablet-screen {
-  //    padding-bottom: 16px;
-  //  }
-  //}
+  h1 {
+    @include font(42px, 600);
+    line-height: 1.23;
+    margin: 0 auto;
+    padding-bottom: 40px;
+
+    @include small-tablet-screen {
+      padding-bottom: 16px;
+    }
+  }
 
   h2 {
     @include font(42px, 600);
@@ -232,7 +232,7 @@ body {
     margin: 0;
   }
 
-  h1 {
+  .main-title {
     font-size: 52px;
     margin-bottom: 60px;
     padding: 0 20px;
@@ -302,7 +302,7 @@ body {
       max-width: 640px;
     }
 
-    h1 {
+    h1, .main-title {
       margin: 0 auto;
     }
   }
@@ -380,8 +380,20 @@ body {
     }
 
     .subtitle {
+      font-size: 20px;
+      margin: 0;
+
+      @include small-desktop-screen {
+        @include font(18px, 300);
+        line-height: 1.55;
+      }
+
       @include tablet-screen {
         padding-bottom: 16px;
+      }
+
+      @include small-tablet-screen {
+        font-size: 16px;
       }
     }
   }

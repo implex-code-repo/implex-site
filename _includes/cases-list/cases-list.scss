@@ -114,6 +114,7 @@
           @include font(26px, 600);
           line-height: 1.23;
           grid-column: 2;
+          margin: 0;
 
           @include small-desktop-screen {
             font-size: 24px;
