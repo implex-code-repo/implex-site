@@ -33,7 +33,7 @@
                 <a href="{{ item.link }}" class="button button-outline transite transite-up sn-{{ animationIndex }}">View
                     Case Study</a>
                 <div class="image transite transite-{{imageAnimationDirection}} sn-{{ animationIndex }}">
-                    <img src="{{ prefix | relative_url}}{{ item.image }}">
+                    <img alt="{{ item.imageAlt }}" src="{{ prefix | relative_url}}{{ item.image }}">
                 </div>
             </div>
         </div>
