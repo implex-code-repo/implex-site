@@ -11,14 +11,14 @@ You will be working at the https://www.admit.me product. The project is aimed to
 
 The platform is released not only on it's own site, but for other institutions (Emory, Georgetown, Economist, Foster). The nearest steps are to develop the analogous versions for Part-time MBA and Executive MBA and roll-out them on different school sites.
 
-### What is the project tech-stack:
+## What is the project tech-stack:
 
 - Backend: C# .Net core
 - Frontend: TypeScript, Angular
 - Infrastructure: AWS, TeamCity
 - Databases: MongoDB
 
-### What You Will Do:
+## What You Will Do:
 
 - Produce high-quality software;
 - Work with back end in C#
@@ -27,13 +27,13 @@ The platform is released not only on it's own site, but for other institutions (
 - Participate in code and design reviews
 - Identify and uphold engineering best practice
 
-### What We Offer:
+## What We Offer:
 
 - Small and friendly team where your ideas are welcome and your voice is heard
 - Flexible hours and the ability to work remotely which will let you determine your own work-life balance
 - Direct communication with customer
 
-### Requirements:
+## Requirements:
 
 - Experience with C#
 - Prior experience with Node.js will be a plus
@@ -42,6 +42,6 @@ The platform is released not only on it's own site, but for other institutions (
 - Intermediate or higher English level
 - Ability to work responsibly in full remote
 
-### How to join us:
+## How to join us:
 
 If you are interested in this position - send your linkedin profile or CV to hr@implex.dev
