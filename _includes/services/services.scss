@@ -74,6 +74,7 @@
           @include font(30px, 600);
           line-height: 1.17;
           padding-bottom: 26px;
+          margin: 0;
 
           @include small-desktop-screen {
             @include font(28px, 600);

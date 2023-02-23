@@ -28,12 +28,12 @@
         {% endif %}
         <div class="clients-block-background" style="background-color: {{ item.backgroundColor }}">
             <div class="{{ clientsBlock_classes }}">
-                <div class="title transite transite-up sn-{{ animationTextIndex }}">{{ item.title }}</div>
+                <h2 class="title transite transite-up sn-{{ animationTextIndex }}">{{ item.title }}</h2>
                 <div class="description transite transite-up sn-{{ animationTextIndex }}">{{ item.description }}</div>
                 <a href="{{ item.link }}" class="button button-outline transite transite-up sn-{{ animationIndex }}">View
                     Case Study</a>
                 <div class="image transite transite-{{imageAnimationDirection}} sn-{{ animationIndex }}">
-                    <img src="{{ prefix | relative_url}}{{ item.image }}">
+                    <img alt="{{ item.imageAlt }}" src="{{ prefix | relative_url}}{{ item.image }}">
                 </div>
             </div>
         </div>
