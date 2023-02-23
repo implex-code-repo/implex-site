@@ -8,7 +8,7 @@
 <section class="section services" id="services">
   {% assign prefix = site.imgPrefix %}
   <div class="content content-block">
-    <h1 class="title transite transite-up sn-1">Our services</h1>
+    <h2 class="title transite transite-up sn-1">Our services</h2>
     <div class="services-container">
       {% for item in site.data.services %}
         {% assign animationIndex = forloop.index | plus: 1 %}
@@ -16,7 +16,7 @@
           <div class="icon">
             <img src="{{ prefix }}{{ item.icon }}">
           </div>
-          <div class="service-title">{{ item.title }}</div>
+          <h3 class="service-title">{{ item.title }}</h3>
           <div class="service-description">{{ item.description }}</div>
         </div>
       {% endfor %}

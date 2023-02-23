@@ -23,7 +23,7 @@ As an application support specialist you will be **responsible for:**
 - First and second level customer support and cooperation with external service providers
 - Ticket management and escalation to / collaboration with third-level support
 
-### Requirements:
+## Requirements:
 
 - English language skills, both spoken and written (German language skills will be a plus)
 - Experience working within Active Directory, MS Exchange and within a Cisco network environment
@@ -31,7 +31,7 @@ As an application support specialist you will be **responsible for:**
 - Experience working with and supporting an Office 365 environment
 - A degree in an IT-related field is preferable
 
-### Benefits:
+## Benefits:
 
 - Official employment
 - 18 working days paid vacation
