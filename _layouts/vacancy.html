@@ -30,7 +30,7 @@
 
       {% assign filtered_posts = site.categories["Vacancy"] | where: 'tag', page.tag %}
       {% if filtered_posts.size > 1 %}
-        <h2>See also</h2>
+        <h2 class="vacancy-heading">See also</h2>
       {% endif %}
       {% for post in filtered_posts %}
         {% if post.title != page.title %}

@@ -157,12 +157,17 @@ body {
 
   @include tablet-screen {
     max-width: 100%;
-    margin-left: 90px;
-    margin-right: 90px;
+    padding-top: 75px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   @include mobile-screen {
   }
+
+    .vacancy-heading{
+      margin: 0;
+    }
 
   .post-metadata {
     color: rgba(0, 0, 0, 0.5);
@@ -540,7 +545,6 @@ body {
 }
 
 .vacancy {
-  margin: 95px 0;
 }
 
 .content {
