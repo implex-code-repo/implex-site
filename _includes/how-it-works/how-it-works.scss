@@ -20,6 +20,11 @@
     }
 
     .description {
+      @include font(24px, 300);
+      line-height: 1.5;
+      max-width: 560px;
+      margin: 0 auto;
+
       @include small-desktop-screen {
         @include font(22px, 300);
       }
@@ -100,6 +105,8 @@
         @include font(24px, 600);
         line-height: 1.35;
         padding-bottom: 20px;
+        margin: 0;
+        max-width: 100%;
 
         @include small-desktop-screen {
           @include font(22px, 600px);

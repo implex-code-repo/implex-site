@@ -16,7 +16,9 @@
 
   .subtitle {
     font-size: 30px;
-    margin-bottom: 90px;
+    line-height: 1.5;
+    max-width: 560px;
+    margin: 0 auto 90px;
 
     @include small-desktop-screen {
       font-size: 22px;
@@ -29,6 +31,7 @@
     @include small-tablet-screen {
       @include font(20px, 300);
       margin-bottom: 45px;
+      padding: 0 20px;
 
     }
   }
