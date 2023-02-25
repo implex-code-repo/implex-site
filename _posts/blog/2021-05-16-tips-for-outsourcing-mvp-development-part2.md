@@ -12,7 +12,7 @@ category: "Blog"
 showContactForm: true
 ---
 
-![](../../assets/img/articles/tips-2.jpg)
+![Time is ticking](../../assets/img/articles/tips-2.jpg)
 
 In the previous part of this article, we talked about the Lean approach, and why successful startups use it to accelerate time to market. We’ve also defined a minimal viable product (MVP) and gave the lowdown on the preparation to be made before the MVP development.
 

@@ -6,7 +6,7 @@ clients:
     description: A cross-platform mobile application that helps to learn the Ukrainian language to kids whose native language is Hungarian or Romanian. Developed for schoolchildren, it is simple, logical, concise, and at the same time, attractive and low resource-consuming to work fast, even on old mobile devices. The app has been created in partnership with a digital agency, "Friends of Brands," for the program of cooperation between Ukraine, Finland, and the EU aims to support the reform of the New Ukrainian School (NUSch).
     link: /case-study/yoy
     image: clients/yoy.webp
-    imageAlt:
+    imageAlt: "Yoy case cover"
     backgroundColor: '#00893A'
     whiteText: true
   - title: WikiArt.org
