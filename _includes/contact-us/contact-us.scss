@@ -28,6 +28,11 @@
       }
 
       .subtitle {
+        @include font(24px, 300);
+        line-height: 1.5;
+        margin: 0 auto;
+        max-width: 600px;
+
         @include tablet-screen {
           @include font(20px, 300);
         }

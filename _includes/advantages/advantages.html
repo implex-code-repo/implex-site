@@ -11,7 +11,7 @@
     {% assign content = site.data.advantages %}
     <div class="text-center transite transite-up sn-1">
       <h2 class="title">{{ content.title }}</h2>
-      <h3 class="description">{{ content.description }}</h3>
+      <div class="description">{{ content.description }}</div>
     </div>
     <div class="advantages-container">
       {% for item in content.advantages %}
@@ -20,7 +20,7 @@
           <div class="icon">
             <img src="{{ prefix }}{{ item.icon }}">
           </div>
-          <div class="adv-title">{{ item.title }}</div>
+          <h3 class="adv-title">{{ item.title }}</h3>
           <div class="adv-description">{{ item.description }}</div>
         </div>
       {% endfor %}
