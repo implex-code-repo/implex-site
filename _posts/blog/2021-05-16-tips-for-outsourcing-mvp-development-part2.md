@@ -3,8 +3,8 @@ layout: post
 title: "Tips for Outsourcing MVP Development. Part II"
 description: "Team, requirements management, sprint planning  estimation and communication for successful MVP delivery — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup"
 ogDescription: "Team, requirements management, sprint planning  estimation and communication for successful MVP delivery — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup"
-image: "../../assets/img/articles/tips-2.jpg"
-ogImage: "../../assets/img/articles/tips-2.jpg"
+image: "/assets/img/articles/tips-2.jpg"
+ogImage: "/assets/img/articles/tips-2.jpg"
 author: "Slava Hraichenko"
 permalink: "/tpost/m6n0b6l511-tips-for-outsourcing-mvp-development-par"
 showOnMainPage: true
