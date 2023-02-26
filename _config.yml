@@ -1,3 +1,4 @@
+url: "https://implex.dev"
 sass:
     style: compressed
     sass_dir: assets/css
@@ -26,3 +27,5 @@ defaults:
       layout: "default"
 include: ['_pages']
 imgPrefix: "assets/img/"
+plugins:
+  - jekyll-sitemap
