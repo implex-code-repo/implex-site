@@ -1,4 +1,3 @@
-url: "https://implex.dev"
 sass:
     style: compressed
     sass_dir: assets/css
