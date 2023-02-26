@@ -24,5 +24,11 @@ defaults:
       path: ""
     values:
       layout: "default"
+  - scope:
+      path: ""
+    values:
+      JEKYLL_ENV": "production"
 include: ['_pages']
 imgPrefix: "assets/img/"
+plugins:
+  - jekyll-gzip

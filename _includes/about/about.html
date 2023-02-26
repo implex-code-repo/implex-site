@@ -24,7 +24,7 @@
     <div class="collage">
       {% for item in content.images %}
       {% assign animationIndex = forloop.index | plus: 1 %}
-      <img src="{{ prefix }}{{ item }}" class="transite transite-up sn-{{ animationIndex }}">
+      <img alt="{{ item.alt }}" src="{{ prefix }}{{ item.img }}" class="transite transite-up sn-{{ animationIndex }}">
       {% endfor %}
     </div>
   </div>
