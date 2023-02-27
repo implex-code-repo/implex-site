@@ -1,8 +1,12 @@
 images:
-  - about/img-1.webp
-  - about/img-2.webp
-  - about/img-3.webp
-  - about/img-4.webp
+  - img: about/img-1.webp
+    alt:
+  - img: about/img-2.webp
+    alt:
+  - img: about/img-3.webp
+    alt:
+  - img: about/img-4.webp
+    alt:
 title: About Implex
 descriptions:
   - We built our company with a dream to create quality products that improve people's lives. Every day, we work hard to achieve this dream again and again.

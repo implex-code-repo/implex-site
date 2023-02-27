@@ -23,7 +23,7 @@
         {% for item in content.icons %}
         <div class="icon">
           <a target="_blank" rel="noopener noreferrer" href="{{ item.href }}">
-            <img src="{{ prefix }}{{ item.icon }}">
+            <img alt="{{ item.alt }}" src="{{ prefix }}{{ item.icon }}">
           </a>
         </div>
         {% endfor %}
