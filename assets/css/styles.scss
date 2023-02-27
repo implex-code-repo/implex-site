@@ -387,14 +387,11 @@ body {
     .subtitle {
       font-size: 20px;
       margin: 0;
+      padding-bottom: 16px;
 
       @include small-desktop-screen {
         @include font(18px, 300);
         line-height: 1.55;
-      }
-
-      @include tablet-screen {
-        padding-bottom: 16px;
       }
 
       @include small-tablet-screen {

@@ -26,3 +26,5 @@ defaults:
       layout: "default"
 include: ['_pages']
 imgPrefix: "assets/img/"
+plugins:
+  - jekyll-sitemap

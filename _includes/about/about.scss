@@ -6,22 +6,13 @@
   .content-block {
     @include flex(row, center, flex-start);
 
-    @include small-desktop-screen {
-      padding: 0 10px;
-    }
-
     @include tablet-screen {
       @include flex(column, center, center);
       padding: 0 100px;
     }
 
     @include small-tablet-screen {
-      max-width: 460px;
       padding: 0;
-    }
-
-    @include mobile-screen {
-      padding: 0 40px;
     }
 
     .info {
@@ -67,12 +58,12 @@
         }
 
         @include tablet-screen {
-          max-width: 600px;
+          max-width: 100%;
         }
 
         @include mobile-screen {
           font-size: 16px;
-          max-width: 300px;
+          max-width: 100%;
         }
 
         .link {
