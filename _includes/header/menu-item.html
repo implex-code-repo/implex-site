@@ -23,6 +23,8 @@
 </div>
 {% elsif item.id == "contact-us" and page.showContactForm == true %}
 <a class="{{ item_classes }}" data-section-id="{{ item.id }}" href="{{ page.permalink }}{{ item.link }}">{{ item.name }}</a>
+{% elsif item.id == "contact-us" %}
+<a class="{{ item_classes }}" data-section-id="{{ item.id }}" href="/{{ item.link }}">{{ item.name }}</a>
 {% else %}
 <a class="{{ item_classes }}" data-section-id="{{ item.id }}" href="{{ item.link }}">{{ item.name }}</a>
 {% endif %}

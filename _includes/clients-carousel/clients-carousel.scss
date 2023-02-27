@@ -31,7 +31,7 @@
       @include tablet-screen {
         box-sizing: border-box;
         flex: 0 0 100%;
-        padding: 30px;
+        padding: 0 30px;
         position: relative;
       }
 
@@ -46,7 +46,7 @@
           grid-template-columns: 100%;
           grid-column-gap: 0;
           grid-row-gap: 20px;
-          margin-top: 80px;
+          margin-top: 40px;
         }
 
         &:nth-child(2n) {
@@ -124,7 +124,6 @@
           @include tablet-screen {
             font-size: 16px;
             grid-column: 1;
-            max-width: 500px;
           }
 
           @include small-tablet-screen {
