@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "og Title"
+title: "How to Quickly Find a Hundred Software Development Specialists"
 headingTitle: "Is It Possible to Find 100+ Tech Specialists at Affordable Rates in a Fortnight? Yes!"
-description: "We analyzed the market, various hiring channels, and payment models. Our experience has shown you CAN subcontract 100 specialists in a fortnight, but boy, will you have to work for it."
-ogDescription: "We analyzed the market, various hiring channels, and payment models. Our experience has shown you CAN subcontract 100 specialists in a fortnight, but boy, will you have to work for it."
+description: "We analyzed the market, various hiring channels, and payment models. Our experience has shown you CAN subcontract 100 specialists in a fortnight, but boy, will you have to work for it"
+ogDescription: "We analyzed the market, various hiring channels, and payment models. Our experience has shown you CAN subcontract 100 specialists in a fortnight, but boy, will you have to work for it"
 image: "/assets/img/articles/rates.jpg"
 altImage: "/assets/img/articles/rates.jpg"
 ogImage: "/assets/img/articles/rates.jpg"
