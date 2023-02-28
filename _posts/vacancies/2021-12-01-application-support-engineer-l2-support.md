@@ -1,7 +1,7 @@
 ---
 layout: vacancy
 title: "Application support engineer (L2 support)"
-vacancyTitle: "Application support engineer (L2 support)"
+headingTitle: "Application support engineer (L2 support)"
 description: "Our client is an IT consultancy and software development company which provides comprehensive end to end solutions for banks and financial institutions, from electronic payments to software systems."
 ogDescription: "Our client is an IT consultancy and software development company which provides comprehensive end to end solutions for banks and financial institutions, from electronic payments to software systems."
 category: "Vacancy"

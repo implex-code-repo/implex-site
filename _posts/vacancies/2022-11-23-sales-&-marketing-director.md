@@ -1,7 +1,7 @@
 ---
 layout: vacancy
 title: "Sales & Marketing Director"
-vacancyTitle: "22Sales & Marketing Director"
+headingTitle: "Sales & Marketing Director"
 ogDescription: "Experienced sales and marketing leader , who will define and implement the marketing strategy and drive sales processes"
 category: "Vacancy"
 tag: "Management"

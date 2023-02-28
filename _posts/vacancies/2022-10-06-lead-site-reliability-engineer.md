@@ -1,7 +1,7 @@
 ---
 layout: vacancy
 title: "Lead Site Reliability Engineer"
-vacancyTitle: "Lead Site Reliability Engineer"
+headingTitle: "Lead Site Reliability Engineer"
 ogDescription: "Full-time experienced DevOps/SRE with Azure/AWS/GCP and Docker/Kubernetes which will build a microservices architecture for an online learning platform that contains a variety of modern content and libraries"
 category: "Vacancy"
 tag: "Devops"
