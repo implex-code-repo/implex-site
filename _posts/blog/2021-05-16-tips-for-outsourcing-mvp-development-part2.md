@@ -5,6 +5,7 @@ headingTitle: "How to Successfully Manage Team, Requirements, Estimation and Com
 description: "Manage team, requirements, sprint planning and communication for successful MVP delivery — based on building an MVP in 3.5 mos. for the U.S. automotive startup"
 ogDescription: "Manage team, requirements, sprint planning and communication for successful MVP delivery — based on building an MVP in 3.5 mos. for the U.S. automotive startup"
 image: "/assets/img/articles/tips-2.jpg"
+altImage:
 ogImage: "/assets/img/articles/tips-2.jpg"
 author: "Slava Hraichenko"
 permalink: "/tpost/m6n0b6l511-tips-for-outsourcing-mvp-development-par"

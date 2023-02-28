@@ -5,6 +5,7 @@ headingTitle: "Is It Possible to Find 100+ Tech Specialists at Affordable Rates 
 description: "We analyzed the market, various hiring channels, and payment models. Our experience has shown you CAN subcontract 100 specialists in a fortnight, but boy, will you have to work for it"
 ogDescription: "We analyzed the market, various hiring channels, and payment models. Our experience has shown you CAN subcontract 100 specialists in a fortnight, but boy, will you have to work for it"
 image: "/assets/img/articles/rates.jpg"
+altImage: "/assets/img/articles/rates.jpg"
 ogImage: "/assets/img/articles/rates.jpg"
 author: "Orysya Sklyar"
 category: "Blog"

@@ -5,6 +5,7 @@ headingTitle: "4 Main Steps to Prepare for Successful MVP Development Outsourcin
 description: "Project preparation, documentation and right tech stack — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup"
 ogDescription: "Project preparation, documentation and right tech stack — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup"
 image: "/assets/img/articles/tips-1.jpg"
+altImage: ""
 ogImage: "/assets/img/articles/tips-1.jpg"
 author: "Slava Hraichenko"
 category: "Blog"
