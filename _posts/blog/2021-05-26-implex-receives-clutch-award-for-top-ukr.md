@@ -5,6 +5,7 @@ headingTitle: "Implex Receives Clutch Award For Top Ukranian B2B Firm"
 description: "We are thrilled to announce that Clutch have recognized us as one of the 250 best-performing software development companies in Ukraine."
 ogDescription: "We are thrilled to announce that Clutch have recognized us as one of the 250 best-performing software development companies in Ukraine."
 image: "/assets/img/articles/clutch.png"
+altImage:
 ogImage: "/assets/img/articles/clutch.png"
 author: "Slava Hraichenko"
 category: "Blog"
