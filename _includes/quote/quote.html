@@ -11,7 +11,7 @@
     <div class="text">{{ include.content }}</div>
     <a
       target="_blank"
-      rel="noopener noreferrer"
+      rel="noopener noreferrer nofollow"
       href="{{ include.authorUrl }}"
       class="author-name"
     >{{ include.authorName }}</a>
@@ -20,7 +20,7 @@
       {% if include.linkedin %}
         <a
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow"
           href="{{ include.linkedin }}"
         >
           {% include svg/linkedin.svg %}
@@ -29,7 +29,7 @@
       {% if include.facebook %}
         <a
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow"
           href="{{ include.facebook }}"
         >
           {% include svg/facebook.svg %}
@@ -38,7 +38,7 @@
       {% if include.instagram %}
         <a
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow"
           href="{{ include.instagram }}"
         >
           {% include svg/instagram.svg %}

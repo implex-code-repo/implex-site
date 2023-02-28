@@ -2,8 +2,8 @@
 layout: post
 title: "Tips for Outsourcing MVP Development. Part II - Runnnig"
 headingTitle: "How to Successfully Manage Team, Requirements, Estimation and Communication in Outsourcing"
-description: "Manage team, requirements, sprint planning and communication for successful MVP delivery — based on building an MVP in 3.5 mos. for the U.S. automotive startup"
-ogDescription: "Manage team, requirements, sprint planning and communication for successful MVP delivery — based on building an MVP in 3.5 mos. for the U.S. automotive startup"
+description: "Manage team, requirements, sprint planning and comms for successful MVP delivery — based on building an MVP in 3.5 mos. for the US automotive startup"
+ogDescription: "Manage team, requirements, sprint planning and comms for successful MVP delivery — based on building an MVP in 3.5 mos. for the US automotive startups"
 image: "/assets/img/articles/tips-2.jpg"
 altImage:
 ogImage: "/assets/img/articles/tips-2.jpg"
@@ -14,7 +14,7 @@ showOnMainPage: true
 showContactForm: true
 ---
 
-![Time is ticking](../../assets/img/articles/tips-2.jpg)
+![Time is ticking](/assets/img/articles/tips-2.jpg)
 
 In the previous part of this article, we talked about the Lean approach, and why successful startups use it to accelerate time to market. We’ve also defined a minimal viable product (MVP) and gave the lowdown on the preparation to be made before the MVP development.
 
@@ -22,7 +22,7 @@ In this part, we’ll get down to the nitty-gritty of the development process, a
 
 ## Top tips for building a startup team
 
-![](../../assets/img/articles/tips-2/the-team.jpg)
+![Team picture](/assets/img/articles/tips-2/the-team.jpg)
 
 The team of experts in your corner is the backbone of your project. But building your software development team is often challenging. Here are some ideas on how we reduced headaches when working on the SmartLane project.
 
@@ -50,9 +50,9 @@ Sometimes, your dedicated team of developers will have to build an MVP when the 
 
 During the first sprint and at the beginning of the second one, we only worked with clickable wireframes while SmartLane’s team was polishing their design. Our experience allowed us to design UX and develop a web UI using standard Material Components. Along with direct communication with SmartLane’s designer team, this allowed us to smoothly integrate our work with the final design once it was ready.
 
-## Allow the development vendor to attract more specialists fast
+## Allow the outsourcing development vendor to attract more specialists fast
 
-In some cases, your development vendor will need to attract more specialists if the team lacks some expertise. For example, we invited a specialist to configure the .NET Core Starter with Angular 5 in the SmartLane project. We’ve also temporarily involved an architect to build the bidding engine at the first development stage.
+In some cases, your outsourcing development vendor will need to attract more specialists if the team lacks some expertise. For example, we invited a specialist to configure the .NET Core Starter with Angular 5 in the SmartLane project. We’ve also temporarily involved an architect to build the bidding engine at the first development stage.
 
 Implementing these three principles of the team assembling allowed us to complete the following tasks within a week:
 
@@ -84,13 +84,13 @@ For planning the development phases, we used the Waterfall model and Gantt chart
 
 ## Information exchange
 
-![](../../assets/img/articles/tips-2/team-information-exchange.jpg)
+![Team sharing ideas](/assets/img/articles/tips-2/team-information-exchange.jpg)
 
 Soft skills such as communication, collaboration, and accountability are vital for professional developers, so make sure that all specialists in your team have them. Opt for face-to-face or real-time communication using tools built for collaboration like Figma or Miro. They allow multiple active users to work together on the same document or design and share comments.
 
 According to the research on computer-mediated communication, the "question and answer" approach has proved to be the most effective way of communication. It also improves relationships between team members.
 
-![](../../assets/img/articles/tips-2/communication-effectiveness.png)
+![Communication effectiveness chart](/assets/img/articles/tips-2/communication-effectiveness.png)
 
 That’s why, at Implex, we encourage verbal discussions instead of the “read and confirm” principle and detailed written specifications. We do this by inviting another team member to look through the document together and discuss everything that isn’t clear.
 
