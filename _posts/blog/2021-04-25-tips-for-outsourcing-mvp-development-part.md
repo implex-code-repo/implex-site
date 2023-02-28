@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Tips for Outsourcing MVP Development. Part I"
-headingTitle: "Tips for Outsourcing MVP Development. Part I"
+title: "Tips for Outsourcing MVP Development. Part I - Preparation"
+headingTitle: "4 Main Steps to Prepare for Successful MVP Development Outsourcing"
 description: "Project preparation, documentation and right tech stack — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup"
 ogDescription: "Project preparation, documentation and right tech stack — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup"
 image: "/assets/img/articles/tips-1.jpg"
@@ -12,6 +12,7 @@ permalink: '/tpost/ye6u7ml161-tips-for-outsourcing-mvp-development-par'
 showOnMainPage: true
 showContactForm: true
 ---
+
 ![](../../assets/img/articles/tips-1.jpg)
 
 It’s no secret that nine out of ten startups fail, mostly because of the lack of interest and problems with the product-market fit. But validating your hypothesis from the beginning can dramatically improve your odds for success. How? With the Lean startup approach.
