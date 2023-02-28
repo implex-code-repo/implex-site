@@ -1,6 +1,7 @@
 ---
 layout: vacancy
 title: "QA Automation Engineer for Percona team"
+vacancyTitle: "QA Automation Engineer for Percona team"
 description: "Full-time experienced QA Automation Engineer for PMM product - free and open-source platform for monitoring and managing the performance of SQL/NoSQL based databases"
 ogDescription: "Full-time experienced QA Automation Engineer for PMM product - free and open-source platform for monitoring and managing the performance of SQL/NoSQL based databases"
 category: "Vacancy"

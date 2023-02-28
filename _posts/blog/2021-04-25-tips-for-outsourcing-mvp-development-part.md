@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Tips for Outsourcing MVP Development. Part I"
+postTitle: "Tips for Outsourcing MVP Development. Part I"
 description: "Project preparation, documentation and right tech stack — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup"
 ogDescription: "Project preparation, documentation and right tech stack — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup"
 image: "/assets/img/articles/tips-1.jpg"
