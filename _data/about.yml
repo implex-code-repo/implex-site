@@ -1,12 +1,12 @@
 images:
   - img: about/img-1.webp
-    alt:
+    alt: "Girls pair programming"
   - img: about/img-2.webp
-    alt:
+    alt: "Testing Wikiart.org on a desktiop"
   - img: about/img-3.webp
-    alt:
+    alt: "Developing front-end"
   - img: about/img-4.webp
-    alt:
+    alt: "Working outside"
 title: About Implex
 descriptions:
   - 1We built our company with a dream to create quality products that improve people's lives. Every day, we work hard to achieve this dream again and again.
