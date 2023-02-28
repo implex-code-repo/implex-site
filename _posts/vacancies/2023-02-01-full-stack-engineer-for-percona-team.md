@@ -1,13 +1,14 @@
 ---
 layout: vacancy
-title: "Implex Hires a Full-Stack Engineer for Percona Team"
-headingTitle: "Full stack engineer for Percona team"
+title: "Full stack engineer for Percona team"
 description: "Full-time or part-time Software Engineer with focus mainly on backend and partially frontend for PMM product - free and open-source platform for monitoring and managing the performance of SQL/NoSQL based databases"
 ogDescription: "Full-time or part-time Software Engineer with focus mainly on backend and partially frontend for PMM product - free and open-source platform for monitoring and managing the performance of SQL/NoSQL based databases"
 category: "Vacancy"
 tag: "Software engeneering"
 keywords: ''
 ---
+
+![Percona logo](/assets/img/vacancy/Percona-logo.png)
 
 _We are working with a cutting-edge technology stack! Golang, k8s, clickhouse, gRPC and many more. It’s a product company, not a typical outsource where nobody cares about your results. It’s so cool to work on products that are used by thousands of people every day. We are driven by delivering results, not closed tickets, we are always open to new ideas. And this is OSS, so you can proudly show your friends how cool you are!_
 
@@ -30,7 +31,7 @@ _We are working with a cutting-edge technology stack! Golang, k8s, clickhouse, g
 
 ## How the architecture looks like:
 
-![](https://static.tildacdn.com/tild6334-6161-4332-b362-313164373564/image.png)
+![Percona architecture](/assets/img/vacancy/Percona-architecture.png)
 
 ## What We Offer:
 
