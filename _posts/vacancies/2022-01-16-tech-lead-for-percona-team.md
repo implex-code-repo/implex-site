@@ -1,6 +1,7 @@
 ---
 layout: vacancy
 title: "Tech Lead for Percona team"
+headingTitle: "Tech Lead for Percona team"
 ogDescription: "Full-time or part-time experienced Software Engineer with solution architecture and team managememt skills for PMM product - free and open-source platform for monitoring and managing the performance of SQL/NoSQL based databases"
 category: "Vacancy"
 tag: "Software engeneering"

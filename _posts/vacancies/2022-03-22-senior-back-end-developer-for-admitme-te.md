@@ -1,6 +1,7 @@
 ---
 layout: vacancy
 title: "Senior Back End Developer for Admit.me team"
+headingTitle: "Senior Back End Developer for Admit.me team"
 ogDescription: "Full-time Backend Software Engineer with strong skills in C# and .NET for a platform that offers step-by-step guides through the admissions process of the best high schools in USA."
 category: "Vacancy"
 tag: "Software engeneering"
