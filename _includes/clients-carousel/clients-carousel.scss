@@ -1,30 +1,15 @@
 @import 'mixins';
 
 .carousel-wrapper {
-  &.black {
-    color: white;
-    background-color: black;
-    padding-bottom: 60px;
-
-    @include mobile-screen {
-      padding-bottom: 0;
-    }
-
-    .splide__arrow {
-      top: 58%;
-    }
-
-    .splide__pagination {
-      padding: 0;
-      display: none;
-    }
-  }
-
   .content.carousel-content {
     max-width: 1200px;
 
     @include tablet-screen {
       padding: 0 20px;
+    }
+
+    @include small-tablet-screen {
+      padding: 0;
     }
 
     .clients-container {
@@ -33,6 +18,10 @@
         flex: 0 0 100%;
         padding: 0 30px;
         position: relative;
+
+        @include small-tablet-screen {
+          padding: 0;
+        }
       }
 
       .clients-block {
@@ -106,7 +95,6 @@
         .title-button {
           text-decoration: none;
           border-bottom: 3px $orange solid;
-          width: max-content;
           padding-bottom: 6px;
           color: white;
         }
@@ -200,6 +188,11 @@
           display: none;
         }
 
+        @include small-tablet-screen {
+          @include flex(row, center, center);
+          padding-top: 20px;
+        }
+
         li {
           display: inline-flex;
         }
@@ -218,5 +211,31 @@
         }
       }
     }
+  }
+
+  &.black {
+    color: white;
+    background-color: black;
+    padding-bottom: 60px;
+
+    @include mobile-screen {
+      padding-bottom: 0;
+    }
+
+    .carousel-content {
+      @include small-tablet-screen {
+        padding: 0 20px;
+      }
+
+      .splide__arrow {
+        top: 58%;
+      }
+
+      .splide__pagination {
+        padding: 0;
+        display: none;
+      }
+    }
+
   }
 }
