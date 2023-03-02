@@ -24,7 +24,6 @@ const implex = (function () {
       const splide = new Splide('.splide', {
         drag: isTouchScreen(),
         type: 'loop',
-        arrows: !window.matchMedia('(max-width: 640px)').matches,
       });
 
       splide.mount();

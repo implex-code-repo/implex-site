@@ -16,6 +16,50 @@
   <div class="content carousel-content">
     <div class="clients-container carousel transite transite-up sn-3">
       <div class="splide">
+        <div class="splide__arrows">
+          <button class="splide__arrow splide__arrow--prev">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="90" viewBox="0 0 45 90">
+              <defs>
+                <rect id="b" width="50" height="60" rx="6"/>
+                <filter id="a" width="200%" height="183.3%" x="-50%" y="-33.3%" filterUnits="objectBoundingBox">
+                  <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+                  <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="7.5"/>
+                  <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.2784314 0 0 0 0 0.32156864 0 0 0 0 0.3647059 0 0 0 0.3 0"/>
+                </filter>
+              </defs>
+              <g fill="none" fill-rule="evenodd">
+                <g transform="matrix(-1 0 0 1 30 10)">
+                  <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+                  <use fill="#FFF" xlink:href="#b"/>
+                </g>
+                <g stroke="#555" stroke-linecap="round">
+                  <path stroke-width="2" d="M20.75 29.25l-6.5 10.5M20.75 50.75l-6.5-10.5"/>
+                </g>
+              </g>
+            </svg>
+          </button>
+          <button class="splide__arrow splide__arrow--next">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="90" viewBox="0 0 45 90">
+              <defs>
+                <rect transform="rotate(180 50 50)" id="b" width="50" height="60" rx="6"/>
+                <filter id="a" width="200%" height="183.3%" x="-50%" y="-33.3%" filterUnits="objectBoundingBox">
+                  <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+                  <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="7.5"/>
+                  <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.2784314 0 0 0 0 0.32156864 0 0 0 0 0.3647059 0 0 0 0.3 0"/>
+                </filter>
+              </defs>
+              <g fill="none" fill-rule="evenodd">
+                <g transform="matrix(-1 0 0 1 30 10)">
+                  <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+                  <use fill="#FFF" xlink:href="#b"/>
+                </g>
+                <g stroke="#555" stroke-linecap="round">
+                  <path stroke-width="2" d="M20.75 29.25l-6.5 10.5M20.75 50.75l-6.5-10.5"/>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
         <div class="splide__track">
           <ul class="splide__list">
             {% for item in content.clients %}

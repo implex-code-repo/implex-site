@@ -160,23 +160,37 @@
       }
 
       .splide__arrow {
-        &:hover {
-          svg {
-            fill: #cbcaca;
-          }
+
+        svg {
+          height: 80px;
         }
 
         &.splide__arrow--prev {
           left: -38px;
+
+          @include small-tablet-screen {
+            left: 0;
+            top: 220px;
+          }
+
+          svg {
+            transform: scaleX(1);
+          }
         }
 
         &.splide__arrow--next {
           right: -38px;
+
+          @include small-tablet-screen {
+            right: 0;
+            top: 220px;
+          }
+
+          svg {
+            transform: scaleX(-1);
+          }
         }
 
-        svg {
-          fill: #D9D9D9;
-        }
       }
 
       .splide__pagination {
@@ -186,11 +200,6 @@
         @include tablet-screen {
           padding: 0;
           display: none;
-        }
-
-        @include small-tablet-screen {
-          @include flex(row, center, center);
-          padding-top: 20px;
         }
 
         li {
