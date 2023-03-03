@@ -160,6 +160,17 @@
       }
 
       .splide__arrow {
+        @include tablet-screen {
+          top: 280px;
+        }
+
+        @include small-tablet-screen {
+          top: 220px;
+        }
+
+        @include mobile-screen {
+          top: 160px;
+        }
 
         svg {
           height: 80px;
@@ -168,9 +179,16 @@
         &.splide__arrow--prev {
           left: -38px;
 
+          @include tablet-landscape-screen {
+            left: -20px;
+          }
+
+          @include tablet-screen {
+            left: -70px;
+          }
+
           @include small-tablet-screen {
-            left: 0;
-            top: 220px;
+            left: -20px;
           }
 
           svg {
@@ -181,9 +199,16 @@
         &.splide__arrow--next {
           right: -38px;
 
+          @include tablet-landscape-screen {
+            right: -20px;
+          }
+
+          @include tablet-screen {
+            right: -70px;
+          }
+
           @include small-tablet-screen {
-            right: 0;
-            top: 220px;
+            right: -20px;
           }
 
           svg {
@@ -238,6 +263,46 @@
 
       .splide__arrow {
         top: 58%;
+
+        &.splide__arrow--prev {
+          left: -38px !important;
+
+          @include small-desktop-screen {
+            left: 0 !important;
+          }
+
+          @include tablet-landscape-screen {
+            left: 0 !important;
+          }
+
+          @include tablet-screen {
+            left: -48px !important;
+          }
+
+          @include small-tablet-screen {
+            left: -20px !important;
+          }
+        }
+
+        &.splide__arrow--next {
+          right: -38px !important;
+
+          @include small-desktop-screen {
+            right: 0 !important;
+          }
+
+          @include tablet-landscape-screen {
+            right: 0 !important;
+          }
+
+          @include tablet-screen {
+            right: -48px !important;
+          }
+
+          @include small-tablet-screen {
+            right: -20px !important;
+          }
+        }
       }
 
       .splide__pagination {
@@ -245,6 +310,5 @@
         display: none;
       }
     }
-
   }
 }
