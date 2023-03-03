@@ -8,7 +8,6 @@
 
     @include tablet-screen {
       @include flex(column, center, center);
-      padding: 0 100px;
     }
 
     @include small-tablet-screen {
@@ -58,7 +57,7 @@
         }
 
         @include tablet-screen {
-          max-width: 100%;
+          max-width: 600px;
         }
 
         @include mobile-screen {
@@ -100,11 +99,7 @@
         }
 
         @include small-tablet-screen {
-          @include size(220px, 220px);
-        }
-
-        @include mobile-screen {
-          @include size(140px, 140px);
+          @include size(100%, 100%);
         }
       }
     }
