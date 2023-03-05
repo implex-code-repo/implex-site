@@ -38,6 +38,10 @@
     grid-row-gap: 72px;
     margin-top: 80px;
 
+    @include tablet-landscape-screen {
+      margin: 80px 20px 0;
+    }
+
     @include tablet-screen {
       grid-template-columns: repeat(1, 100%);
       margin: 60px auto 0;

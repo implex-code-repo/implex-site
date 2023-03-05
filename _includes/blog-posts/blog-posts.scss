@@ -20,6 +20,10 @@
     max-width: 560px;
     margin: 0 auto 90px;
 
+    @include tablet-landscape-screen {
+      margin-bottom: 80px;
+    }
+
     @include small-desktop-screen {
       font-size: 22px;
     }
@@ -42,7 +46,7 @@
     margin: 0 auto;
 
     @include small-desktop-screen {
-      max-width: 780px;
+      max-width: 850px;
     }
 
     @include small-tablet-screen {

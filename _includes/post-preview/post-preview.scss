@@ -9,7 +9,7 @@
   max-width: 960px;
 
   @include tablet-screen {
-    max-width: 600px;
+    max-width: 766px;
   }
 
   @include mobile-screen {
@@ -17,18 +17,22 @@
   }
 
   .image {
-    @include size(190px, 150px);
+    @include size(240px, 150px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 40px;
     flex-shrink: 0;
 
+    @include tablet-screen {
+      @include size(190px, 150px);
+    }
+
     @include mobile-screen {
       @include size(100%, 192px);
       margin-right: auto;
       margin-bottom: 20px;
-      background-size: contain;
+      background-size: cover;
     }
   }
 

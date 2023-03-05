@@ -21,6 +21,13 @@
     .text-center {
       margin-bottom: 74px;
 
+      @include tablet-landscape-screen {}
+      padding: 0 55px;
+
+      @include small-tablet-screen {
+        padding: 0;
+      }
+
       .title {
         @include tablet-screen {
           @include font(30px, 700);
@@ -44,6 +51,14 @@
       flex-wrap: wrap;
       max-width: 960px;
       margin: 0 auto;
+
+      @include tablet-landscape-screen {
+        padding: 0 55px;
+      }
+
+      @include small-tablet-screen {
+        padding: 0;
+      }
 
       .input-wrapper {
         @include flex(row, space-between, flex-start);
@@ -73,6 +88,10 @@
         border: 1px solid $grey;
         border-radius: $formInputBorderRadius;
         color: white;
+
+        @include tablet-landscape-screen {
+          @include size(413px, 56px);
+        }
 
         @include tablet-screen {
           @include size(100%, 56px);
@@ -144,6 +163,10 @@
       margin: 0 auto;
       border-radius: $formInputBorderRadius;
 
+      @include tablet-landscape-screen {
+        @include size(850px, 56px);
+      }
+
       @include tablet-screen {
         @include size(100%, 56px);
       }
@@ -174,6 +197,10 @@
       border: 1px solid $grey;
       margin: 30px auto 0;
       position: relative;
+
+      @include tablet-landscape-screen {
+        @include size(850px, 380px);
+      }
 
       @include tablet-screen {
         @include size(100%, 332px);
