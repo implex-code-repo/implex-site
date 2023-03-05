@@ -36,7 +36,11 @@
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 72px;
-    margin-top: 80px;
+    margin: 80px 50px 0;
+
+    @include small-desktop-screen {
+      margin: 80px 0 0;
+    }
 
     @include tablet-landscape-screen {
       margin: 80px 20px 0;
