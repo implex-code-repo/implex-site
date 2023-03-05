@@ -32,9 +32,16 @@
     @include flex(column, center, center);
     margin: 60px auto 0;
 
+    @include tablet-screen {
+      width: 330px;
+    }
+
     @include small-tablet-screen {
       margin-top: 30px;
-      width: 100%;
+    }
+
+    @include mobile-screen {
+      width: calc(100% - 48px);
     }
   }
 }

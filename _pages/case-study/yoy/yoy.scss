@@ -23,6 +23,7 @@
   .player {
     width: 960px;
     height: 540px;
+    padding: 0 20px;
 
     @include tablet-screen {
       width: 100%;
