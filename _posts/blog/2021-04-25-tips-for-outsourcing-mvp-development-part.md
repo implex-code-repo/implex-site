@@ -4,9 +4,9 @@ title: "Tips for Outsourcing MVP Development. Part I - Preparation"
 headingTitle: "4 Main Steps to Prepare for Successful MVP Development Outsourcing"
 description: "Project preparation, documentation and right tech stack — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup"
 ogDescription: "Project preparation, documentation and right tech stack — based on our case study of building an MVP in 3.5 months for the U.S. automotive startup"
-image: "/assets/img/articles/tips-1.jpg"
+image: "/assets/img/articles/tips-1-920.webp"
 altImage: ""
-ogImage: "/assets/img/articles/tips-1.jpg"
+ogImage: "/assets/img/articles/tips-1-920.webp"
 author: "Slava Hraichenko"
 category: "Blog"
 permalink: '/tpost/ye6u7ml161-tips-for-outsourcing-mvp-development-par'
@@ -14,7 +14,7 @@ showOnMainPage: true
 showContactForm: true
 ---
 
-![](../../assets/img/articles/tips-1.jpg)
+![MVP explanation](/assets/img/articles/tips-1-920.webp)
 
 It’s no secret that nine out of ten startups fail, mostly because of the lack of interest and problems with the product-market fit. But validating your hypothesis from the beginning can dramatically improve your odds for success. How? With the Lean startup approach.
 
@@ -28,7 +28,7 @@ So let’s get down to it!
 
 ## Lean startups: getting to the market faster
 
-![](../../assets/img/articles/tips-1/lean-startups.jpg)
+![Lean startups](/assets/img/articles/tips-1/lean-startups.jpg)
 
 Dropbox, Slack, or General Electric's project FastWorks are just some successful startups that used the Lean approach. And for a good reason. The method is based on three main principles:
 
@@ -65,7 +65,7 @@ Before jumping aboard the MVP train, make sure you have a clear vision of your f
 
 ## Understanding the concept
 
-![](../../assets/img/articles/tips-1/lean-development.png)
+![Lean development](/assets/img/articles/tips-1/lean-development.png)
 
 We’ve seen many companies that don’t understand the concept of an MVP right. Here are four principles to bear in mind before you start the development process:
 
@@ -97,7 +97,7 @@ Regardless of how genius your developers are, they don’t know the project as p
 
 At Implex, we prefer the story mapping technique for describing the future product and its requirements. When making the map, we arrange user activities along the horizontal axis according to their priority or system requirements. Down the vertical axis, we place product features in the order of descending priority.
 
-![](../../assets/img/articles/tips-1/story-mapping.jpg)
+![Story mapping technique](/assets/img/articles/tips-1/story-mapping.jpg)
 
 Story mapping is equally effective and insightful for both: software development teams and product owners. On a single sheet of paper or a board, developers can see product goals and features arranged in a strict order. Product owners, on the other hand, can see the efforts and costs necessary for every additional feature. They can also change priorities or discard non-important features from the MVP.
 
