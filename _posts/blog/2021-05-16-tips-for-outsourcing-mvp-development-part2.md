@@ -4,9 +4,9 @@ title: "Tips for Outsourcing MVP Development. Part II - Runnnig"
 headingTitle: "How to Successfully Manage Team, Requirements, Estimation and Communication in Outsourcing"
 description: "Manage team, requirements, sprint planning and comms for successful MVP delivery — based on building an MVP in 3.5 mos. for the US automotive startup"
 ogDescription: "Manage team, requirements, sprint planning and comms for successful MVP delivery — based on building an MVP in 3.5 mos. for the US automotive startups"
-image: "/assets/img/articles/tips-2.jpg"
+image: "/assets/img/articles/tips-2-920.webp"
 altImage:
-ogImage: "/assets/img/articles/tips-2.jpg"
+ogImage: "/assets/img/articles/tips-2-920.webp"
 author: "Slava Hraichenko"
 permalink: "/tpost/m6n0b6l511-tips-for-outsourcing-mvp-development-par"
 category: "Blog"
@@ -14,7 +14,7 @@ showOnMainPage: true
 showContactForm: true
 ---
 
-![Time is ticking](/assets/img/articles/tips-2.jpg)
+![Time is ticking](/assets/img/articles/tips-2-920.webp)
 
 In the previous part of this article, we talked about the Lean approach, and why successful startups use it to accelerate time to market. We’ve also defined a minimal viable product (MVP) and gave the lowdown on the preparation to be made before the MVP development.
 

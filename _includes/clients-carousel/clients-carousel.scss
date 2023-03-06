@@ -26,10 +26,23 @@
 
       .clients-block {
         display: grid;
-        grid-template-columns: repeat(2, calc(50% - 10px));
+        grid-template-columns: calc(50%) calc(50% - 30px);
         grid-column-gap: 20px;
-        margin-top: 120px;
+        margin-top: 40px;
         align-items: center;
+        padding: 0 44px;
+
+        @include small-desktop-screen {
+          margin-top: 40px;
+          grid-row-gap: 10px;
+          padding: 0;
+        }
+
+
+        @include tablet-landscape-screen {
+          margin-left: 24px;
+          margin-right: 24px;
+        }
 
         @include tablet-screen {
           grid-template-columns: 100%;
@@ -61,8 +74,8 @@
         }
 
         &.without-button {
-          grid-template-columns: calc(50%) 480px;
           grid-row-gap: 20px;
+          padding: 0 44px;
 
           @include tablet-screen {
             grid-template-columns: 100%;
@@ -179,8 +192,16 @@
         &.splide__arrow--prev {
           left: -38px;
 
+          @media screen and (max-width: 1300px){
+            left: 0;
+          }
+
+          @include small-desktop-screen {
+            left: -38px;
+          }
+
           @include tablet-landscape-screen {
-            left: -20px;
+            left: 0;
           }
 
           @include tablet-screen {
@@ -199,8 +220,16 @@
         &.splide__arrow--next {
           right: -38px;
 
+          @media screen and (max-width: 1300px){
+            right: 0;
+          }
+
+          @include small-desktop-screen {
+            right: -38px;
+          }
+
           @include tablet-landscape-screen {
-            right: -20px;
+            right: 0;
           }
 
           @include tablet-screen {
@@ -219,7 +248,7 @@
       }
 
       .splide__pagination {
-        padding-top: 100px;
+        padding-top: 36px;
         position: relative;
 
         @include tablet-screen {
@@ -267,11 +296,7 @@
         &.splide__arrow--prev {
           left: -38px !important;
 
-          @include small-desktop-screen {
-            left: 0 !important;
-          }
-
-          @include tablet-landscape-screen {
+          @media screen and (max-width: 1300px){
             left: 0 !important;
           }
 
@@ -287,11 +312,7 @@
         &.splide__arrow--next {
           right: -38px !important;
 
-          @include small-desktop-screen {
-            right: 0 !important;
-          }
-
-          @include tablet-landscape-screen {
+          @media screen and (max-width: 1300px){
             right: 0 !important;
           }
 

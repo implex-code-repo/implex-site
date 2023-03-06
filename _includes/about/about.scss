@@ -6,6 +6,10 @@
   .content-block {
     @include flex(row, center, flex-start);
 
+    @include tablet-landscape-screen {
+      padding: 0 20px;
+    }
+
     @include tablet-screen {
       @include flex(column, center, center);
     }

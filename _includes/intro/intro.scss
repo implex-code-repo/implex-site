@@ -59,7 +59,7 @@
 
       .description {
         padding: 15px 0 30px;
-        font-size: 24px;
+        font-size: 22px;
         max-width: 960px;
         line-height: 36px;
         font-weight: 300;
@@ -72,13 +72,18 @@
 
         @include tablet-screen {
           font-size: 20px;
-          width: 100%;
+          width: 640px;
           padding: 0 20px;
         }
 
         @include small-tablet-screen {
           font-size: 14px;
           line-height: 30px;
+          width: 100%;
+        }
+
+        @include mobile-screen {
+          line-height: 20px;
         }
       }
 
