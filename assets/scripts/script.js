@@ -20,6 +20,11 @@ const implex = (function () {
   document.addEventListener("DOMContentLoaded", init);
 
   function init() {
+    // Get the iframe element by ID
+    const iframe = document.getElementById('iframe-0.9792492733831788');
+    // Remove the "hidden" attribute
+    iframe.removeAttribute('hidden');
+    
     if (document.getElementsByClassName('carousel').length !== 0) {
       const splide = new Splide('.splide', {
         drag: isTouchScreen(),
