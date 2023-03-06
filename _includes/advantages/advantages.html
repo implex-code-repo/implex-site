@@ -17,9 +17,7 @@
       {% for item in content.advantages %}
         {% assign animationIndex = forloop.index | plus: 1 %}
         <div class="advantage transite transite-up sn-{{ animationIndex }}">
-          <div class="icon">
-            <img alt="{{ item.alt }}" src="{{ prefix }}{{ item.icon }}">
-          </div>
+            <img class="icon" alt="{{ item.alt }}" src="{{ prefix }}{{ item.icon }}">
           <h3 class="adv-title">{{ item.title }}</h3>
           <div class="adv-description">{{ item.description }}</div>
         </div>

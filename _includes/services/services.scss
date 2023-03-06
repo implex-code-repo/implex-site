@@ -65,9 +65,10 @@
           }
         }
 
-        .icon {
-          @include size(90px, 90px);
-          padding-bottom: 36px;
+        .icon-wrapper {
+          .icon {
+            @include size(90px, 90px);
+          }
         }
 
         .service-title {

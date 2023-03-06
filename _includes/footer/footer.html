@@ -21,9 +21,9 @@
       <div class="subtitle">{{ content.subtitle }}</div>
       <div class="icons-wrapper">
         {% for item in content.icons %}
-        <div class="icon">
+        <div class="icon-wrapper">
           <a target="_blank" rel="noopener noreferrer" href="{{ item.href }}">
-            <img alt="{{ item.alt }}" src="{{ prefix }}{{ item.icon }}">
+            <img class="icon" alt="{{ item.alt }}" src="{{ prefix }}{{ item.icon }}">
           </a>
         </div>
         {% endfor %}
