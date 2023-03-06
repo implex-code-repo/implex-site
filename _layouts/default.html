@@ -13,7 +13,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{ site.url }}/assets/css/splide-skyblue.min.css">
     <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css" />
-    <script type ="text/javascript" src="https://widget.clutch.co/static/js/widget.js" defer loading="lazy"> </script>
     {% include _head/head.html %}
 </head>
 <body>
@@ -22,5 +21,14 @@
   {% include footer/footer.html %}
   <script src="{{ site.url }}/assets/scripts/script.js?q=20220805"></script>
   <script src="{{ site.url }}/assets/scripts/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+  <script type="text/javascript">
+    // Initialize the lazy loader and load the widget when it is in view
+    var lazyLoadInstance = new LazyLoad({
+      // Your custom settings go here
+      container: document.querySelector(".lazyloading")
+    });
+  </script>
+
 </body>
 </html>
