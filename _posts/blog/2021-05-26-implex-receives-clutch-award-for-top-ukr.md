@@ -4,9 +4,9 @@ title: "Implex Among the Best Ukrainian B2B Firms"
 headingTitle: "Implex Receives Clutch Award For Top Ukrainian B2B Firm"
 description: "We are thrilled to announce that Clutch have recognized us as one of the 250 best-performing software development companies in Ukraine."
 ogDescription: "We are thrilled to announce that Clutch have recognized us as one of the 250 best-performing software development companies in Ukraine."
-image: "/assets/img/articles/clutch.png"
+image: "/assets/img/articles/clutch-920.webp"
 altImage:
-ogImage: "/assets/img/articles/clutch.png"
+ogImage: "/assets/img/articles/clutch-920.webp"
 author: "Slava Hraichenko"
 category: "Blog"
 permalink: "/tpost/x6dxl0fpp1-implex-receives-clutch-award-for-top-ukr"
@@ -17,7 +17,7 @@ Headquartered in the beautiful city of Kyiv, Ukraine, Implex is one of the count
 
 With that in mind, we are thrilled to announce that Clutch have recognized us as one of the 250 best-performing software development companies in Ukraine. Located in Washington, DC, Clutch is a [data-driven resource for businesses](https://clutch.co/developers/ukraine). They evaluate technology service and solutions companies based on the quality of work, thought leadership, and client reviews.
 
-![](../../assets/img/articles/clutch.png)
+![Implex in Clutch top list](../../assets/img/articles/clutch-920.webp)
 
 The entire Implex team is beyond proud to receive this recognition from Clutch. We would like to extend our appreciation to all of our clients who helped make this possible. We couldn’t have done this without you.
 
