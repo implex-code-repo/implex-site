@@ -53,8 +53,12 @@
 
   .icons-wrapper {
     @include flex(row, center, center);
-    .icon {
+    .icon-wrapper {
       margin-top: 44px;
+
+      .icon {
+        @include size(48px, 48px);
+      }
 
       &:nth-child(2) {
         padding-left: 10px;

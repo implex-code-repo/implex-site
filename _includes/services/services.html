@@ -13,8 +13,8 @@
       {% for item in site.data.services %}
         {% assign animationIndex = forloop.index | plus: 1 %}
         <div class="service transite transite-up sn-{{ animationIndex }}">
-          <div class="icon">
-            <img alt="{{ item.alt }}" src="{{ prefix }}{{ item.icon }}">
+          <div class="icon-wrapper">
+            <img class="icon" alt="{{ item.alt }}" src="{{ prefix }}{{ item.icon }}">
           </div>
           <h3 class="service-title">{{ item.title }}</h3>
           <div class="service-description">{{ item.description }}</div>

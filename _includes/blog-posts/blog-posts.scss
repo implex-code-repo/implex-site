@@ -48,9 +48,5 @@
     @include small-desktop-screen {
       max-width: 850px;
     }
-
-    @include small-tablet-screen {
-      padding: 0 20px;
-    }
   }
 }
