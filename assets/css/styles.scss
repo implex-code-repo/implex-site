@@ -264,6 +264,7 @@ body {
 
     @include small-tablet-screen {
       font-size: 30px;
+      padding: 0;
     }
   }
 
@@ -335,6 +336,10 @@ body {
 
     & > div {
       margin: 0 20px;
+
+      @include tablet-screen {
+        margin: 0;
+      }
     }
 
     &.margin-top {
@@ -459,7 +464,6 @@ body {
 
       @include tablet-screen {
         margin-top: 100px;
-        padding: 0 20px;
       }
 
       @include small-tablet-screen {
@@ -506,9 +510,9 @@ body {
         margin: 0 auto;
       }
 
-      @include small-tablet-screen {
-        margin: 0 20px;
-      }
+      //@include small-tablet-screen {
+      //  margin: 0 20px;
+      //}
     }
 
     &.margin-top {
@@ -569,7 +573,7 @@ body {
 }
 
 .button {
-  @include size(330px, 56px);
+  @include size(330px, 60px);
   @include font(16px, 700);
   font-family: 'Roboto', Arial, sans-serif;
   background-color: $orange;

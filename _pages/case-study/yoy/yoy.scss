@@ -28,6 +28,10 @@
     @include tablet-screen {
       width: 100%;
     }
+
+    @include small-tablet-screen {
+      padding: 0;
+    }
   }
 
   .logos-row.yoy-logos {

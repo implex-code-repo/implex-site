@@ -81,11 +81,14 @@
           }
         }
 
+        @include tablet-landscape-screen {
+          grid-column-gap: 0;
+          padding: 0 20px;
+        }
+
         @include tablet-screen {
           grid-template-columns: 100%;
-          grid-column-gap: 0;
           grid-row-gap: 20px;
-          padding: 0 20px;
         }
 
         &:nth-child(3n) {
