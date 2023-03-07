@@ -11,8 +11,8 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="{{ site.url }}/assets/css/splide-skyblue.min.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css" />
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/splide-skyblue.min.css?{{ site.time | date: '%s%N' }}">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css?{{ site.time | date: '%s%N' }}" />
     {% include _head/head.html %}
 </head>
 <body>
@@ -25,7 +25,7 @@
   {% include contact-us/contact-us.html %}
   {% endif %}
   {% include footer/footer.html careers = page.careers %}
-  <script src="{{ site.url }}/assets/scripts/script.js?q=20220805"></script>
-  <script src="{{ site.url }}/assets/scripts/splide.min.js"></script>
+  <script src="{{ site.url }}/assets/scripts/script.js?{{ site.time | date: '%s%N' }}"></script>
+  <script src="{{ site.url }}/assets/scripts/splide.min.js?{{ site.time | date: '%s%N' }}"></script>
 </body>
 </html>

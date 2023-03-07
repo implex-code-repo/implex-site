@@ -12,6 +12,7 @@
 
     @include tablet-screen {
       @include flex(column, center, center);
+      padding: 0;
     }
 
     @include small-tablet-screen {
@@ -89,6 +90,10 @@
 
       @include tablet-screen {
         padding-left: 0;
+      }
+
+      @include small-tablet-screen {
+        width: 100%;
       }
 
       img {

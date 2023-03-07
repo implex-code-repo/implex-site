@@ -1,7 +1,7 @@
 sass:
-    style: compressed
-    sass_dir: assets/css
-    load_paths: [ _includes/**/*, _pages/**/* ]
+  style: compressed
+  sass_dir: assets/css
+  load_paths: [ _includes/**/*, _pages/**/* ]
 collections:
   authors:
     output: true
@@ -28,7 +28,7 @@ defaults:
       path: ""
     values:
       JEKYLL_ENV": "production"
-include: ['_pages']
+include: [ '_pages' ]
 imgPrefix: "assets/img/"
 plugins:
   - jekyll-gzip
