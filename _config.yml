@@ -28,10 +28,6 @@ defaults:
       path: ""
     values:
       JEKYLL_ENV": "production"
-  - scope:
-      path: ""
-    values:
-        cache-control: "public, max-age=31536000, immutable"
 include: [ '_pages' ]
 imgPrefix: "assets/img/"
 plugins:
