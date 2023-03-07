@@ -101,7 +101,7 @@
         @include size(202px, 60px);
       }
 
-      @include small-tablet-screen {
+      @include mobile-screen {
         width: 100%;
       }
     }

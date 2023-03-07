@@ -6,7 +6,7 @@
     padding: 104px 20px;
   }
 
-  @include mobile-screen {
+  @include tablet-screen {
     padding-top: 60px;
   }
 
@@ -24,11 +24,15 @@
     }
 
     h1 {
-      margin-bottom: 90px;
       text-align: center;
+      margin: 0 0 90px;
 
       @include small-tablet-screen {
         margin-bottom: 30px;
+      }
+
+      @include tablet-screen {
+        font-size: 30px;
       }
     }
 
