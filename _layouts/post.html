@@ -14,7 +14,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css" />
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css?{{ site.time | date: '%s%N' }}" />
     {% include _head/head.html %}
 </head>
 <body>
@@ -40,6 +40,6 @@
   </div>
   {% include contact-us/contact-us.html %}
   {% include footer/footer.html %}
-  <script src="{{ site.url }}/assets/scripts/script.js?q=20220805"></script>
+  <script src="{{ site.url }}/assets/scripts/script.js?{{ site.time | date: '%s%N' }}"></script>
 </body>
 </html>
