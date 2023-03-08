@@ -308,8 +308,12 @@
       @include font(16px, 700);
       text-transform: uppercase;
       text-align: center;
-      padding: 100px 0 0;
+      padding: 100px 0 70px;
       margin: 0;
+
+      @include tablet-screen {
+        padding-bottom: 0;
+      }
 
       @include small-tablet-screen {
         padding: 80px 0 0;
