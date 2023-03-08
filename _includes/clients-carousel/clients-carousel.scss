@@ -211,7 +211,7 @@
         &.splide__arrow--prev {
           left: -38px;
 
-          @media screen and (max-width: 1300px){
+          @media screen and (max-width: 1300px) {
             left: 0;
           }
 
@@ -239,7 +239,7 @@
         &.splide__arrow--next {
           right: -38px;
 
-          @media screen and (max-width: 1300px){
+          @media screen and (max-width: 1300px) {
             right: 0;
           }
 
@@ -302,6 +302,34 @@
 
     @include mobile-screen {
       padding-bottom: 0;
+    }
+
+    .carousel-title {
+      @include font(16px, 700);
+      text-transform: uppercase;
+      text-align: center;
+      padding: 100px 0 0;
+      margin: 0;
+
+      @include small-tablet-screen {
+        padding: 80px 0 0;
+      }
+    }
+
+    .alt-cases-button {
+      @include flex(column, center, center);
+      margin: 30px auto 0;
+      background: none;
+      color: $orange;
+
+      @include tablet-screen {
+        width: 330px;
+        margin-top: 14px;
+      }
+
+      @include mobile-screen {
+        width: calc(100% - 40px);
+      }
     }
 
     .carousel-content {
