@@ -13,6 +13,9 @@
 {% endif %}
 
 <div class="{{ carousel_wrapper_classes }}">
+  {% if include.black %}
+  <h2 class="carousel-title">More case studies</h2>
+  {% endif %}
   <div class="content carousel-content">
     <div class="clients-container carousel transite transite-up sn-3">
       <div class="splide">
@@ -100,4 +103,8 @@
       </div>
     </div>
   </div>
+  {% if include.black %}
+  <a href="/case-study"
+     class="button alt-cases-button transite transite-up sn-3">Case Studies list</a>
+  {% endif %}
 </div>
