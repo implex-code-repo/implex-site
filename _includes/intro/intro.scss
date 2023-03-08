@@ -6,6 +6,10 @@
   background-size: cover;
   background-position: top;
 
+  @include mobile-screen {
+    background-image: url("/assets/img/background/main-bg-480.webp");
+  }
+
   .overlay {
     @include size(100%, 100%);
     background-color: rgba(0, 0, 0, .7);
