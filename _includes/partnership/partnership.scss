@@ -4,6 +4,10 @@
   background: url("/assets/img/background/partnership-bg-1680.webp") no-repeat center center;
   background-size: cover;
 
+  @include mobile-screen {
+    background: url("/assets/img/background/partnership-bg-480.webp") no-repeat center center;
+  }
+
   .overlay {
     @include size(100%, 100%);
     background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9));
