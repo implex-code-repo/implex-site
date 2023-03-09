@@ -14,7 +14,7 @@ clients:
     link: /case-study/wikiart
     image: clients/Wiki_preview_cover-772.webp
     imageAlt: "Visual art web encyclopedia Wikiart cover"
-  - title: "An extremely quick MVP for the on-line mobile and web car auction"
+  - title: "Rapid MVP for the on-line mobile and web car auction"
     description: "A B2B startup for car dealers who sell used vehicles across the USA via the marketplace. The developed application has a whole range of functions to support the workflows of car dealers and inspectors, like auctions workflow, live and proxy bidding, post-auction counter offering, and deal closing. The solution is integrated with different APIs to gather information about vehicles, helping dealers make the right decisions at auctions."
     link: /case-study/smartlane
     image: clients/SmartLane_preview_cover-772.webp
@@ -26,7 +26,7 @@ clients:
     link: /case-study/admit-me
     image: clients/AdmitMe_preview_cover-772.webp
     imageAlt: "Trustful cooperation in education domain - Admit.me cover"
-  - title: "A lightning-fast website for a reputable cybersecurity company"
+  - title: "A lightning-fast website for a reputable cybersec company"
     description: "A cybersecurity services company Berezha Security Group rebranded as BSG in 2020. So they needed to improve their website, but redesign was only part of the story. The ultimate goal was to make the website fast and SEO-friendly, keeping its Google PageSpeed Insights scores in the green 90-100 range, what's impossible using a WordPress-like CMS approach. A static website with perfect usability, external CMS and one-click deployment functionality, and revision control successfully represents the BSG brand now."
     link: /case-study/bsg
     image: clients/Bsg_preview_cover-772.webp
