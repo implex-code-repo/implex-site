@@ -1,5 +1,6 @@
 ---
 layout: vacancy
+headingTitle: "Full stack engineer for Percona team"
 title: "Full stack engineer for Percona team"
 description: "Full-time or part-time Software Engineer with focus mainly on backend and partially frontend for PMM product - free and open-source platform for monitoring and managing the performance of SQL/NoSQL based databases"
 ogDescription: "Full-time or part-time Software Engineer with focus mainly on backend and partially frontend for PMM product - free and open-source platform for monitoring and managing the performance of SQL/NoSQL based databases"
