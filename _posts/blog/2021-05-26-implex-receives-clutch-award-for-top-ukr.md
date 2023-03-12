@@ -17,7 +17,7 @@ Headquartered in the beautiful city of Kyiv, Ukraine, Implex is one of the count
 
 With that in mind, we are thrilled to announce that Clutch have recognized us as one of the 250 best-performing software development companies in Ukraine. Located in Washington, DC, Clutch is a [data-driven resource for businesses](https://clutch.co/developers/ukraine). They evaluate technology service and solutions companies based on the quality of work, thought leadership, and client reviews.
 
-![Implex in Clutch top list](../../assets/img/articles/clutch-920.webp)
+![Implex in Clutch top list](/assets/img/articles/clutch-920.webp)
 
 The entire Implex team is beyond proud to receive this recognition from Clutch. We would like to extend our appreciation to all of our clients who helped make this possible. We couldn’t have done this without you.
 

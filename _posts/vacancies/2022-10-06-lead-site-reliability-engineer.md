@@ -7,7 +7,7 @@ category: "Vacancy"
 tag: "Devops"
 keywords: ''
 ---
-![](../../../../assets/img/vacancy/reability.png)
+![](/assets/img/vacancy/reability.png)
 
 **About Project**
 

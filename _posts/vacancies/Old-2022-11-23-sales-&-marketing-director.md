@@ -6,7 +6,7 @@ category: "Vacancy"
 tag: "Management"
 keywords: ''
 ---
-![](../../../../assets/img/vacancy/implex.png)
+![](/assets/img/vacancy/implex.png)
 
 *We are a software development company that provides high-quality outsourcing services to clients from the US and Europe. We strive for building relationships with our clients that last for years. This makes trust, reliability, and respect the principal values of our culture. Our clients recognize us as a one-stop software development company that allows them to focus on business without having to worry about the tech side. We are an ambitious team of like minded people.*
 
