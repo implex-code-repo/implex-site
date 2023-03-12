@@ -89,6 +89,7 @@
         @include tablet-screen {
           grid-template-columns: 100%;
           grid-row-gap: 20px;
+          max-width: 600px;
         }
 
         &:nth-child(3n) {
