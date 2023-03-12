@@ -464,6 +464,10 @@ body {
 
       @include tablet-screen {
         margin-top: 100px;
+
+        &.remove-margin {
+          margin-top: 0;
+        }
       }
 
       @include small-tablet-screen {
