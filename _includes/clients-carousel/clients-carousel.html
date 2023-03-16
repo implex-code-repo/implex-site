@@ -91,10 +91,14 @@
                   <a href="{{ item.link }}"
                      class="button button-outline transite transite-up sn-{{ animationIndex }}">View Case
                     Study</a>
-                {% endif %}
-                <div class="image transite transite-{{imageAnimationDirection}} sn-{{ animationIndex }}">
+                  <div class="image transite transite-{{imageAnimationDirection}} sn-{{ animationIndex }}">
+                    <img alt="{{ item.imageAlt }}" src="{{ site.url }}/{{ prefix }}{{ item.image }}">
+                  </div>
+                {% else %}
+                <a href="{{ item.link }}" class="image transite transite-{{imageAnimationDirection}} sn-{{ animationIndex }}">
                   <img alt="{{ item.imageAlt }}" src="{{ site.url }}/{{ prefix }}{{ item.image }}">
-                </div>
+                </a>
+                {% endif %}
               </div>
             </li>
             {% endfor %}
