@@ -1,3 +1,7 @@
 .blogs {
-  padding: 135px 0;
+  padding: 104px 0;
+
+  @include tablet-screen {
+    padding: 46px 20px 0;
+  }
 }

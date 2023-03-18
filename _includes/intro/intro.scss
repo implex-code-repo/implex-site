@@ -2,9 +2,13 @@
   height: 100vh;
   align-items: center;
   text-align: center;
-  background-image: url("../../assets/img/background/main-bg.webp");
+  background-image: url("/assets/img/background/main-bg-1680.webp");
   background-size: cover;
   background-position: top;
+
+  @include mobile-screen {
+    background-image: url("/assets/img/background/main-bg-480.webp");
+  }
 
   .overlay {
     @include size(100%, 100%);
@@ -29,7 +33,7 @@
         max-width: 960px;
         white-space:nowrap;
 
-        @include tablet-screen {
+        @include small-desktop-screen {
           font-size: 68px;
         }
 
@@ -41,13 +45,14 @@
           @include font(30px, 600);
           padding-inline: 10px;
           letter-spacing: 1px;
+          white-space: normal;
         }
       }
 
       .break-line {
         display: none;
 
-        @include small-desktop-screen {
+        @include tablet-screen {
           display: block;
         }
 
@@ -60,36 +65,52 @@
         padding: 15px 0 30px;
         font-size: 22px;
         max-width: 960px;
-        line-height: 1.55;
+        line-height: 36px;
+        font-weight: 300;
+        margin: 0;
 
         @include small-desktop-screen {
+          font-size: 20px;
           width: 780px;
         }
 
         @include tablet-screen {
           font-size: 20px;
-          max-width: 640px;
+          width: 640px;
+          padding: 0 20px;
         }
 
         @include small-tablet-screen {
           font-size: 14px;
-          padding-inline: 10px;
+          line-height: 30px;
+          width: 100%;
+        }
+
+        @include mobile-screen {
+          line-height: 20px;
         }
       }
 
       .button-wrapper {
         margin-top: 44px;
+        padding: 0 20px;
+
+        @include mobile-screen {
+          width: 100%;
+        }
       }
 
       .button {
-        text-transform: uppercase;
-
         @include tablet-screen {
           @include size(220px, 60px);
         }
 
         @include small-tablet-screen {
           @include size(160px, 60px);
+        }
+
+        @include mobile-screen {
+          @include size(100%, 60px);
         }
       }
     }

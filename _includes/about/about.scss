@@ -1,27 +1,31 @@
 @import 'mixins';
 
-.about {
+.about.section {
   background-color: white;
 
   .content-block {
     @include flex(row, center, flex-start);
 
+    @include tablet-landscape-screen {
+      padding: 0 20px;
+    }
+
     @include tablet-screen {
       @include flex(column, center, center);
-      padding: 0 100px;
+      padding: 0;
     }
 
     @include small-tablet-screen {
       padding: 0;
     }
 
-    @include mobile-screen {
-      padding: 0 40px;
-    }
-
     .info {
       @include flex(column, center, flex-start);
       padding-right: 80px;
+
+      @include small-desktop-screen {
+        padding-right: 12px;
+      }
 
       @include tablet-screen {
         padding-bottom: 40px;
@@ -31,12 +35,10 @@
       .title {
         @include font(42px, 700);
         line-height: 1.23;
+        padding: 0;
+        margin: 0;
 
-        @include tablet-screen {
-          @include font(30px, 700);
-        }
-
-        @include small-tablet-screen {
+        @include small-desktop-screen {
           font-size: 38px;
         }
 
@@ -53,19 +55,29 @@
         padding-top: 24px;
         max-width: 450px;
 
-        @include tablet-screen {
-          @include font(16px, 300);
-          max-width: 600px;
+        @include small-desktop-screen {
+          font-size: 18px;
+          max-width: 460px;
+          line-height: 28px;
         }
 
-        @include small-tablet-screen {
-          font-size: 18px;
+        @include tablet-screen {
+          max-width: 600px;
         }
 
         @include mobile-screen {
           font-size: 16px;
-          max-width: 300px;
+          max-width: 100%;
         }
+
+        .link {
+          color: $orange;
+          text-decoration: none;
+        }
+      }
+
+      .clutch-widget {
+        padding-top: 60px;
       }
     }
 
@@ -80,15 +92,23 @@
         padding-left: 0;
       }
 
+      @include small-tablet-screen {
+        width: 100%;
+      }
+
       img {
         @include size(270px, 270px);
 
-        @include tablet-screen {
-          @include size(100%, auto);
+        @include small-desktop-screen {
+          @include size(220px, 220px);
         }
 
-        @include mobile-screen {
-          @include size(140px, 140px);
+        @include tablet-screen {
+          @include size(290px, 290px);
+        }
+
+        @include small-tablet-screen {
+          @include size(100%, 100%);
         }
       }
     }

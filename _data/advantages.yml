@@ -3,21 +3,27 @@ description: Our diverse background allows offering you
   the most effective practices.
 advantages:
   - icon: advantages/advantages-1.svg
+    alt: "Combination"
     title: Agile and Waterfall combination
     description: Software development is the process of continuous iterative improvement. Following the Agile principles, we also know when the best approaches of Waterfall can help.
   - icon: advantages/advantages-2.svg
+    alt: "Monitor"
     title: Modern but proven technologies
     description: No matter how promising, every new technology needs time to prove itself. So, in our work, we rely on the ones that are reliable yet rapidly evolving.
   - icon: advantages/advantages-3.svg
+    alt: "People"
     title: Proper work culture and attitude
     description: Delivering high-quality software requires the right mix of technical and soft skills. We carefully select professionals for each position and help them embrace our culture.
   - icon: advantages/advantages-4.svg
+    alt: "Globe"
     title: A fully remote and distributed team
     description: Being a team doesn't require having a physical office. In fact, a remote team offers numerous benefits when you implement the management techniques we are good at.
   - icon: advantages/advantages-5.svg
+    alt: "Sight"
     title: Empathy for your pains and needs
     description: It's not enough to master technologies and tools. We wouldn't be able to produce great applications without understanding the business almost as well as the client.
   - icon: advantages/advantages-6.svg
+    alt: "Shield"
     title: Impressive cost-efficiency
     description: Our price is fair since we don't have a fancy office, top management expenses and don't invest much in advertising. After all, the best way to get new clients is through recommendations.
 

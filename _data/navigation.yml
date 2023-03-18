@@ -3,7 +3,8 @@
     - name: About us
       link: /#about
     - name: Careers
-      link: /careers
+      link: /careers/
+  id: company
 - name: Services
   link: /#services
   id: services
@@ -11,11 +12,12 @@
   link: /#how-it-works
   id: how-it-works
 - name: Our Clients
-  link: /#our-clients
+  link: /case-study/
   id: our-clients
 - name: Blog
-  link: /#blog
+  link: /blog/
   id: blog
 - name: Contact Us
-  link: /#
+  link: '#contact-us'
   button: true
+  id: contact-us

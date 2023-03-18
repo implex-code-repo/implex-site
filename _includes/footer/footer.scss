@@ -1,9 +1,13 @@
 .white-part {
   background-color: white;
-  padding: 100px 0;
+  padding: 150px 0;
+
+  @include tablet-landscape-screen {
+    padding: 120px 0;
+  }
 
   @include tablet-screen {
-    padding-inline: 20px;
+    padding: 80px 20px;
   }
 
   .title {
@@ -47,8 +51,19 @@
     }
   }
 
-  .icon {
-    margin-top: 44px;
+  .icons-wrapper {
+    @include flex(row, center, center);
+    .icon-wrapper {
+      margin-top: 44px;
+
+      .icon {
+        @include size(48px, 48px);
+      }
+
+      &:nth-child(2) {
+        padding-left: 10px;
+      }
+    }
   }
 }
 
@@ -57,7 +72,7 @@
   line-height: 1.55;
   background-color: black;
   color: #939393;
-  padding: 60px 0 30px;
+  padding: 28px 0;
 
   @include small-desktop-screen {
     font-size: 14px;

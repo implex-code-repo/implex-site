@@ -9,15 +9,15 @@
   {% assign content = site.data.how-it-works %}
   <div class="content content-block">
     <div class="text-center transite transite-up sn-1">
-      <h1 class="title">{{ content.title }}</h1>
-      <h2 class="description">{{ content.description }}</h2>
+      <h2 class="title">{{ content.title }}</h2>
+      <div class="description">{{ content.description }}</div>
     </div>
     <div class="product-container">
       {% for item in content.products %}
         {% assign animationIndex = forloop.index | plus: 1 %}
         <div class="product-block transite transite-up sn-{{ animationIndex }}">
           <div class="index">-{{ forloop.index }}-</div>
-          <div class="product-title">{{ item.title }}</div>
+          <h3 class="product-title">{{ item.title }}</h3>
           <div class="product-description">{{ item.description }}</div>
         </div>
       {% endfor%}

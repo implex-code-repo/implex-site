@@ -1,0 +1,72 @@
+{% comment %}
+<!--
+  ~ Copyright (c) 2022. Implex
+  ~ All rights reserved
+  -->
+{% endcomment %}
+
+<section class="section section-dark contact-us" id="contact-us">
+    {% assign content = site.data.contact-us %}
+  <div class="overlay">
+    <div class="content">
+        <div class="text-center">
+            <h2 class="title transite transite-up sn-1">{{ content.title }}</h2>
+            <div id="contact-form-subtitle" class="subtitle transite transite-up sn-2">{{ content.subTitle }}</div>
+        </div>
+        <form id="contact-form" class="form-wrapper transite transite-up sn-3">
+            <div class="input-wrapper">
+                <input id="contact-form-name-input" name="name" placeholder="Your name" type="text">
+                <input id="contact-form-email-input" name="email" placeholder="Your E-mail" type="text">
+            </div>
+            <textarea id="contact-form-comment-input" name="comment" placeholder="Your text"
+                      onkeyup="implex.textAreaSizesDependContent(this)"></textarea>
+            <div class="file-wrapper">
+                <label id="contact-form-custom-btn" class="file-label" for="contact-form-file-upload">Choose
+                    file</label>
+                <input id="contact-form-file-upload" name="file" type="file" hidden="hidden">
+                <div id="contact-form-custom-text" class="text-helper"></div>
+                <div id="contact-form-remove-file" class="remove-btn hidden">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="7" y="11" width="10" height="2" rx="1" fill="white"/>
+                        <circle cx="12" cy="12" r="9.5" stroke="white"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="button-wrapper transite transite-up sn-3">
+                <input value="Contact Us" type="submit">
+            </div>
+        </form>
+        <div id="contact-form-additional-text" class="additional-text transite transite-up sn-3">{{
+            content.additionalText }}
+        </div>
+        <div id="contact-form-error-block" class="error-block hidden">Please enter valid value</div>
+        <div id="contact-form-success-block" class="success-block hidden">
+            <div class="success-icon">
+                <svg width="127" height="76" viewBox="0 0 127 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_119_121)">
+                        <path d="M99.6172 0.686083L9.32644 0.792322C4.78289 0.797668 1.10399 4.48874 1.1094 9.03656L1.15807 49.9536C1.16348 54.5015 4.85114 58.1839 9.3947 58.1785L99.6855 58.0723C104.229 58.0669 107.908 54.3759 107.903 49.828L107.854 8.91096C107.848 4.36314 104.161 0.680737 99.6172 0.686083Z"
+                              fill="#F5914F"/>
+                        <path d="M54.5616 40.3717C54.3061 40.3737 54.0502 40.3246 53.819 40.173L5.90139 9.96939C5.31071 9.5905 5.12554 8.79918 5.50407 8.20796C5.88259 7.61673 6.67316 7.4314 7.26384 7.81029L54.5137 37.5845L101.696 7.69513C102.28 7.30685 103.074 7.5051 103.462 8.0902C103.85 8.6753 103.652 9.46968 103.067 9.85796L55.1986 40.162C54.9953 40.2915 54.7913 40.3443 54.5616 40.3717Z"
+                              fill="white"/>
+                        <path d="M102.475 50.8323C102.22 50.8343 101.964 50.7852 101.733 50.6336L74.2549 33.1815C73.6642 32.8027 73.4791 32.0113 73.8576 31.4201C74.2361 30.8289 75.0267 30.6436 75.6174 31.0224L103.095 48.4745C103.686 48.8534 103.871 49.6447 103.493 50.236C103.266 50.5958 102.858 50.8037 102.475 50.8323Z"
+                              fill="white"/>
+                        <path d="M6.68908 50.9328C6.25476 50.9363 5.81881 50.7352 5.56026 50.3536C5.17233 49.7685 5.34484 48.9744 5.95493 48.5859L33.3835 31.0787C33.9681 30.6904 34.7615 30.8631 35.1496 31.4738C35.5375 32.0589 35.365 32.853 34.7549 33.2415L7.32636 50.7487C7.123 50.8782 6.91902 50.931 6.68929 50.9584L6.68908 50.9328Z"
+                              fill="white"/>
+                    </g>
+                    <circle cx="104.5" cy="53.5" r="21.25" fill="#10A427" stroke="white" stroke-width="2.5"/>
+                    <path d="M94 53.5L102.5 62L116 44.5" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                    <defs>
+                        <clipPath id="clip0_119_121">
+                            <rect width="107" height="58" fill="white"
+                                  transform="translate(0.769531 0.85498) rotate(-0.457782)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+
+            </div>
+            <div class="success-title">{{ content.successTitle }}</div>
+            <div class="success-text">{{ content.successText }}</div>
+        </div>
+    </div>
+  </div>
+</section>

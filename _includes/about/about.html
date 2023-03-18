@@ -10,15 +10,18 @@
   {% assign content = site.data.about %}
   <div class="content content-block">
     <div class="info transite transite-up sn-1">
-      <div class="title">{{ content.title }}</div>
+      <h2 class="title">{{ content.title }}</h2>
       {% for item in content.descriptions %}
-        <div class="description">{{ item }}</div>
+      <div class="description">{{ item }}</div>
       {% endfor %}
+      <div class="clutch-widget"><a aria-label="Clutch reviews" href="https://clutch.co/profile/implex#reviews" rel="noopener noreferrer nofollow"
+                                    target="_blank"><img alt="Clutch reviews" src="/assets/img/about/Clutch-6_reviews-186x44.webp"
+                                                         width="186" height="44"></a></div>
     </div>
     <div class="collage">
       {% for item in content.images %}
-        {% assign animationIndex = forloop.index | plus: 1 %}
-        <img src="{{ prefix }}{{ item }}" class="transite transite-up sn-{{ animationIndex }}">
+      {% assign animationIndex = forloop.index | plus: 1 %}
+      <img alt="{{ item.alt }}" src="{{ prefix }}{{ item.img }}" class="transite transite-up sn-{{ animationIndex }}">
       {% endfor %}
     </div>
   </div>

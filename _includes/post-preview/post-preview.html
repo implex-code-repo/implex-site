@@ -6,9 +6,9 @@
 {% endcomment %}
 
 <a href="{{ include.post.url }}" class="post-preview">
-  <div class="image" style="background-image: url({{include.post.image}})"></div>
+  <div role="img" aria-label="{{ include.post.altImage }}" class="image" style="background-image: url({{include.post.image}})"></div>
   <div>
-    <div class="title">{{ include.post.title }}</div>
+    <div class="title">{{ include.post.headingTitle }}</div>
     <div class="description">{{ include.post.description }}</div>
     <div class="date">{{ include.post.date | date: "%d-%m-%Y" }}</div>
   </div>

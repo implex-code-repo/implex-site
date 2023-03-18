@@ -6,18 +6,26 @@
 {% endcomment %}
 
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css" />
+  <link rel="stylesheet" href="{{ site.url }}/assets/css/splide-skyblue.min.css?{{ site.time | date: '%s%N' }}">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css?{{ site.time | date: '%s%N' }}" />
     {% include _head/head.html %}
 </head>
 <body>
   {% include header/header.html black=true %}
   {{ content }}
-  {% include footer/footer.html %}
-  <script src="../assets/scripts/script.js?q=20220805"></script>
+  {% if page.showSlider %}
+  {% include clients-carousel/clients-carousel.html black=true %}
+  {% endif %}
+  {% if page.showContactForm %}
+  {% include contact-us/contact-us.html %}
+  {% endif %}
+  {% include footer/footer.html careers = page.careers %}
+  <script src="{{ site.url }}/assets/scripts/script.js?{{ site.time | date: '%s%N' }}"></script>
+  <script src="{{ site.url }}/assets/scripts/splide.min.js?{{ site.time | date: '%s%N' }}"></script>
 </body>
 </html>

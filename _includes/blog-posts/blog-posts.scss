@@ -1,34 +1,51 @@
 .blog-posts {
   .title {
-    @include small-desktop-screen {
-      font-size: 38px;
-    }
+    font-size: 42px;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
 
     @include tablet-screen {
+      font-size: 30px;
+      max-width: 600px;
+    }
+
+    @include small-tablet-screen {
       @include font(30px, 600);
+      max-width: 100%;
     }
   }
 
   .subtitle {
-    margin-bottom: 90px;
+    @include font(24px, 300);
+    line-height: 1.5;
+    max-width: 640px;
+    margin: 0 auto 90px;
 
-    @include small-desktop-screen {
-      font-size: 22px;
+    @include tablet-landscape-screen {
+      margin-bottom: 80px;
     }
 
     @include tablet-screen {
+      font-size: 20px;
+      max-width: 600px;
+    }
+
+    @include small-tablet-screen {
       @include font(20px, 300);
       margin-bottom: 45px;
-
+      padding: 0 20px;
+      max-width: 100%;
     }
   }
 
   .posts-list {
+    @include flex(column, center, center);
     max-width: 960px;
     margin: 0 auto;
 
     @include small-desktop-screen {
-      max-width: 780px;
+      max-width: 850px;
     }
   }
 }

@@ -1,0 +1,244 @@
+@import 'mixins';
+
+.contact-us.section.section-dark {
+  background: url("/assets/img/background/footer-bg-1680.webp") no-repeat center center;
+  background-size: cover;
+
+@include mobile-screen {
+  background: url("/assets/img/background/footer-bg-480.webp") no-repeat center center;
+}
+
+  .overlay {
+    @include size(100%, 100%);
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9));
+    padding: 150px 0;
+
+    @include tablet-landscape-screen {
+      padding: 120px 0;
+    }
+
+    @include tablet-screen {
+      padding: 80px 20px;
+    }
+
+    .text-center {
+      margin: 0 auto 74px;
+      max-width: 960px;
+
+      @include tablet-landscape-screen {}
+      padding: 0 55px;
+
+      @include small-tablet-screen {
+        padding: 0;
+      }
+
+      .title {
+        @include tablet-screen {
+          @include font(30px, 700);
+        }
+      }
+
+      .subtitle {
+        @include font(24px, 300);
+        line-height: 1.5;
+        margin: 0 auto;
+
+        @include tablet-screen {
+          @include font(20px, 300);
+        }
+      }
+    }
+
+    .form-wrapper {
+      @include flex(column, flex-start, flex-start);
+      flex-wrap: wrap;
+      max-width: 960px;
+      margin: 0 auto;
+
+      @include tablet-landscape-screen {
+        padding: 0 55px;
+      }
+
+      @include small-tablet-screen {
+        padding: 0;
+      }
+
+      .input-wrapper {
+        @include flex(row, space-between, flex-start);
+        padding-bottom: 24px;
+
+        @include tablet-screen {
+          @include flex(column, center, center);
+          width: 100%;
+        }
+
+        #contact-form-name-input {
+          margin-right: 24px;
+
+          @include tablet-screen {
+            margin-bottom: 24px;
+            margin-right: 0;
+          }
+        }
+      }
+
+      input[type=text] {
+        @include size(468px, 56px);
+        @include font(16px, 400);
+        line-height: 24px;
+        padding: 16px 20px;
+        background-color: transparent;
+        border: 1px solid $grey;
+        border-radius: $formInputBorderRadius;
+        color: white;
+
+        @include tablet-landscape-screen {
+          @include size(413px, 56px);
+        }
+
+        @include tablet-screen {
+          @include size(100%, 56px);
+        }
+      }
+
+      input[type=submit] {
+        @include size(220px, 60px);
+        @include font(16px, 700);
+        background-color: $orange;
+        border: 1px solid $orange;
+        border-radius: $formInputBorderRadius;
+        color: white;
+        cursor: pointer;
+      }
+
+      .file-wrapper {
+        @include flex(row, center, center);
+        padding: 24px 0;
+
+        .file-label {
+          @include font(16px, 600);
+          line-height: 24px;
+          background-color: transparent;
+          padding: 8px 20px;
+          border-radius: $formInputBorderRadius;
+          border: 1px solid $grey;
+          height: auto;
+          cursor: pointer;
+        }
+
+        .text-helper{
+          @include font(16px, 400);
+          line-height: 24px;
+          margin-left: 20px;
+          color: rgba(130, 128, 128, 1);
+        }
+
+        .remove-btn {
+          cursor: pointer;
+          margin-left: 26px;
+        }
+      }
+
+      #contact-form-comment-input {
+        @include font(16px, 400);
+        font-family: 'Roboto', Arial, sans-serif;
+        width: 100%;
+        line-height: 24px;
+        padding: 16px 20px;
+        background-color: transparent;
+        border: 1px solid $grey;
+        border-radius: $formInputBorderRadius;
+        color: white;
+        resize: none;
+        overflow: hidden;
+      }
+
+      .button-wrapper {
+        margin: 0 auto;
+      }
+    }
+
+    .error-block {
+      @include font(16px, 500);
+      @include flex(column, center, center);
+      @include size(960px, 56px);
+      background-color: #F95D51;
+      margin: 0 auto;
+      border-radius: $formInputBorderRadius;
+
+      @include tablet-landscape-screen {
+        @include size(850px, 56px);
+      }
+
+      @include tablet-screen {
+        @include size(100%, 56px);
+      }
+    }
+
+    .error-border {
+      border-color: #F95D51 !important;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .additional-text {
+      @include font(15px, 300);
+      padding: 24px 0;
+      line-height: 1.55;
+      text-align: center;
+
+      @include small-desktop-screen {
+        font-size: 14px;
+      }
+    }
+
+    .success-block {
+      @include flex(column, center, center);
+      @include size(960px, 380px);
+      border: 1px solid $grey;
+      margin: 30px auto 0;
+      position: relative;
+
+      @include tablet-landscape-screen {
+        @include size(850px, 380px);
+      }
+
+      @include tablet-screen {
+        @include size(100%, 332px);
+      }
+
+      .success-icon {
+        position: absolute;
+        top: 0;
+        transform: translateY(-40%);
+      }
+
+      .success-title {
+        @include font(36px, 600);
+        line-height: 54px;
+        text-align: center;
+
+        @include tablet-screen {
+          @include font(30px, 700);
+          padding: 0 40px;
+          line-height: 36px;
+        }
+      }
+
+      .success-text {
+        @include font(24px, 300);
+        line-height: 36px;
+        max-width: 640px;
+        text-align: center;
+        padding-top: 20px;
+
+        @include tablet-screen {
+          @include font(20px, 300);
+          padding: 20px 32px 0;
+        }
+      }
+    }
+  }
+}

@@ -1,17 +1,44 @@
 .yoy {
   #image1 {
-    height: 700px;
-    
+    height: 680px;
+
     @include small-desktop-screen {
-      height: 575px;
+      height: 100%;
+      background-size: contain;
     }
   }
 
   #image2 {
-    height: 600px;
+    height: 638px;
+    background-size: contain;
 
     @include small-desktop-screen {
       height: 493px;
+    }
+  }
+
+  .player {
+    width: 960px;
+    height: 540px;
+    padding: 0 20px;
+
+    @include tablet-screen {
+      width: 100%;
+    }
+
+    @include small-tablet-screen {
+      padding: 0;
+    }
+  }
+
+  .logos-row.yoy-logos {
+    justify-content: space-around;
+  }
+
+  .content-wrapper {
+    @include tablet-screen {
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 }

@@ -1,8 +1,24 @@
 .quote {
-  @include flex(row, flex-start, flex-start);
+  @include flex(row, center, flex-start);
   color: white;
   text-align: left;
   line-height: 1.55;
+  padding: 0 20px;
+
+  @include small-tablet-screen {
+    flex-direction: column;
+    padding: 0 50px;
+  }
+
+  .quote-data {
+    @include tablet-screen {
+      max-width: 412px;
+    }
+
+    @include small-tablet-screen {
+      max-width: 100%;
+    }
+  }
 
   .avatar {
     @include size(100px, 100px);
@@ -18,6 +34,11 @@
     @include font(20px, 300);
     font-style: italic;
     margin-bottom: 20px;
+
+    @include small-desktop-screen {
+      font-size: 16px;
+      margin-top: 20px;
+    }
   }
 
   .author-name {
@@ -26,16 +47,24 @@
     border-bottom: 2px solid $orange;
     text-decoration: none;
     margin-bottom: 2px;
+
+    @include small-desktop-screen {
+      font-size: 14px;
+    }
   }
 
   .author-position {
     @include font(14px, 300);
     margin-bottom: 10px;
+
+    @include small-desktop-screen {
+      font-size: 12px;
+    }
   }
 
   .author-socials {
     @include flex(row, flex-start, flex-start);
-    
+
     svg {
       @include size(24px, 24px);
     }

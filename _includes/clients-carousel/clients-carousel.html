@@ -1,0 +1,114 @@
+<!--
+  ~ Copyright (c) 2022. Implex
+  ~ All rights reserved
+  -->
+
+{% assign prefix = site.imgPrefix %}
+{% assign content = site.data.clients %}
+{% assign carousel_wrapper_classes = 'carousel-wrapper' %}
+{% assign clients_block_classes = 'clients-block' %}
+{% if include.black %}
+  {% assign carousel_wrapper_classes = carousel_wrapper_classes | append: ' black' %}
+  {% assign clients_block_classes = clients_block_classes | append: ' without-button' %}
+{% endif %}
+
+<div class="{{ carousel_wrapper_classes }}">
+  {% if include.black %}
+  <h2 class="carousel-title">More case studies</h2>
+  {% endif %}
+  <div class="content carousel-content">
+    <div class="clients-container carousel transite transite-up sn-3">
+      <div class="splide">
+        <div class="splide__arrows">
+          <button class="splide__arrow splide__arrow--prev">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="90" viewBox="0 0 45 90">
+              <defs>
+                <rect id="b" width="50" height="60" rx="6"/>
+                <filter id="a" width="200%" height="183.3%" x="-50%" y="-33.3%" filterUnits="objectBoundingBox">
+                  <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+                  <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="7.5"/>
+                  <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.2784314 0 0 0 0 0.32156864 0 0 0 0 0.3647059 0 0 0 0.3 0"/>
+                </filter>
+              </defs>
+              <g fill="none" fill-rule="evenodd">
+                <g transform="matrix(-1 0 0 1 30 10)">
+                  <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+                  <use fill="#FFF" xlink:href="#b"/>
+                </g>
+                <g stroke="#555" stroke-linecap="round">
+                  <path stroke-width="2" d="M20.75 29.25l-6.5 10.5M20.75 50.75l-6.5-10.5"/>
+                </g>
+              </g>
+            </svg>
+          </button>
+          <button class="splide__arrow splide__arrow--next">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="90" viewBox="0 0 45 90">
+              <defs>
+                <rect transform="rotate(180 50 50)" id="b" width="50" height="60" rx="6"/>
+                <filter id="a" width="200%" height="183.3%" x="-50%" y="-33.3%" filterUnits="objectBoundingBox">
+                  <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+                  <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="7.5"/>
+                  <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.2784314 0 0 0 0 0.32156864 0 0 0 0 0.3647059 0 0 0 0.3 0"/>
+                </filter>
+              </defs>
+              <g fill="none" fill-rule="evenodd">
+                <g transform="matrix(-1 0 0 1 30 10)">
+                  <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+                  <use fill="#FFF" xlink:href="#b"/>
+                </g>
+                <g stroke="#555" stroke-linecap="round">
+                  <path stroke-width="2" d="M20.75 29.25l-6.5 10.5M20.75 50.75l-6.5-10.5"/>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+        <div class="splide__track">
+          <ul class="splide__list">
+            {% for item in content.clients %}
+            {% assign animationTextIndex = forloop.index | times: 2 | plus: 1 %}
+            {% assign animationIndex = forloop.index | times: 2 | plus: 2 %}
+            {% assign imageAnimationDirection = "left" %}
+            {% assign mod = forloop.index | modulo: 2 %}
+            {% if mod == 1 %}
+            {% assign imageAnimationDirection = "right" %}
+            {% endif %}
+            <li class="splide__slide">
+              <div class="{{ clients_block_classes }}">
+                {% if include.showButton %}
+                <div class="title transite transite-up sn-{{ animationTextIndex }}">
+                  {{ item.title }}
+                </div>
+                {% else %}
+                <a href="{{ item.link }}" class="title title-button transite transite-up sn-{{ animationTextIndex }}">
+                  {{ item.title }}
+                </a>
+                {% endif %}
+                <div class="description transite transite-up sn-{{ animationTextIndex }}">{{
+                  item.description }}
+                </div>
+                {% if include.showButton %}
+                  <a href="{{ item.link }}"
+                     class="button button-outline transite transite-up sn-{{ animationIndex }}">View Case
+                    Study</a>
+                  <div class="image transite transite-{{imageAnimationDirection}} sn-{{ animationIndex }}">
+                    <img alt="{{ item.imageAlt }}" src="{{ site.url }}/{{ prefix }}{{ item.image }}">
+                  </div>
+                {% else %}
+                <a href="{{ item.link }}" class="image transite transite-{{imageAnimationDirection}} sn-{{ animationIndex }}">
+                  <img alt="{{ item.imageAlt }}" src="{{ site.url }}/{{ prefix }}{{ item.image }}">
+                </a>
+                {% endif %}
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% if include.black %}
+  <a href="/case-study"
+     class="button alt-cases-button transite transite-up sn-3">Case Studies list</a>
+  {% endif %}
+</div>

@@ -10,17 +10,15 @@
     {% assign prefix = site.imgPrefix %}
     {% assign content = site.data.advantages %}
     <div class="text-center transite transite-up sn-1">
-      <h1 class="title">{{ content.title }}</h1>
-      <h2 class="description">{{ content.description }}</h2>
+      <h2 class="title">{{ content.title }}</h2>
+      <div class="description">{{ content.description }}</div>
     </div>
     <div class="advantages-container">
       {% for item in content.advantages %}
         {% assign animationIndex = forloop.index | plus: 1 %}
         <div class="advantage transite transite-up sn-{{ animationIndex }}">
-          <div class="icon">
-            <img src="{{ prefix }}{{ item.icon }}">
-          </div>
-          <div class="adv-title">{{ item.title }}</div>
+            <img class="icon" alt="{{ item.alt }}" src="{{ prefix }}{{ item.icon }}">
+          <h3 class="adv-title">{{ item.title }}</h3>
           <div class="adv-description">{{ item.description }}</div>
         </div>
       {% endfor %}

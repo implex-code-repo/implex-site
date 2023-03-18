@@ -1,0 +1,122 @@
+---
+title: "Site with CMS and 100% Google PageSpeed Rating | Implex"
+description: "See how we implemented a fast website with custom CMS and site versioning in order not to use WordPress which slows down your PageSpeed rate"
+ogDescription: "See how we implemented a fast website with custom CMS and site versioning in order not to use WordPress which slows down your PageSpeed rate"
+ogImage: "/assets/img/case-study/bsg/og-image-case-study_bsg.png"
+permalink: /case-study/bsg
+layout: default-static-header
+showSlider: true
+showContactForm: true
+keywords: ''
+---
+
+{% comment %}
+<!--
+  ~ Copyright (c) 2022. Implex
+  ~ All rights reserved
+  -->
+{% endcomment %}
+<div class="case-study bsg">
+  <section>
+    <div class="content">
+      <h1 class="main-title">A lightning-fast website for a reputable cybersec company in Ukraine</h1>
+      <div class="col-2 margin-top">
+        <div class="column-wrapper big">
+          <div class="image" id="image1" style="background-image: url('/assets/img/case-study/bsg/1-BSG-title-640.webp')"></div>
+        </div>
+        <div class="column-wrapper column-content margin-top margin-left">
+          <h2>Client</h2>
+          <div>Berezha Security Group is a cybersecurity services company focused on application security, penetration testing, and data security consulting.</div>
+          <br/>
+          <div>Since 2014, the company has delivered 200+ projects for over 100 clients worldwide. Its customers come from a range of business sectors, including software engineering, fintech, retail, healthcare, media, gaming, legal and advisory, and others.</div>
+          <br/>
+          <div><strong>Industry</strong>: Cybersecurity</div>
+          <div><strong>Location</strong>: Ukraine</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-grey">
+    <div class="content">
+      <div class="col-2">
+        <div class="column-wrapper column-content big">
+          <h2>Challenge</h2>
+          <div>In 2020, Berezha Security Group rebranded as BSG. The next logical step was redesigning the brand book and the corporate website. But redesign was only part of the story. The ultimate goal was to make the website fast and SEO-friendly, keeping its Google PageSpeed Insights scores in the green 90-100 range. The upgrade was expected to be gradual, with the original URL kept intact to maintain ranking on Google.</div>
+          <br />
+          <div>Certain functions were to stay, too. For example, the website administrator reserved the right to change content without the programmer's or layout designer's help – just like with the previous, WordPress-powered website.</div>
+          <br />
+          <div>Developing a tool for pre-qualifying leads came as an extra task.</div>
+        </div>
+        <div class="column-wrapper center-content big remove-margin">
+          <div class="image" id="image2" style="background-image: url('/assets/img/case-study/bsg/2-BSG-challenge-640.webp'); background-size: contain;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-black">
+    <div class="content">
+      {% include quote/quote.html
+        avatarUrl="/assets/img/case-study/bsg/avatar.webp"
+        authorName="Andriy Varusha"
+        authorPosition="COO and co-founder"
+        authorUrl="https://www.linkedin.com/in/andriyvarusha/"
+        content="\"With Implex's help, we were able to achieve the proper look and feel for our website, with the required metrics for the response time and page loading time. I think the engagement of the management, who are the co-founders at the same time and who are focused on problem-solving, is definitely a positive differentiator of Implex.\""
+      %}
+    </div>
+  </section>
+  <section>
+    <div class="content">
+      <h2>Solution</h2>
+      <div class="col-2 margin-top">
+        <div class="column-content">
+          <h3 class="subtitle"><strong>Design</strong></h3>
+          <div>Our UI/UX specialist collaborated with BSG's marketing director to create a new design fully matching the updated brand book and the client's expectations. An Implex engineer developed a sophisticated dynamic wizard form to pre-qualify leads and integrated it into a static website.</div>
+          <div>The company's blog was kept as a separate WordPress website. It was only redesigned to fit the new brand book.</div>
+        </div>
+        <div class="column-content">
+          <h3 class="subtitle"><strong>Optimization</strong></h3>
+          <div>The updated website works much faster, as static pages are now generated at frontend build-time using React components.</div>
+          <br />
+          <div>Building a new CMS from scratch equaled budget overrun. To avoid that, we reused the repository web editor. The website admin can edit existing pages or create new ones using readily available blocks.</div>
+        </div>
+      </div>
+      <h3 class="text-center technologies">The tools and technologies we used were:</h3>
+      <br />
+      <div class="logos-row">
+        <div>
+          <img src="/assets/img/case-study/icons/logo_html.png" alt="HTML 5" style="max-height: 100px;">
+        </div>
+        <div>
+          <img src="/assets/img/case-study/icons/logo_css.png" alt="CSS 3" style="max-height: 100px;">
+        </div>
+        <div>
+          <img src="/assets/img/case-study/icons/javascript-logo.png" alt="Vanilla Javascript" style="max-height: 100px;">
+        </div>
+        <div>
+          <img src="/assets/img/case-study/icons/react-logo.png" alt="React components" style="max-height: 100px;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-grey">
+    <div class="content">
+      <div class="col-2">
+        <div class="column-wrapper column-content big">
+          <h2>Results</h2>
+          <div>
+            <ul>
+              <li>A brand-new design comes with perfect usability and successfully represents the BSG brand.</li>
+              <li>The website scores a gorgeous 95-100 on Google PageSpeed Insights for desktop and mobile.</li>
+              <li>Modular code lets the website admin reuse the existing elements to create new pages.</li>
+              <li>An updated deployment scheme empowers the admin to make changes, deploy them in the test environment in one click, run tests, and send them to the production environment – again in just one click.</li>
+              <li>If an error pops up, the admin can easily roll back to any of the previous website versions.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="column-wrapper center-content margin-left huge">
+          <div class="image" id="image3" style="background-image: url('/assets/img/case-study/bsg/3-BSG-results-640.webp')"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

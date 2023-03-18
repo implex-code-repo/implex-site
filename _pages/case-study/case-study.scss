@@ -1,0 +1,7 @@
+.case-study-list {
+  padding: 130px 0 0;
+
+  @include tablet-screen {
+    padding-top: 46px;
+  }
+}
