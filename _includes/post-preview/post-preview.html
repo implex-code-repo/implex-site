@@ -5,11 +5,11 @@
   -->
 {% endcomment %}
 
-<a href="{{ include.post.url }}" class="post-preview">
-  <div role="img" aria-label="{{ include.post.altImage }}" class="image" style="background-image: url({{include.post.image}})"></div>
+<div class="post-preview">
+  <a href="{{ include.post.url }}" role="img" aria-label="{{ include.post.altImage }}" class="image" style="background-image: url({{include.post.image}})"></a>
   <div>
-    <div class="title">{{ include.post.headingTitle }}</div>
+    <a href="{{ include.post.url }}" class="post-title">{{ include.post.headingTitle }}</a>
     <div class="description">{{ include.post.description }}</div>
     <div class="date">{{ include.post.date | date: "%d-%m-%Y" }}</div>
   </div>
-</a>
+</div>
