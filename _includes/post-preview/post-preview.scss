@@ -36,11 +36,12 @@
     }
   }
 
-  .title {
+  .post-title {
     color: #000;
     font-size: 24px;
     font-weight: 600;
     line-height: 1.35;
+    text-decoration: none;
 
     @include small-desktop-screen {
       font-size: 22px;
