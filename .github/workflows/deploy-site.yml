@@ -38,9 +38,11 @@ jobs:
             git config --global user.email github-actions@github.com
       - name: Push files to target
         run: |
+          echo "label 10: $PWD"
           rsync -r ./build/* ./deploy --delete --exclude .github
           cd deploy
           echo ${{ inputs.envUrl }} > CNAME
+          echo "label 20: $PWD"
           git add .
           git commit -m $GITHUB_SHA
           git push
