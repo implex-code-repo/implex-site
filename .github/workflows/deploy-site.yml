@@ -11,6 +11,9 @@ on:
       envRepoName:
         required: true
         type: string
+      GA_id:
+        required: true
+        type: string
     secrets:
       envPAT:
         required: true
