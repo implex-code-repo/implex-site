@@ -42,8 +42,10 @@ jobs:
           rsync -r ./build/* ./deploy --delete --exclude .github
           cd deploy
           echo ${{ inputs.envUrl }} > CNAME
+          echo "GA_id: ${{ inputs.GA_id }}" >> _config.yml
           echo "label 20: "; ls -l; pwd
-          echo "label 30: "; cat CNAME; cat _config.yml
+          echo "label 30: "; cat CNAME;
+          echo "label 40: "; cat _config.yml
           git add .
           git commit -m $GITHUB_SHA
           git push
