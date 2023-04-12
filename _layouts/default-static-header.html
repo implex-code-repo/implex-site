@@ -8,11 +8,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+  {% assign pageUrl = page.url | prepend: site.url %}
+  {% assign canonicalLink = page.canonicalLink | default: pageUrl %}
+  <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="{{ site.url }}/assets/css/splide-skyblue.min.css?{{ site.time | date: '%s%N' }}">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/splide-skyblue.min.css?{{ site.time | date: '%s%N' }}">
     <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css?{{ site.time | date: '%s%N' }}" />
+    <link rel="canonical" href="{{ canonicalLink }}"/>
     {% include _head/head.html %}
 </head>
 <body>
