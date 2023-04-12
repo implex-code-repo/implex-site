@@ -11,7 +11,8 @@
 
 <html lang="en">
 <head>
-    {% assign canonicalLink = page.canonicalLink | default: page.url %}
+    {% assign pageUrl = page.url | prepend: site.url %}
+    {% assign canonicalLink = page.canonicalLink | default: pageUrl %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
