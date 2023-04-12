@@ -1,11 +1,10 @@
-{% assign ga-id=site.data.google-analytics %}
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ga-id.stage-ga-id}}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.GA_id }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', '{{ga-id.stage-ga-id}}');
+  gtag('config', '{{ site.GA_id }}');
 </script>
 <!-- End Google Analytics -->

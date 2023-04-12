@@ -11,6 +11,9 @@ on:
       envRepoName:
         required: true
         type: string
+      GA_id:
+        required: true
+        type: string
     secrets:
       envPAT:
         required: true
@@ -41,6 +44,8 @@ jobs:
           rsync -r ./build/* ./deploy --delete --exclude .github
           cd deploy
           echo ${{ inputs.envUrl }} > CNAME
+          echo "GA_id: ${{ inputs.GA_id }}" >> _config.yml
+          echo "label 30: "; cat CNAME;
           git add .
           git commit -m $GITHUB_SHA
           git push
