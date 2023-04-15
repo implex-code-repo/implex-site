@@ -6,6 +6,7 @@ description: "Full-time or part-time Software Engineer with focus mainly on back
 ogDescription: "Full-time or part-time Software Engineer with focus mainly on backend and partially frontend for PMM product - free and open-source platform for monitoring and managing the performance of SQL/NoSQL based databases"
 category: "Vacancy"
 tag: "Software engeneering"
+canonicalLink: ""
 keywords: ''
 ---
 

@@ -11,10 +11,13 @@
 
 <html lang="en">
 <head>
+    {% assign pageUrl = page.url | prepend: site.url %}
+    {% assign canonicalLink = page.canonicalLink | default: pageUrl %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css?{{ site.time | date: '%s%N' }}" />
+    <link rel="canonical" href="{{ canonicalLink }}"/>
     {% include _head/head.html %}
 </head>
 <body>

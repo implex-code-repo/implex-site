@@ -6,6 +6,7 @@ description: "Full-time Senior Expert/Architect role for PMM product - free and 
 ogDescription: "Full-time  Senior Expert/Architect role for PMM product - free and open-source platform for monitoring and managing the performance of SQL/NoSQL based databases"
 category: "Vacancy"
 tag: "Software engeneering"
+canonicalLink: ""
 keywords: ''
 ---
 

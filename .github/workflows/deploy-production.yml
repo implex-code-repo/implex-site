@@ -10,7 +10,8 @@ jobs:
     uses: ./.github/workflows/deploy-site.yml
     with:
       envName: production
-      envUrl: www.implex.dev
+      envUrl: implex.dev
       envRepoName: implex-code-repo/implex-site-prod
+      GA_id: UA-163722668-1
     secrets:
       envPAT: ${{ secrets.PAT }}
