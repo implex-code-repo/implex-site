@@ -420,6 +420,13 @@ body {
         font-size: 16px;
       }
     }
+
+    .content-link {
+      color: black;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 3px solid $orange;
+    }
   }
 
   .column-content + .column-content {
