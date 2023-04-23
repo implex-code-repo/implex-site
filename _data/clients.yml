@@ -3,7 +3,7 @@ subTitle: "We offer a wide range of services,<br>
           and here are some of our best projects."
 clients:
   - title: "Telemetry Service for data-driven decisions & product growth"
-    description: "Тут не треба описувати Перкону (копія першої секції з кейсу), як на дизайні. Треба написати engaging текст, в якому користувач може узнати свою проблему і наше рішення. Наприклад, що ми створили Outsourcing Development Center з GoLang експертизою і закрили їхню потребу в ресурсах (фантазую, але щось такого типу має бути)."
+    description: "Implementation of the new Telemetry service, which should have a significant impact on Percona's business decision process. By collecting data on how the company’s product and services were being used by clients, Percona is able to identify and prioritize new features based on user needs and improve the product development flow. This lightweight, scalable service was implemented with high quality, allowing the company to meet its product release schedule and manage its software more efficiently."
     link: /case-study/percona
     image: clients/Percona_preview_cover_dark-640.webp
     imageAlt: "Percona Outsourcing Development Center cover"
