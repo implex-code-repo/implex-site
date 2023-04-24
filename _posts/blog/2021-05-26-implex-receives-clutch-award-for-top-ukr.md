@@ -10,6 +10,7 @@ ogImage: "/assets/img/articles/clutch-920.webp"
 author: "Slava Hraichenko"
 category: "Blog"
 permalink: "/tpost/x6dxl0fpp1-implex-receives-clutch-award-for-top-ukr"
+redirect_from: "/tpost/implex-receives-clutch-award-for-top-ukrainian-b2b-firm"
 canonicalLink: ""
 showContactForm: true
 ---
