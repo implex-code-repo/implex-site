@@ -10,6 +10,7 @@ ogImage: "/assets/img/articles/rates-920.webp"
 author: "Orysya Sklyar"
 category: "Blog"
 permalink: "/tpost/j7m9itycp1-is-it-possible-to-find-100-tech-speciali"
+redirect_from: "/tpost/is-it-possible-to-find-100-tech-specialists-at-affordable-rates-in-a-fortnight"
 canonicalLink: ""
 showContactForm: true
 ---
