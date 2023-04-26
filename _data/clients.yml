@@ -2,7 +2,7 @@ title: Our Featured Use Cases
 subTitle: "We offer a wide range of services,<br>
           and here are some of our best projects."
 clients:
-  - title: "Telemetry Service for data-driven decisions & product growth"
+  - title: "Telemetry service for data-driven decisions & product growth"
     description: "Implementation of the new Telemetry service, which should have a significant impact on Percona's business decision process. By collecting data on how the company’s product and services were being used by clients, Percona is able to identify and prioritize new features based on user needs and improve the product development flow. This lightweight, scalable service was implemented with high quality, allowing the company to meet its product release schedule and manage its software more efficiently."
     link: /case-study/percona
     image: clients/Percona_preview_cover_dark-640.webp
