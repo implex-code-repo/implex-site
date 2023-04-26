@@ -73,6 +73,9 @@
             {% if mod == 1 %}
             {% assign imageAnimationDirection = "right" %}
             {% endif %}
+            {% if item.link == page.url %}
+              {% continue %}
+            {% endif %}
             <li class="splide__slide">
               <div class="{{ clients_block_classes }}">
                 {% if include.showButton %}
