@@ -8,8 +8,8 @@ image: "/assets/img/articles/tips-2-920.webp"
 altImage:
 ogImage: "/assets/img/articles/tips-2-920.webp"
 author: "Slava Hraichenko"
-permalink: "/tpost/m6n0b6l511-tips-for-outsourcing-mvp-development-par"
-redirect_from: "/tpost/tips-for-outsourcing-mvp-development-part-ii"
+redirect_from: "/tpost/m6n0b6l511-tips-for-outsourcing-mvp-development-par"
+permalink: "/tpost/how-to-successfully-manage-team-requirements-estimation-and-communication-in-outsourcing"
 canonicalLink: ""
 category: "Blog"
 showOnMainPage: true
