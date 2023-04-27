@@ -420,6 +420,13 @@ body {
         font-size: 16px;
       }
     }
+
+    .content-link {
+      color: black;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 3px solid $orange;
+    }
   }
 
   .column-content + .column-content {
@@ -600,4 +607,96 @@ body {
 a.button {
   @include flex(row, center, center);
   text-decoration: none;
+}
+
+// 404 page styles
+.not-found {
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  background-image: url("/assets/img/background/404-bg-1440.png");
+  background-size: initial;
+  background-position: center;
+
+  .overlay {
+    @include size(100%, 100%);
+    background-color: rgba(0, 0, 0, .7);
+    position: relative;
+
+    .not-found-wrapper {
+      @include flex(column, center, center);
+      margin: 0;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+
+      @include tablet-screen {
+        width: 100%;
+      }
+
+      .title {
+        @include font(42px, 700);
+        line-height: 50px;
+        padding: 24px 0;
+        max-width: 960px;
+        white-space: nowrap;
+
+        @include mobile-screen {
+          font-size: 32px;
+          line-height: 38px;
+          padding-inline: 10px;
+          letter-spacing: 1px;
+          white-space: normal;
+        }
+      }
+
+      .description {
+        padding: 15px 0 30px;
+        font-size: 24px;
+        max-width: 596px;
+        line-height: 36px;
+        font-weight: 300;
+        margin: 0;
+
+        @include tablet-screen {
+          font-size: 20px;
+          width: 616px;
+          padding: 0 20px;
+        }
+
+        @include small-tablet-screen {
+          width: 100%;
+        }
+
+        @include mobile-screen {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+
+      .button-wrapper {
+        margin-top: 44px;
+        padding: 0 20px;
+
+        @include mobile-screen {
+          width: 100%;
+        }
+      }
+
+      .button {
+        @include tablet-screen {
+          @include size(220px, 60px);
+        }
+
+        @include small-tablet-screen {
+          @include size(160px, 60px);
+        }
+
+        @include mobile-screen {
+          @include size(100%, 60px);
+        }
+      }
+    }
+  }
 }
