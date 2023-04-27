@@ -9,8 +9,8 @@ altImage: ""
 ogImage: "/assets/img/articles/tips-1-920.webp"
 author: "Slava Hraichenko"
 category: "Blog"
-permalink: "/tpost/ye6u7ml161-tips-for-outsourcing-mvp-development-par"
-redirect_from: "/tpost/4-main-steps-to-prepare-for-successful-mvp-development-outsourcing"
+redirect_from: "/tpost/ye6u7ml161-tips-for-outsourcing-mvp-development-par"
+permalink: "/tpost/4-main-steps-to-prepare-for-successful-mvp-development-outsourcing"
 canonicalLink: ""
 showOnMainPage: true
 showContactForm: true
