@@ -11,7 +11,7 @@ author: "Slava Hraichenko"
 category: "Blog"
 redirect_from: "/tpost/ye6u7ml161-tips-for-outsourcing-mvp-development-par"
 permalink: "/tpost/4-main-steps-to-prepare-for-successful-mvp-development-outsourcing"
-canonicalLink: ""
+canonicalLink: "https://implex.dev/tpost/4-main-steps-to-prepare-for-successful-mvp-development-outsourcing"
 showOnMainPage: true
 showContactForm: true
 ---
