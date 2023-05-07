@@ -10,7 +10,7 @@ ogImage: "/assets/img/articles/tips-2-920.webp"
 author: "Slava Hraichenko"
 redirect_from: "/tpost/m6n0b6l511-tips-for-outsourcing-mvp-development-par"
 permalink: "/tpost/how-to-successfully-manage-team-requirements-estimation-and-communication-in-outsourcing"
-canonicalLink: ""
+canonicalLink: "https://implex.dev/tpost/how-to-successfully-manage-team-requirements-estimation-and-communication-in-outsourcing"
 category: "Blog"
 showOnMainPage: true
 showContactForm: true

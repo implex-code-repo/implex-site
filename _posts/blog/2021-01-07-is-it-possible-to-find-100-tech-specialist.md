@@ -11,7 +11,7 @@ author: "Orysya Sklyar"
 category: "Blog"
 redirect_from: "/tpost/j7m9itycp1-is-it-possible-to-find-100-tech-speciali"
 permalink: "/tpost/is-it-possible-to-find-100-tech-specialists-at-affordable-rates-in-a-fortnight"
-canonicalLink: ""
+canonicalLink: "https://implex.dev/tpost/is-it-possible-to-find-100-tech-specialists-at-affordable-rates-in-a-fortnight"
 showContactForm: true
 ---
 

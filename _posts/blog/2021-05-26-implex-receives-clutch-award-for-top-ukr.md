@@ -11,7 +11,7 @@ author: "Slava Hraichenko"
 category: "Blog"
 redirect_from: "/tpost/x6dxl0fpp1-implex-receives-clutch-award-for-top-ukr"
 permalink: "/tpost/implex-receives-clutch-award-for-top-ukrainian-b2b-firm"
-canonicalLink: ""
+canonicalLink: "https://implex.dev/tpost/implex-receives-clutch-award-for-top-ukrainian-b2b-firm"
 showContactForm: true
 ---
 
