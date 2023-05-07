@@ -12,7 +12,7 @@ category: "Blog"
 redirect_from: "/tpost/j7m9itycp1-is-it-possible-to-find-100-tech-speciali"
 permalink: "/tpost/is-it-possible-to-find-100-tech-specialists-at-affordable-rates-in-a-fortnight"
 canonicalLink: "https://implex.dev/tpost/is-it-possible-to-find-100-tech-specialists-at-affordable-rates-in-a-fortnight"
-showContactForm: true
+showContactForm: true 
 ---
 
 ![Outsource networking](/assets/img/articles/rates-920.webp)
