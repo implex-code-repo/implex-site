@@ -45,6 +45,7 @@ jobs:
           cd deploy
           echo ${{ inputs.envUrl }} > CNAME
           echo "GA_id: ${{ inputs.GA_id }}" >> _config.yml
+          echo "TM_id: ${{ inputs.TM_id }}" >> _config.yml
           echo "label 30: "; cat CNAME;
           git add .
           git commit -m $GITHUB_SHA

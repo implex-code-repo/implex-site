@@ -13,5 +13,6 @@ jobs:
       envUrl: stage.site.implex.me
       envRepoName: implex-code-repo/implex-site-stage
       GA_id: G-staging
+      TM_id: TM-staging
     secrets:
       envPAT: ${{ secrets.PAT }}
