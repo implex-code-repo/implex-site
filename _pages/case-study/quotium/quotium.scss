@@ -1,6 +1,6 @@
 .quotium {
   #image1 {
-    height: 560px;
+    background-size: contain;
 
     @include small-desktop-screen {
       height: 100%;

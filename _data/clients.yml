@@ -44,3 +44,8 @@ clients:
     image: clients/Bsg_preview_cover-772.webp
     imageAlt: "Lightning-fast website for cybersecurity company BSG cover"
     backgroundColor: '#E6F1FF'
+  - title: "Rapid MVP for the beauty industry mobile marketplace"
+    description: "Working as a committed technical partner, we strategically optimized the project scope for Best of Masters, a beauty marketplace. Utilizing the Story Mapping technique, we identified critical features and efficiently built a comprehensive MVP. The result was a platform facilitating free master registration, portfolio creation, service catalogues, location-based searches, scheduling, and booking management. Remarkably, we developed the MVP in three languages in just two months."
+    link: /case-study/bom
+    image: clients/BoM_preview_cover-600.webp
+    imageAlt: "Rapid MVP for the beauty industry mobile marketplace - Best of Masters cover"
