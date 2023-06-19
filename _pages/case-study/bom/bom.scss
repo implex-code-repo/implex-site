@@ -1,16 +1,4 @@
 .bom {
-  #image1 {
-    @include small-desktop-screen {
-      height: 100%;
-    }
-  }
-
-  #image2 {
-
-    @include small-desktop-screen {
-      height: 493px;
-    }
-  }
 
   .player {
     width: 960px;
@@ -23,6 +11,10 @@
 
     @include small-tablet-screen {
       padding: 0;
+    }
+
+    @include mobile-screen {
+      height: 270px;
     }
   }
 

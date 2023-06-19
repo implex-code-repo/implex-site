@@ -29,6 +29,10 @@
     @include small-tablet-screen {
       padding: 0;
     }
+
+    @include mobile-screen {
+      height: 270px;
+    }
   }
 
   .logos-row.yoy-logos {
