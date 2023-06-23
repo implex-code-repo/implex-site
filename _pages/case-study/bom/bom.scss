@@ -1,21 +1,4 @@
-.yoy {
-  #image1 {
-    height: 680px;
-
-    @include small-desktop-screen {
-      height: 100%;
-      background-size: contain;
-    }
-  }
-
-  #image2 {
-    height: 638px;
-    background-size: contain;
-
-    @include small-desktop-screen {
-      height: 493px;
-    }
-  }
+.bom {
 
   .player {
     width: 960px;
@@ -33,10 +16,6 @@
     @include mobile-screen {
       height: 270px;
     }
-  }
-
-  .logos-row.yoy-logos {
-    justify-content: space-around;
   }
 
   .content-wrapper {

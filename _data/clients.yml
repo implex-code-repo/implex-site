@@ -9,11 +9,11 @@ clients:
     imageAlt: "Percona Outsourcing Development Center cover"
     backgroundColor: '#0C2E4C'
     whiteText: true
-  - title: "(R)evolution of the high-load visual art web encyclopedia"
-    description: "The aim of the project was to make art accessible to anyone, anywhere. Today, WikiArt features over 250,000 artworks by 5,000 artists, localized to 8 languages. These artworks are displayed in museums, universities and town halls of more than 100 countries, yet most of it is not on public view. The client claims that they are planning to cover the entire art history of the Earth, from cave artworks to modern private collections."
-    link: /case-study/wikiart
-    image: clients/Wiki_preview_cover-772.webp
-    imageAlt: "Visual art web encyclopedia Wikiart cover"
+  - title: "Turning unusual vision into a novel map-based web product"
+    description: "CyberQuantic's web application transforms a mind map with cases into an innovative map-based website with intuitive navigation. Mental maps are the primary content and navigation method with an easy-to-read visualization. The web app is integrated with CyberQuantic's knowledge base and maintains a high level of website performance. The site includes data on 600+ AI firms in Europe and 200+ open APIs, and excellent Google PageSpeed Insights ratings."
+    link: /case-study/cyberquantic
+    image: clients/CyberQuantic_preview_cover-1280.webp
+    imageAlt: "CyberQuantic novel map-based web product"
   - title: "Flutter Edtech App for primary school students"
     description: 'A cross-platform mobile application that helps to learn the Ukrainian language to kids whose native language is Hungarian or Romanian. Developed for schoolchildren, it is simple, logical, concise, and at the same time, attractive and low resource-consuming to work fast, even on old mobile devices. The app has been created in partnership with a digital agency, "Friends of Brands", for the program of cooperation between Ukraine, Finland, and the EU aims to support the reform of the New Ukrainian School (NUSch).'
     link: /case-study/yoy
@@ -21,11 +21,11 @@ clients:
     imageAlt: "Flutter Edtech App YOY cover"
     backgroundColor: '#00893A'
     whiteText: true
-  - title: "Admit.me: trustful cooperation in education domain for years"
-    description: "Admit.me is a free virtual admissions coach that offers step-by-step guides through the admissions process of the best schools. The developed solution allows for generating personalized admissions programs based on the applicant's background and goals. Admit.me provides tools and lessons designed to optimize the applicant's admissions chances by framing the applicant's thinking and informing critical admissions decisions."
-    link: /case-study/admit-me
-    image: clients/AdmitMe_preview_cover-772.webp
-    imageAlt: "Trustful cooperation in education domain - Admit.me cover"
+  - title: "(R)evolution of the high-load visual art web encyclopedia"
+    description: "The aim of the project was to make art accessible to anyone, anywhere. Today, WikiArt features over 250,000 artworks by 5,000 artists, localized to 8 languages. These artworks are displayed in museums, universities and town halls of more than 100 countries, yet most of it is not on public view. The client claims that they are planning to cover the entire art history of the Earth, from cave artworks to modern private collections."
+    link: /case-study/wikiart
+    image: clients/Wiki_preview_cover-772.webp
+    imageAlt: "Visual art web encyclopedia Wikiart cover"
   - title: "Rapid MVP for the on-line mobile and web car auction"
     description: "A B2B startup for car dealers who sell used vehicles across the USA via the marketplace. The developed application has a whole range of functions to support the workflows of car dealers and inspectors, like auctions workflow, live and proxy bidding, post-auction counter offering, and deal closing. The solution is integrated with different APIs to gather information about vehicles, helping dealers make the right decisions at auctions."
     link: /case-study/smartlane
@@ -33,9 +33,19 @@ clients:
     imageAlt: "On-line mobile and web car auction SmartLane cover"
     backgroundColor: '#3455A0'
     whiteText: true
+  - title: "Admit.me: trustful cooperation in education domain for years"
+    description: "Admit.me is a free virtual admissions coach that offers step-by-step guides through the admissions process of the best schools. The developed solution allows for generating personalized admissions programs based on the applicant's background and goals. Admit.me provides tools and lessons designed to optimize the applicant's admissions chances by framing the applicant's thinking and informing critical admissions decisions."
+    link: /case-study/admit-me
+    image: clients/AdmitMe_preview_cover-772.webp
+    imageAlt: "Trustful cooperation in education domain - Admit.me cover"
   - title: "A lightning-fast website for a reputable cybersec company"
     description: "A cybersecurity services company Berezha Security Group rebranded as BSG in 2020. So they needed to improve their website, but redesign was only part of the story. The ultimate goal was to make the website fast and SEO-friendly, keeping its Google PageSpeed Insights scores in the green 90-100 range, what's impossible using a WordPress-like CMS approach. A static website with perfect usability, external CMS and one-click deployment functionality, and revision control successfully represents the BSG brand now."
     link: /case-study/bsg
     image: clients/Bsg_preview_cover-772.webp
     imageAlt: "Lightning-fast website for cybersecurity company BSG cover"
-#    backgroundColor: '#E6F1FF'
+    backgroundColor: '#E6F1FF'
+  - title: "Rapid MVP for the beauty industry mobile marketplace"
+    description: "Working as a committed technical partner, we strategically optimized the project scope for Best of Masters, a beauty marketplace. Utilizing the Story Mapping technique, we identified critical features and efficiently built a comprehensive MVP. The result was a platform facilitating free master registration, portfolio creation, service catalogues, location-based searches, scheduling, and booking management. Remarkably, we developed the MVP in three languages in just two months."
+    link: /case-study/bom
+    image: clients/BoM_preview_cover-600.webp
+    imageAlt: "Rapid MVP for the beauty industry mobile marketplace - Best of Masters cover"
