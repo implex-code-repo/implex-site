@@ -34,6 +34,10 @@
 @import "admit-me";
 @import "smartlane";
 @import "wikiart";
+@import "bom";
+@import "bsg";
+@import "percona";
+@import "cyberquantic";
 
 @font-face {
   font-family: 'Roboto';
@@ -573,9 +577,6 @@ body {
       max-width: 160px;
     }
   }
-}
-
-.vacancy {
 }
 
 .content {
