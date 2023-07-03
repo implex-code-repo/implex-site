@@ -9,6 +9,7 @@ category: "Vacancy"
 tag: "Software engeneering"
 canonicalLink: ""
 keywords: ''
+
 ---
 
 You will be a part of the team for our Canadian customer – Series B+ startup that changes the world of the human resources. The team works on the enterprise B2B solution – one of the core products of the company.
